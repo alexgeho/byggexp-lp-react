@@ -1,5 +1,6 @@
 /* ============ BENEFITS ============ */
-.benefits, benefits-team {
+.benefits,
+benefits-team {
   color: var(--white);
   padding: 120px 0;
   position: relative;
@@ -13,7 +14,6 @@
 .benefits-team {
   background: var(--bg);
 }
-
 
 .benefits::before {
   content: "";
@@ -45,13 +45,42 @@
   gap: 30px;
   margin-top: 24px;
 }
+
+.eyebrow {
+    display: inline-block;
+    font-size: 13px; font-weight: 600;
+    color: var(--blue);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-bottom: 14px;
+  }
+
+h2 {
+  font-size: clamp(32px, 4vw, 52px);
+  line-height: 1.05;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+h2 em {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--blue);
+}
+.section-sub {
+  font-size: 19px;
+  line-height: 1.5;
+  color: var(--muted);
+  margin-top: 18px;
+  max-width: 640px;
+}
 @media (max-width: 800px) {
   .benefits-grid {
     grid-template-columns: 1fr;
   }
 }
-.benefit-card, .benefit-card-team {
-
+.benefit-card,
+.benefit-card-team {
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 24px;
   padding: 26px 26px;
@@ -62,14 +91,15 @@
     background 0.2s;
 }
 
-.benefit-card{
-    background: linear-gradient(
+.benefit-card {
+  background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0.04),
     rgba(255, 255, 255, 0.01)
   );
 }
-.benefit-card:hover, .benefit-card-team:hover {
+.benefit-card:hover,
+.benefit-card-team:hover {
   transform: translateY(-4px);
   border-color: rgba(35, 148, 255, 0.4);
   background: linear-gradient(
@@ -100,7 +130,8 @@
   line-height: 1.05;
   margin-bottom: 20px;
 }
-.benefit-card, benefit-card-team p {
+.benefit-card,
+benefit-card-team p {
   font-size: 16px;
   line-height: 1.5;
 }
@@ -116,7 +147,6 @@
     rgba(255, 255, 255, 0.9)
   );
 }
-
 
 /* ============ SOLUTION ============ */
 .solution {

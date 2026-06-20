@@ -13,7 +13,36 @@
   max-width: 720px;
   margin: 0 auto 80px;
 }
-.how-head h2, .how-head p {
+.how-head .eyebrow {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--blue);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 14px;
+}
+.how-head h2 {
+  font-size: clamp(32px, 4vw, 52px);
+  line-height: 1.05;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+.how-head h2 em {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--blue);
+}
+.how-head .section-sub {
+  font-size: 19px;
+  line-height: 1.5;
+  color: var(--muted);
+  margin-top: 18px;
+  max-width: 640px;
+}
+.how-head h2,
+.how-head p {
   color: white;
 }
 
