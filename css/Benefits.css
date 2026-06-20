@@ -1,0 +1,215 @@
+/* ============ BENEFITS ============ */
+.benefits, benefits-team {
+  color: var(--white);
+  padding: 120px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.benefits {
+  background: var(--navy-900);
+}
+
+.benefits-team {
+  background: var(--bg);
+}
+
+.benefits::before {
+  content: "";
+  position: absolute;
+  bottom: -40%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1400px;
+  height: 900px;
+  background: radial-gradient(ellipse at center, rgba(35, 148, 255, 0.22) 0%, transparent 55%);
+  pointer-events: none;
+}
+
+.benefits-inner {
+  position: relative;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.benefits h2 {
+  color: var(--white);
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 24px;
+}
+
+@media (max-width: 800px) {
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.benefit-card, .benefit-card-team {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  padding: 26px 26px;
+  text-align: left;
+  transition: transform 0.2s, border-color 0.2s, background 0.2s;
+}
+
+.benefit-card {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01));
+}
+
+.benefit-card:hover, .benefit-card-team:hover {
+  transform: translateY(-4px);
+  border-color: rgba(35, 148, 255, 0.4);
+  background: linear-gradient(180deg, rgba(35, 148, 255, 0.08), rgba(35, 148, 255, 0.02));
+}
+
+.benefit-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: rgba(69, 179, 107, 0.18);
+  color: var(--green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.benefit-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.benefit-card h3 {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.05;
+  margin-bottom: 20px;
+}
+
+.benefit-card, benefit-card-team p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.benefit-card {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.benefit-card-team {
+  color: var(--ink);
+  background: linear-gradient(180deg, rgba(69, 179, 107, 0.1), rgba(255, 255, 255, 0.9));
+}
+
+/* ============ SOLUTION ============ */
+.solution {
+  background: var(--navy-900);
+  color: var(--white);
+  padding: 120px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.solution::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("assets/bg-glow-wide.png") no-repeat center 60%/110% auto;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.solution-inner {
+  position: relative;
+  text-align: center;
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.solution h2 {
+  color: var(--white);
+  font-size: clamp(38px, 5vw, 64px);
+}
+
+.solution-lead,
+.solution-lead-team {
+  font-size: 21px;
+  line-height: 1.5;
+  margin: 44px auto 0;
+  max-width: 740px;
+}
+
+.solution-lead {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.solution-lead-team {
+  color: var(--ink);
+}
+
+.solution-lead strong {
+  color: var(--white);
+  font-weight: 600;
+}
+
+.solution-features {
+  margin-top: 64px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+@media (max-width: 800px) {
+  .solution-features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.feature-chip {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 24px 20px;
+  text-align: left;
+  backdrop-filter: blur(8px);
+  transition: background 0.2s, border-color 0.2s, transform 0.2s;
+}
+
+.feature-chip:hover {
+  background: rgba(35, 148, 255, 0.08);
+  border-color: rgba(35, 148, 255, 0.32);
+  transform: translateY(-3px);
+}
+
+.feature-chip-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: rgba(35, 148, 255, 0.18);
+  color: #6bb6ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+
+.feature-chip-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.feature-chip h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.feature-chip p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 1.4;
+}

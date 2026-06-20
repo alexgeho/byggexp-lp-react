@@ -8,7 +8,7 @@ import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import HowDark from "./components/How/HowDark";
 import HowLight from "./components/How/HowLight";
-import How from "./components/How/HowLight";
+
 import Pricing from "./components/Pricing/Pricing";
 import Why from "./components/Why/Why";
 /* 
@@ -22,16 +22,15 @@ function App() {
       <Hero />
       <Why />
       <BenefitsForOffice />
-      
+
       <BenefitsForSite />
 
-{/* 
+      <HowDark/>
+      <HowLight/>
+
+      {/* 
       <Pain />
       <Consequences /> */}
-
-      <HowDark />
-      <HowLight />
-
 
       <FinalBenefits />
       <Pricing />

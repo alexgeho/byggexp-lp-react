@@ -4,20 +4,19 @@
   background: var(--navy-900);
 }
 
-.howLight{
-   background: var(--bg);
+.howLight {
+  background: var(--bg);
 }
 
 .how-head {
   text-align: center;
   max-width: 720px;
   margin: 0 auto 80px;
-  
-
-  h2, p {
-    color: white;
-  }
 }
+.how-head h2, .how-head p {
+  color: white;
+}
+
 .how-head .section-sub {
   margin-left: auto;
   margin-right: auto;
@@ -34,17 +33,18 @@
   padding: 24px;
   margin-bottom: 20px;
   box-shadow: 0 1px 0 rgba(15, 34, 54, 0.02);
-  transition:
-    box-shadow 0.25s,
-    transform 0.25s;
+  transition: box-shadow 0.25s, transform 0.25s;
 }
+
 .step:hover {
   box-shadow: 0 24px 60px -20px rgba(15, 34, 54, 0.12);
   transform: translateY(-2px);
 }
+
 .step:last-child {
   margin-bottom: 0;
 }
+
 .step:nth-child(even) .step-visual {
   order: -1;
 }
@@ -82,13 +82,13 @@
     order: 0;
   }
 }
-
 .step-text-block {
   padding: 28px 24px 28px 32px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
 @media (max-width: 900px) {
   .step-text-block {
     padding: 16px 12px 24px;
@@ -102,18 +102,21 @@
   margin-bottom: 16px;
   color: var(--ink);
 }
+
 .step-text {
   color: var(--muted);
   font-size: 17px;
   line-height: 1.55;
   margin-bottom: 22px;
 }
+
 .step-bullets {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
+
 .step-bullets li {
   display: flex;
   gap: 12px;
@@ -121,6 +124,7 @@
   font-size: 15px;
   color: var(--ink-2);
 }
+
 .step-bullets .check {
   flex-shrink: 0;
   width: 30px;
@@ -133,6 +137,7 @@
   justify-content: center;
   margin-top: 1px;
 }
+
 .step-bullets .check svg {
   width: 12px;
   height: 12px;
@@ -149,27 +154,27 @@
   height: 420px;
   overflow: hidden;
 }
+
 .step-visual::after {
   content: "";
   position: absolute;
   inset: -40% -20% auto -20%;
   height: 80%;
-  background: radial-gradient(
-    ellipse at center,
-    rgba(35, 148, 255, 0.18) 0%,
-    transparent 65%
-  );
+  background: radial-gradient(ellipse at center, rgba(35, 148, 255, 0.18) 0%, transparent 65%);
   pointer-events: none;
 }
+
 .phone-shell {
   position: relative;
   z-index: 1;
   width: 260px;
   transition: transform 0.3s;
 }
+
 .step:hover .phone-shell {
   transform: translateY(-8px);
 }
+
 .phone-shell img {
   width: 100%;
   height: auto;

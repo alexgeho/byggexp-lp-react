@@ -1,0 +1,75 @@
+:root {
+  --navy-900: #050b14;
+  --navy-800: #0a1828;
+  --navy-700: #0f2236;
+  --navy-600: #142e48;
+  --navy-500: #1b3d5e;
+  --ink: #0a1828;
+  --ink-2: #15324f;
+  --muted: #5b7591;
+  --muted-2: #94a8bc;
+  --line: #e1eaf3;
+  --line-dark: #1b3550;
+  --bg: #f1f6fb;
+  --bg-2: #e8f1f9;
+  --white: #ffffff;
+  --blue: #2394ff;
+  --blue-2: #1378e0;
+  --blue-soft: #dbeeff;
+  --green: #45b36b;
+  --danger: #e5556a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: "DM Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  font-size: 17px;
+  line-height: 1.5;
+  text-wrap: pretty;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+input,
+select {
+  font-family: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.container-narrow {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
