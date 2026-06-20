@@ -1,12 +1,22 @@
 /* ============ HOW IT WORKS / STEPS ============ */
 .how {
-  padding: 120px 0;
-  background: var(--bg);
+  padding: 60px 0;
+  background: var(--navy-900);
 }
+
+howLight{
+   background: var(--bg);
+}
+
 .how-head {
   text-align: center;
   max-width: 720px;
   margin: 0 auto 80px;
+  
+
+  h2, p {
+    color: white;
+  }
 }
 .how-head .section-sub {
   margin-left: auto;
