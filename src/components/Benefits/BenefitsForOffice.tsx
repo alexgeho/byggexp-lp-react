@@ -1,4 +1,3 @@
-import "./Benefits.scss"
 
 function BenefitsForOffice() {
   return (

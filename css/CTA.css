@@ -2,7 +2,6 @@
 .cta {
   background: var(--navy-900);
   color: var(--white);
-  padding: 120px 0;
   position: relative;
   overflow: hidden;
 }

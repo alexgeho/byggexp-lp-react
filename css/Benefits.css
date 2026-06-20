@@ -2,7 +2,6 @@
 .benefits,
 benefits-team {
   color: var(--white);
-  padding: 120px 0;
   position: relative;
   overflow: hidden;
 }
@@ -176,7 +175,6 @@ benefit-card-team p {
 .solution-lead-team {
   font-size: 21px;
   line-height: 1.5;
-  margin: 44px auto 0;
   max-width: 740px;
 }
 
