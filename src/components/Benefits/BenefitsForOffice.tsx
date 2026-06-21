@@ -1,18 +1,22 @@
+import "./Benefits.scss";
 
 function BenefitsForOffice() {
   return (
     <section className="benefits">
       <div className="container benefits-inner">
-        <span className="eyebrow">Что Вам даст работа с нами?</span>
+        
+        <div className="benefits-header">
+          <span className="eyebrow">Что Вам даст работа с нами?</span>
 
-        <h2>
-          С 1й недели <em>Вы больше не тратите время</em> на звонки, ручной
-          сбор/ввод часов и напоминаниями
-        </h2>
+          <h2>
+            С 1й недели <em>Вы больше не тратите время</em> на звонки, ручной
+            сбор/ввод часов и напоминаниями
+          </h2>
+        </div>
 
-        <p className="solution-lead">
-          Что поменяется для офиса и руководителя:
-        </p>
+          <p className="solution-lead">
+            Что поменяется для офиса и руководителя:
+          </p>
 
         <div className="benefits-grid">
           <div className="benefit-card">
@@ -83,6 +87,7 @@ function BenefitsForOffice() {
             <p>Видно Live кто работает, где работает и кто не на работе.</p>
           </div>
         </div>
+
       </div>
     </section>
   );
