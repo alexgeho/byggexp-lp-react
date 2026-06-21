@@ -62,7 +62,11 @@ a {
   text-decoration: none;
 }
 
-
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
 
 .container-narrow {
   max-width: 980px;
@@ -70,3 +74,6 @@ a {
   padding: 0 32px;
 }
 
+section {
+  padding: 50px 0;
+}

@@ -6,7 +6,7 @@ function FinalBenefits() {
       <div className="container benefits-inner">
         <span className="eyebrow" >Итого, что ты получаешь</span>
         <h2>Объект под контролем — <em>и спокойный сон</em></h2>
-        <div className="benefits-grid">
+        <div className="finalBenefits-grid">
           <div className="benefit-card">
             <div className="benefit-icon">
               <svg

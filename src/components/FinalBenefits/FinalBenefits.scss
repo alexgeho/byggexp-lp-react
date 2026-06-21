@@ -29,10 +29,10 @@
 .benefits h2 {
   color: var(--white);
 }
-.benefits-grid {
+.finalBenefits-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+  gap: 40px;
   margin-top: 24px;
 }
 @media (max-width: 800px) {

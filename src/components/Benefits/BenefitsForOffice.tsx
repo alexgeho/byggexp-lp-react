@@ -4,7 +4,7 @@ function BenefitsForOffice() {
   return (
     <section className="benefits">
       <div className="container benefits-inner">
-        
+
         <div className="benefits-header">
           <span className="eyebrow">Что Вам даст работа с нами?</span>
 
@@ -19,6 +19,7 @@ function BenefitsForOffice() {
           </p>
 
         <div className="benefits-grid">
+          
           <div className="benefit-card">
             <div className="benefit-icon">
               <svg
