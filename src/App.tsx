@@ -13,15 +13,18 @@ import Pricing from "./components/Pricing/Pricing";
 import Why from "./components/Why/Why";
 import { Routes, Route, Navigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
+import { translations } from "./locales/translations";
 
 function HomePage() {
   const { lang } = useParams();
+
+  const t = translations[(lang as keyof typeof translations) || "sv"];
 
   console.log(lang);
 
   return (
     <>
-      <Header />
+      <Header t={t} />
       <Hero />
       <Why />
       <BenefitsForOffice />
