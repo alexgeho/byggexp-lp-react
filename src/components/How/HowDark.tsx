@@ -1,4 +1,5 @@
 import "./How.scss";
+import shiftsExport from "../../assets/features/shiftsExport.png"
 
 function HowDark() {
   return (
@@ -42,7 +43,7 @@ function HowDark() {
           </div>
           <div className="step-visual">
             <div className="phone-shell">
-              <img src="assets/screen-chat.png" alt="Чат бригады в Byggexp" />
+              <img src={shiftsExport} alt="shiftsExport" />
             </div>
           </div>
         </div>
