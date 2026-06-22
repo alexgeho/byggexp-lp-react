@@ -21,14 +21,14 @@ function Header({ t }: HeaderProps) {
   const navigate = useNavigate();
 
   function changeLanguage(language: string) {
-    navigate(`/byggexp-lp-react/${language}`);
+    navigate(`/${language}`);
     setIsOpen(false);
   }
 
   return (
     <header className="site-header">
       <nav className="nav">
-        <Link to={`/byggexp-lp-react/${lang}`} className="nav-logo">
+        <Link to={`/${lang}`} className="nav-logo">
           <img src={logo} alt="ByggExp" />
         </Link>
 
@@ -45,29 +45,16 @@ function Header({ t }: HeaderProps) {
 
             {isOpen && (
               <div className="language-dropdown">
-                <button
-                  type="button"
-                  onClick={() => changeLanguage("ru")}
-                >
-                  <img src={languages.ru.flag} alt="" />
-                  <span>{languages.ru.label}</span>
-                </button>
-
-                <button
-                  type="button"
-                  onClick={() => changeLanguage("sv")}
-                >
-                  <img src={languages.sv.flag} alt="" />
-                  <span>{languages.sv.label}</span>
-                </button>
-
-                <button
-                  type="button"
-                  onClick={() => changeLanguage("en")}
-                >
-                  <img src={languages.en.flag} alt="" />
-                  <span>{languages.en.label}</span>
-                </button>
+                {Object.entries(languages).map(([code, language]) => (
+                  <button
+                    key={code}
+                    type="button"
+                    onClick={() => changeLanguage(code)}
+                  >
+                    <img src={language.flag} alt="" />
+                    <span>{language.label}</span>
+                  </button>
+                ))}
               </div>
             )}
           </div>
