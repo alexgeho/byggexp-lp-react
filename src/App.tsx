@@ -43,9 +43,7 @@ function App() {
         path="/byggexp-lp-react/"
         element={<Navigate to="/sv" replace />}
       />
-      <Route path="/byggexp-lp-react/sv" element={<HomePage />} />
-      <Route path="/byggexp-lp-react/en" element={<HomePage />} />
-      <Route path="/byggexp-lp-react/ru" element={<HomePage />} />
+      <Route path="/byggexp-lp-react/:lang" element={<HomePage />} />
     </Routes>
   );
 }
