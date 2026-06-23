@@ -21,7 +21,7 @@ function HomePage() {
     <>
       <Header t={t} />
       <Hero />
-      <Why />
+      <Why t={t} />
       <BenefitsForOffice />
       <BenefitsForSite />
       <HowDark />

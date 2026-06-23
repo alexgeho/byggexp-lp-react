@@ -23,11 +23,11 @@
 }
 
 .why-top {
-  position: relative;
   display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: 80px;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
   align-items: center;
+  justify-content: center;
 }
 
 .eyebrowWhy {
@@ -36,16 +36,15 @@
 }
 
 .stat-big {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+
   font-size: clamp(120px, 18vw, 220px);
   font-weight: 600;
   line-height: 0.9;
   letter-spacing: -0.04em;
-  background: linear-gradient(
-    180deg,
-    #ffeef0 0%,
-    #e5556a 50%,
-    #ef1637 90%
-  );
+  background: linear-gradient(180deg, #ffeef0 0%, #e5556a 50%, #ef1637 90%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -111,4 +110,8 @@
     grid-template-columns: 1fr;
     gap: 16px;
   }
+
+  .why-header h2 {
+  font-size: 1.6rem;
+}
 }

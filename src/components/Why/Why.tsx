@@ -1,51 +1,67 @@
 import "./Why.scss";
 
-function Why() {
+type WhyProps = {
+  t: {
+    whyTitle: string;
+    whyHeading: string;
+    whyItem1: string;
+    whyItem2: string;
+    whyItem3: string;
+    whyItem4: string;
+    whyResult: string;
+    whyResultText: string;
+  };
+};
+
+function Why({ t }: WhyProps) {
+
   return (
     <section className="why">
+
       <div className="container">
+
         <div className="why-top">
+
           <div className="stat-big">
             80<span>%</span>
           </div>
 
           <div className="why-header">
-            <span className="eyebrowWhy">Корень проблемы</span>
 
-            <h2>
-              компаний теряют деньги не из-за плохих работников, а потому что
-              делают вручную то, что успешные давно автоматизирвали
-            </h2>
+            <span className="eyebrowWhy">{t.whyTitle}</span>
+
+            <h2>{t.whyHeading}</h2>
+
           </div>
         </div>
 
         <div className="why-list">
+
           <div className="why-item">
             <span className="dash"></span>
-            часы присылают в SMS или на бумаге — администрация вручную переносит
-            их в Excel
+            {t.whyItem1}
           </div>
 
           <div className="why-item">
             <span className="dash"></span>
-            рабочий забыл отправить часы — приходится звонить и напоминать
+            {t.whyItem2}
           </div>
 
           <div className="why-item">
             <span className="dash"></span>
-            часы с объекта не совпали с данными заказчика — надо разбираться
+            {t.whyItem3}
           </div>
 
           <div className="why-item">
             <span className="dash"></span>
-            секретарша тратит десятки часов на ручной ввод в Excel
+            {t.whyItem4}
           </div>
         </div>
 
         <div className="why-conclusion">
-          <strong>Как результат:</strong> расходы сильно растут, счета уходят
-          позже, а деньги зависают неделями ...
+          <strong>{t.whyResult}</strong> {t.whyResultText}
         </div>
+        
       </div>
     </section>
   );
