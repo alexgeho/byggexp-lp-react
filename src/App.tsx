@@ -10,18 +10,21 @@ import HowLight from "./components/How/HowLight";
 import Pricing from "./components/Pricing/Pricing";
 import Why from "./components/Why/Why";
 import { Routes, Route, Navigate, useParams } from "react-router-dom";
-import { translations } from "./locales/translations";
+import { headerTranslations } from "./locales/header"
+import { whyTranslations } from "./locales/why"
 
 function HomePage() {
   const { lang = "sv" } = useParams();
 
-  const translation = translations[lang as keyof typeof translations] || translations.sv;
+
+  const headerT = headerTranslations[lang as keyof typeof headerTranslations] || headerTranslations.sv;
+  const whyT = whyTranslations[lang as keyof typeof whyTranslations] || whyTranslations.sv;
 
   return (
     <>
-      <Header translation={translation} />
+      <Header headerT={headerT} />
       <Hero />
-      <Why translation={translation} />
+      <Why whyT={whyT} />
       <BenefitsForOffice />
       <BenefitsForSite />
       <HowDark />
