@@ -1,28 +1,39 @@
-import "./Hero.scss"
-import phone from "../../assets/hero/phone-3d.png"
+import "./Hero.scss";
+import phone from "../../assets/hero/phone-3d.png";
 
-function Hero () {
-    return (
+type HeroProps = {
+  heroT: {
+    heroPill: string;
+    heroTitle: string;
+    heroTitleAccent: string;
+    heroSubtitle: string;
+    heroDemo: string;
+    heroHow: string;
+    heroFeature1: string;
+    heroFeature2: string;
+    heroFeature3: string;
+  };
+};
+
+function Hero({ heroT }: HeroProps) {
+  return (
     <section className="hero">
       <div className="container hero-inner">
         <div>
-          <span className="pill"
-            ><span className="pill-dot"></span>Система управления строительными
-            проектами</span>
+          <span className="pill">
+            <span className="pill-dot"></span>
+            {heroT.heroPill}
+          </span>
 
           <h1>
-            Автоматический учёт рабочего времени
-            <em> для строительных компаний </em>
+            {heroT.heroTitle}
+            <em> {heroT.heroTitleAccent}</em>
           </h1>
-          <p className="hero-sub">
-            Быстрое выставляете
-            счетов и зарплат, задачи с авто напоминаниями, контроль смен в
-            режиме онлайн, планирование и многое другое …
-          </p>
+          <p className="hero-sub">{heroT.heroSubtitle}</p>
 
           <div className="hero-ctas">
             <a href="#cta" className="btn-primary">
-              Записаться на демо
+              {heroT.heroDemo}
               <svg
                 width="16"
                 height="16"
@@ -36,11 +47,13 @@ function Hero () {
                 <path d="M5 12h14M13 5l7 7-7 7"></path>
               </svg>
             </a>
-            <a href="#how" className="btn-ghost">Как это работает</a>
+            <a href="#how" className="btn-ghost">
+              {heroT.heroHow}
+            </a>
           </div>
           <div className="hero-meta">
-            <span
-              ><svg
+            <span>
+              <svg
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -50,9 +63,10 @@ function Hero () {
               >
                 <polyline points="20 6 9 17 4 12"></polyline>
               </svg>
-              Первый месяц бесплатно</span>
-            <span
-              ><svg
+              {heroT.heroFeature1}
+            </span>
+            <span>
+              <svg
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -62,9 +76,10 @@ function Hero () {
               >
                 <polyline points="20 6 9 17 4 12"></polyline>
               </svg>
-              Запуск за 15 минут</span>
-            <span
-              ><svg
+              {heroT.heroFeature2}
+            </span>
+            <span>
+              <svg
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -74,20 +89,16 @@ function Hero () {
               >
                 <polyline points="20 6 9 17 4 12"></polyline>
               </svg>
-              Без обучения бригады</span>
+              {heroT.heroFeature3}
+            </span>
           </div>
         </div>
         <div className="hero-visual">
-          <img
-            src={phone}
-            alt="Byggexp mobile"
-            className="hero-phone"
-          />
+          <img src={phone} alt="Byggexp mobile" className="hero-phone" />
         </div>
       </div>
     </section>
-
-    )
+  );
 }
 
 export default Hero;
