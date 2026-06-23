@@ -17,6 +17,10 @@ import { benefitsOfficeTranslations } from "./locales/benefitsOffice"
 import { benefitsSiteTranslations } from "./locales/benefitsSite"
 import { featuresTranslations } from "./locales/featuresDark"
 import { featuresLightTranslations } from "./locales/featuresLight"
+import { finalBenefitsTranslations } from "./locales/finalBenefits"
+import { pricingTranslations } from "./locales/pricing"
+import { ctaTranslations } from "./locales/CTA"
+import { footerTranslations } from "./locales/footer"
 
 function HomePage() {
   const { lang = "sv" } = useParams();
@@ -29,6 +33,10 @@ function HomePage() {
   const benefitsSiteT = benefitsSiteTranslations[lang as keyof typeof benefitsSiteTranslations] || benefitsSiteTranslations.sv;
   const featuresT = featuresTranslations[lang as keyof typeof featuresTranslations] || featuresTranslations.sv;
   const featuresLightT = featuresLightTranslations[lang as keyof typeof featuresTranslations] || featuresTranslations.sv;
+  const finalBenefitsT = finalBenefitsTranslations[lang as keyof typeof finalBenefitsTranslations] || finalBenefitsTranslations.sv;
+  const pricingT = pricingTranslations[lang as keyof typeof pricingTranslations] || pricingTranslations.sv;
+  const ctaT = ctaTranslations[lang as keyof typeof ctaTranslations] || ctaTranslations.sv;
+  const footerT = footerTranslations[lang as keyof typeof footerTranslations] || footerTranslations.sv;
 
   return (
     <>
@@ -39,10 +47,10 @@ function HomePage() {
       <BenefitsForSite benefitsSiteT={benefitsSiteT} />
       <FeaturesDark featuresT={featuresT} />
       <FeaturesLight featuresLightT={featuresLightT} />
-      <FinalBenefits />
-      <Pricing />
-      <CTA />
-      <Footer />
+      <FinalBenefits finalBenefitsT={finalBenefitsT} />
+      <Pricing pricingT={pricingT}/>
+      <CTA ctaT={ctaT}/>
+      <Footer footerT={footerT}/>
     </>
   );
 }

@@ -1,121 +1,190 @@
-import "./CTA.scss"
+import "./CTA.scss";
 
-function CTA() {
-return (
-     <section className="cta" id="cta">
+type CTAProps = {
+  ctaT: {
+    ctaTitle: string;
+
+    ctaHeading1: string;
+    ctaAccent: string;
+    ctaHeading2: string;
+
+    ctaLead: string;
+
+    ctaItem1: string;
+    ctaItem2: string;
+    ctaItem3: string;
+
+    ctaFormTitle: string;
+
+    ctaNameLabel: string;
+    ctaNamePlaceholder: string;
+    ctaNameError: string;
+
+    ctaEmailLabel: string;
+    ctaEmailPlaceholder: string;
+    ctaEmailError: string;
+
+    ctaPhoneLabel: string;
+    ctaPhonePlaceholder: string;
+    ctaPhoneError: string;
+
+    ctaButton: string;
+
+    ctaPrivacy: string;
+
+    ctaSuccessTitle: string;
+    ctaSuccessText: string;
+  };
+};
+
+function CTA({ ctaT }: CTAProps) {
+  return (
+    <section className="cta" id="cta">
       <div className="container cta-inner">
         <div>
-          <span className="eyebrow">Готов попробовать?</span>
-          <h2>Запишись на демо — <em>15 минут</em> по видеосвязи</h2>
-          <p className="cta-lead">
-            Покажем, как Byggexp работает на твоём объекте, ответим на вопросы
-            и поможем настроить первый чат с бригадой.
-          </p>
+          <span className="eyebrow">{ctaT.ctaTitle}</span>
+
+          <h2>
+            {ctaT.ctaHeading1} <em>{ctaT.ctaAccent}</em> {ctaT.ctaHeading2}
+          </h2>
+
+          <p className="cta-lead">{ctaT.ctaLead}</p>
+
           <ul className="cta-list">
             <li>
-              <span className="check"
-                ><svg viewBox="0 0 14 10" fill="none">
+              <span className="check">
+                <svg viewBox="0 0 14 10" fill="none">
                   <path
                     stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     d="m1 5 4 4 8-8"
-                  /></svg></span>Бесплатно и без обязательств
+                  />
+                </svg>
+              </span>
+              {ctaT.ctaItem1}
             </li>
+
             <li>
-              <span className="check"
-                ><svg viewBox="0 0 14 10" fill="none">
+              <span className="check">
+                <svg viewBox="0 0 14 10" fill="none">
                   <path
                     stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     d="m1 5 4 4 8-8"
-                  /></svg></span>Свяжемся в течение часа в рабочее время
+                  />
+                </svg>
+              </span>
+              {ctaT.ctaItem2}
             </li>
+
             <li>
-              <span className="check"
-                ><svg viewBox="0 0 14 10" fill="none">
+              <span className="check">
+                <svg viewBox="0 0 14 10" fill="none">
                   <path
                     stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     d="m1 5 4 4 8-8"
-                  /></svg></span>Поможем перенести данные с твоей системы
+                  />
+                </svg>
+              </span>
+              {ctaT.ctaItem3}
             </li>
           </ul>
         </div>
 
         <div className="form-card" id="form-card">
           <div id="form-view">
-            <h3>Оставь заявку на демо</h3>
+            <h3>{ctaT.ctaFormTitle}</h3>
+
             <form id="demo-form" noValidate>
               <div className="form-group" data-field="name">
-                <label htmlFor="f-name">Как тебя зовут</label>
+                <label htmlFor="f-name">{ctaT.ctaNameLabel}</label>
+
                 <input
                   id="f-name"
                   name="name"
                   type="text"
-                  placeholder="Имя Фамилия"
+                  placeholder={ctaT.ctaNamePlaceholder}
                   autoComplete="name"
                 />
-                <div className="err-msg">Укажи имя</div>
+
+                <div className="err-msg">
+                  {ctaT.ctaNameError}
+                </div>
               </div>
+
               <div className="form-group" data-field="email">
-                <label htmlFor="f-email">Email</label>
+                <label htmlFor="f-email">{ctaT.ctaEmailLabel}</label>
+
                 <input
                   id="f-email"
                   name="email"
                   type="email"
-                  placeholder="hans@bygg.se"
+                  placeholder={ctaT.ctaEmailPlaceholder}
                   autoComplete="email"
                 />
-                <div className="err-msg">Введи реальный email</div>
+
+                <div className="err-msg">
+                  {ctaT.ctaEmailError}
+                </div>
               </div>
+
               <div className="form-group" data-field="phone">
-                <label htmlFor="f-phone">Телефон</label>
+                <label htmlFor="f-phone">{ctaT.ctaPhoneLabel}</label>
+
                 <input
                   id="f-phone"
                   name="phone"
                   type="tel"
-                  placeholder="+46 70 123 45 67"
+                  placeholder={ctaT.ctaPhonePlaceholder}
                   autoComplete="tel"
                 />
-                <div className="err-msg">Укажи телефон для связи</div>
+
+                <div className="err-msg">
+                  {ctaT.ctaPhoneError}
+                </div>
               </div>
+
               <button type="submit" className="form-submit">
-                Записаться на демо
+                {ctaT.ctaButton}
               </button>
+
               <p className="form-fine">
-                Отправляя форму, ты соглашаешься с обработкой персональных
-                данных. Не передаём третьим лицам.
+                {ctaT.ctaPrivacy}
               </p>
             </form>
           </div>
+
           <div id="form-success" className="form-success">
             <div className="form-success-icon">
               <svg
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               >
                 <polyline points="20 6 9 17 4 12"></polyline>
               </svg>
             </div>
-            <h3>Заявка отправлена!</h3>
+
+            <h3>{ctaT.ctaSuccessTitle}</h3>
+
             <p id="success-msg">
-              Свяжемся с тобой в течение часа в рабочее время.
+              {ctaT.ctaSuccessText}
             </p>
           </div>
         </div>
       </div>
     </section>
-)    
+  );
 }
 
 export default CTA;

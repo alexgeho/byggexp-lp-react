@@ -1,11 +1,32 @@
 import "./FinalBenefits.scss";
 
-function FinalBenefits() {
-    return (
-        <section className="benefits">
+type FinalBenefitsProps = {
+  finalBenefitsT: {
+    finalBenefitsTitle: string;
+
+    finalBenefitsHeading1: string;
+    finalBenefitsAccent: string;
+
+    finalBenefitsItem1: string;
+    finalBenefitsItem2: string;
+    finalBenefitsItem3: string;
+    finalBenefitsItem4: string;
+  };
+};
+
+function FinalBenefits({ finalBenefitsT }: FinalBenefitsProps) {
+  return (
+    <section className="benefits">
       <div className="container benefits-inner">
-        <span className="eyebrow" >Итого, что ты получаешь</span>
-        <h2>Объект под контролем — <em>и спокойный сон</em></h2>
+        <span className="eyebrow">
+          {finalBenefitsT.finalBenefitsTitle}
+        </span>
+
+        <h2>
+          {finalBenefitsT.finalBenefitsHeading1}{" "}
+          <em>{finalBenefitsT.finalBenefitsAccent}</em>
+        </h2>
+
         <div className="finalBenefits-grid">
           <div className="benefit-card">
             <div className="benefit-icon">
@@ -13,15 +34,15 @@ function FinalBenefits() {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               >
                 <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
               </svg>
             </div>
 
-            <p>Руководитель получает больше времени и экономии</p>
+            <p>{finalBenefitsT.finalBenefitsItem1}</p>
           </div>
 
           <div className="benefit-card">
@@ -30,15 +51,15 @@ function FinalBenefits() {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               >
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
               </svg>
             </div>
 
-            <p>Компания начинает работать быстрее и спокойнее</p>
+            <p>{finalBenefitsT.finalBenefitsItem2}</p>
           </div>
 
           <div className="benefit-card">
@@ -47,15 +68,15 @@ function FinalBenefits() {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               >
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
               </svg>
             </div>
 
-            <p>Команда тратит время на работу, а не на суету</p>
+            <p>{finalBenefitsT.finalBenefitsItem3}</p>
           </div>
 
           <div className="benefit-card">
@@ -64,21 +85,20 @@ function FinalBenefits() {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               >
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
               </svg>
             </div>
 
-            <p>Ошибки, потери часов и хаос начинают исчезать</p>
+            <p>{finalBenefitsT.finalBenefitsItem4}</p>
           </div>
         </div>
       </div>
     </section>
-    )
-
+  );
 }
 
 export default FinalBenefits;
