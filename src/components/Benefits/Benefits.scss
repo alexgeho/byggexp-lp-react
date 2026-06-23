@@ -1,9 +1,11 @@
 /* ============ BENEFITS ============ */
-.benefits,
-benefits-team {
-  color: var(--white);
-  position: relative;
-  overflow: hidden;
+.benefits {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
 }
 
 .benefits {
@@ -16,12 +18,15 @@ benefits-team {
   gap: 20px;
   margin: 0 auto;
   position: relative;
+  align-items: center;
   justify-content: center;
 }
 
 .benefits-office {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .benefits-team {
@@ -59,8 +64,9 @@ benefits-team {
 .benefits-header {
   display: flex;
   flex-direction: column;
+  max-width: 1200px;
+  text-align: center;
   gap: 30px;
-  margin-bottom: 40px;
 }
 
 .benefits h2 {
