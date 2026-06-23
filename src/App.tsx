@@ -13,6 +13,7 @@ import { Routes, Route, Navigate, useParams } from "react-router-dom";
 import { headerTranslations } from "./locales/header"
 import { whyTranslations } from "./locales/why"
 import { heroTranslations } from "./locales/hero"
+import { benefitsOfficeTranslations } from "./locales/benefits"
 
 function HomePage() {
   const { lang = "sv" } = useParams();
@@ -21,13 +22,14 @@ function HomePage() {
   const headerT = headerTranslations[lang as keyof typeof headerTranslations] || headerTranslations.sv;
   const whyT = whyTranslations[lang as keyof typeof whyTranslations] || whyTranslations.sv;
   const heroT = heroTranslations[lang as keyof typeof heroTranslations] || heroTranslations.sv;
+  const benefitsOfficeT = benefitsOfficeTranslations[lang as keyof typeof benefitsOfficeTranslations] || benefitsOfficeTranslations.sv;
 
   return (
     <>
       <Header headerT={headerT} />
       <Hero heroT={heroT}/>
       <Why whyT={whyT} />
-      <BenefitsForOffice />
+      <BenefitsForOffice benefitsOfficeT={benefitsOfficeT} />
       <BenefitsForSite />
       <HowDark />
       <HowLight />
