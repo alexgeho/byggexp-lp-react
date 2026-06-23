@@ -16,6 +16,7 @@ import { heroTranslations } from "./locales/hero"
 import { benefitsOfficeTranslations } from "./locales/benefitsOffice"
 import { benefitsSiteTranslations } from "./locales/benefitsSite"
 import { featuresTranslations } from "./locales/featuresDark"
+import { featuresLightTranslations } from "./locales/featuresLight"
 
 function HomePage() {
   const { lang = "sv" } = useParams();
@@ -27,6 +28,7 @@ function HomePage() {
   const benefitsOfficeT = benefitsOfficeTranslations[lang as keyof typeof benefitsOfficeTranslations] || benefitsOfficeTranslations.sv;
   const benefitsSiteT = benefitsSiteTranslations[lang as keyof typeof benefitsSiteTranslations] || benefitsSiteTranslations.sv;
   const featuresT = featuresTranslations[lang as keyof typeof featuresTranslations] || featuresTranslations.sv;
+  const featuresLightT = featuresLightTranslations[lang as keyof typeof featuresTranslations] || featuresTranslations.sv;
 
   return (
     <>
@@ -36,7 +38,7 @@ function HomePage() {
       <BenefitsForOffice benefitsOfficeT={benefitsOfficeT} />
       <BenefitsForSite benefitsSiteT={benefitsSiteT} />
       <FeaturesDark featuresT={featuresT} />
-      <FeaturesLight />
+      <FeaturesLight featuresLightT={featuresLightT} />
       <FinalBenefits />
       <Pricing />
       <CTA />

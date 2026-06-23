@@ -1,63 +1,81 @@
-import "./How.scss";
+import "./Features.scss";
 
-function FeaturesLight() {
+type FeaturesLightProps = {
+  featuresLightT: {
+    featuresLightCard1Title: string;
+    featuresLightCard1Text: string;
+    featuresLightCard1Item1: string;
+    featuresLightCard1Item2: string;
+    featuresLightCard1Item3: string;
+
+    featuresLightCard2Title: string;
+    featuresLightCard2Text: string;
+    featuresLightCard2Item1: string;
+    featuresLightCard2Item2: string;
+    featuresLightCard2Item3: string;
+  };
+};
+
+function FeaturesLight({ featuresLightT }: FeaturesLightProps) {
   return (
-    <section className="howLight" id="how">
+    <section className="featuresLight" id="features">
       <div className="container">
-
         <div className="step">
           <div className="step-text-block">
-            <h3>Документы в одном месте</h3>
+            <h3>{featuresLightT.featuresLightCard1Title}</h3>
+
             <p className="step-text">
-              Чертежи, спецификации, фото и график смен — в папке проекта и
-              доступно в пару кликов. Никаких «скинь мне на почту, потом
-              перезвони».
+              {featuresLightT.featuresLightCard1Text}
             </p>
+
             <ul className="step-bullets">
               <li>
                 <span className="check">
                   <svg viewBox="0 0 14 10" fill="none">
                     <path
                       stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       d="m1 5 4 4 8-8"
                     />
                   </svg>
                 </span>
-                Каждому проекту своя отдельная папка
+                {featuresLightT.featuresLightCard1Item1}
               </li>
+
               <li>
                 <span className="check">
                   <svg viewBox="0 0 14 10" fill="none">
                     <path
                       stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       d="m1 5 4 4 8-8"
                     />
                   </svg>
                 </span>
-                История изменений, кто добавлял, скачивал документ
+                {featuresLightT.featuresLightCard1Item2}
               </li>
+
               <li>
                 <span className="check">
                   <svg viewBox="0 0 14 10" fill="none">
                     <path
                       stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       d="m1 5 4 4 8-8"
                     />
                   </svg>
                 </span>
-                Работает офлайн, синхронизируется когда появится связь
+                {featuresLightT.featuresLightCard1Item3}
               </li>
             </ul>
           </div>
+
           <div className="step-visual">
             <div className="phone-shell">
               <img
@@ -70,64 +88,69 @@ function FeaturesLight() {
 
         <div className="step">
           <div className="step-text-block">
-            <h3>Смены и фотоотчеты</h3>
+            <h3>{featuresLightT.featuresLightCard2Title}</h3>
+
             <p className="step-text">
-              Запускаешь смену в один клик — приложение само фиксирует
-              геолокацию, длительность, ты тока делаешь, где надо, фото текущих
-              работ. В конце недели — готовый табель и отчёт для заказчика.
+              {featuresLightT.featuresLightCard2Text}
             </p>
+
             <ul className="step-bullets">
               <li>
                 <span className="check">
                   <svg viewBox="0 0 14 10" fill="none">
                     <path
                       stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       d="m1 5 4 4 8-8"
                     />
                   </svg>
                 </span>
-                Таймер смены с привязкой к адресу объекта
+                {featuresLightT.featuresLightCard2Item1}
               </li>
+
               <li>
                 <span className="check">
                   <svg viewBox="0 0 14 10" fill="none">
                     <path
                       stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       d="m1 5 4 4 8-8"
                     />
                   </svg>
                 </span>
-                Фото работ с датой и геоданными в одном альбоме
+                {featuresLightT.featuresLightCard2Item2}
               </li>
+
               <li>
                 <span className="check">
                   <svg viewBox="0 0 14 10" fill="none">
                     <path
                       stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       d="m1 5 4 4 8-8"
                     />
                   </svg>
                 </span>
-                Недельный отчёт по бригаде формируется автоматически
+                {featuresLightT.featuresLightCard2Item3}
               </li>
             </ul>
           </div>
+
           <div className="step-visual">
             <div className="phone-shell">
-              <img src="assets/screen-shift.png" alt="Учёт смен в Byggexp" />
+              <img
+                src="assets/screen-shift.png"
+                alt="Учёт смен в Byggexp"
+              />
             </div>
           </div>
         </div>
-
       </div>
     </section>
   );
