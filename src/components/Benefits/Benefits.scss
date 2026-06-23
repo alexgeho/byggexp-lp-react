@@ -4,11 +4,29 @@ benefits-team {
   color: var(--white);
   position: relative;
   overflow: hidden;
-
 }
 
 .benefits {
   background: var(--navy-900);
+}
+
+.benefitsBoth {
+  display: grid;
+  grid-template-columns: repeat(2, 600px);
+  gap: 20px;
+  margin: 0 auto;
+  position: relative;
+  justify-content: center;
+}
+
+.benefits-office {
+  display: flex;
+  flex-direction: column;
+}
+
+.benefits-team {
+  display: flex;
+  flex-direction: column;
 }
 
 .benefits-team {
@@ -33,11 +51,9 @@ benefits-team {
 .benefits-inner {
   position: relative;
   text-align: center;
-  max-width: 900px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-
 }
 
 .benefits-header {
@@ -45,9 +61,7 @@ benefits-team {
   flex-direction: column;
   gap: 30px;
   margin-bottom: 40px;
-
 }
-
 
 .benefits h2 {
   color: var(--white);
@@ -55,9 +69,9 @@ benefits-team {
 }
 .benefits-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
- 
+  grid-template-columns: repeat(2, 260px);
+  gap: 20px;
+  justify-content: center;
 }
 
 .eyebrow {
@@ -67,7 +81,6 @@ benefits-team {
   color: var(--blue);
   text-transform: uppercase;
   letter-spacing: 0.12em;
-
 }
 
 h2 {
@@ -96,6 +109,7 @@ h2 em {
 }
 .benefit-card,
 .benefit-card-team {
+  min-height: 280px;
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 24px;
   padding: 24px 24px;
@@ -183,7 +197,6 @@ benefit-card-team p {
 .solution-inner {
   position: relative;
   text-align: center;
-  max-width: 920px;
   margin: 0 auto;
 }
 .solution h2 {
