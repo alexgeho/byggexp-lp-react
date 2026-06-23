@@ -1,7 +1,7 @@
 import "./Why.scss";
 
 type WhyProps = {
-  t: {
+  translation: {
     whyTitle: string;
     whyHeading: string;
     whyItem1: string;
@@ -13,7 +13,7 @@ type WhyProps = {
   };
 };
 
-function Why({ t }: WhyProps) {
+function Why({ translation }: WhyProps) {
 
   return (
     <section className="why">
@@ -28,9 +28,9 @@ function Why({ t }: WhyProps) {
 
           <div className="why-header">
 
-            <span className="eyebrowWhy">{t.whyTitle}</span>
+            <span className="eyebrowWhy">{translation.whyTitle}</span>
 
-            <h2>{t.whyHeading}</h2>
+            <h2>{translation.whyHeading}</h2>
 
           </div>
         </div>
@@ -39,27 +39,27 @@ function Why({ t }: WhyProps) {
 
           <div className="why-item">
             <span className="dash"></span>
-            {t.whyItem1}
+            {translation.whyItem1}
           </div>
 
           <div className="why-item">
             <span className="dash"></span>
-            {t.whyItem2}
+            {translation.whyItem2}
           </div>
 
           <div className="why-item">
             <span className="dash"></span>
-            {t.whyItem3}
+            {translation.whyItem3}
           </div>
 
           <div className="why-item">
             <span className="dash"></span>
-            {t.whyItem4}
+            {translation.whyItem4}
           </div>
         </div>
 
         <div className="why-conclusion">
-          <strong>{t.whyResult}</strong> {t.whyResultText}
+          <strong>{translation.whyResult}</strong> {translation.whyResultText}
         </div>
         
       </div>

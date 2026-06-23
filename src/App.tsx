@@ -15,13 +15,13 @@ import { translations } from "./locales/translations";
 function HomePage() {
   const { lang = "sv" } = useParams();
 
-  const t = translations[lang as keyof typeof translations] || translations.sv;
+  const translation = translations[lang as keyof typeof translations] || translations.sv;
 
   return (
     <>
-      <Header t={t} />
+      <Header translation={translation} />
       <Hero />
-      <Why t={t} />
+      <Why translation={translation} />
       <BenefitsForOffice />
       <BenefitsForSite />
       <HowDark />

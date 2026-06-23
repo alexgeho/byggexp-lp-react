@@ -5,7 +5,7 @@ import { useNavigate, useParams, Link } from "react-router-dom";
 import { languages } from "../../locales/languages";
 
 type HeaderProps = {
-  t: {
+  translation: {
     how: string;
     pricing: string;
     company: string;
@@ -13,7 +13,7 @@ type HeaderProps = {
   };
 };
 
-function Header({ t }: HeaderProps) {
+function Header({ translation }: HeaderProps) {
   const { lang = "sv" } = useParams();
   const currentLanguage = languages[lang as keyof typeof languages];
 
@@ -59,12 +59,12 @@ function Header({ t }: HeaderProps) {
             )}
           </div>
 
-          <a href="#how">{t.how}</a>
-          <a href="#pricing">{t.pricing}</a>
-          <a href="#cta">{t.company}</a>
+          <a href="#how">{translation.how}</a>
+          <a href="#pricing">{translation.pricing}</a>
+          <a href="#cta">{translation.company}</a>
 
           <a href="#demo" className="nav-cta">
-            {t.demo}
+            {translation.demo}
           </a>
         </div>
       </nav>
