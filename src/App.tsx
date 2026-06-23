@@ -5,8 +5,8 @@ import FinalBenefits from "./components/FinalBenefits/FinalBenefits";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
-import HowDark from "./components/How/HowDark";
-import HowLight from "./components/How/HowLight";
+import FeaturesDark from "./components/Features/FeaturesDark";
+import FeaturesLight from "./components/Features/FeaturesLight";
 import Pricing from "./components/Pricing/Pricing";
 import Why from "./components/Why/Why";
 import { Routes, Route, Navigate, useParams } from "react-router-dom";
@@ -15,6 +15,7 @@ import { whyTranslations } from "./locales/why"
 import { heroTranslations } from "./locales/hero"
 import { benefitsOfficeTranslations } from "./locales/benefitsOffice"
 import { benefitsSiteTranslations } from "./locales/benefitsSite"
+import { featuresTranslations } from "./locales/featuresDark"
 
 function HomePage() {
   const { lang = "sv" } = useParams();
@@ -25,6 +26,7 @@ function HomePage() {
   const heroT = heroTranslations[lang as keyof typeof heroTranslations] || heroTranslations.sv;
   const benefitsOfficeT = benefitsOfficeTranslations[lang as keyof typeof benefitsOfficeTranslations] || benefitsOfficeTranslations.sv;
   const benefitsSiteT = benefitsSiteTranslations[lang as keyof typeof benefitsSiteTranslations] || benefitsSiteTranslations.sv;
+  const featuresT = featuresTranslations[lang as keyof typeof featuresTranslations] || featuresTranslations.sv;
 
   return (
     <>
@@ -33,8 +35,8 @@ function HomePage() {
       <Why whyT={whyT} />
       <BenefitsForOffice benefitsOfficeT={benefitsOfficeT} />
       <BenefitsForSite benefitsSiteT={benefitsSiteT} />
-      <HowDark />
-      <HowLight />
+      <FeaturesDark featuresT={featuresT} />
+      <FeaturesLight />
       <FinalBenefits />
       <Pricing />
       <CTA />

@@ -1,6 +1,6 @@
 import "./How.scss";
 
-function HowLight() {
+function FeaturesLight() {
   return (
     <section className="howLight" id="how">
       <div className="container">
@@ -133,4 +133,4 @@ function HowLight() {
   );
 }
 
-export default HowLight;
+export default FeaturesLight;
