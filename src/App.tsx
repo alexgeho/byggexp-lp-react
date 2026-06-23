@@ -13,7 +13,8 @@ import { Routes, Route, Navigate, useParams } from "react-router-dom";
 import { headerTranslations } from "./locales/header"
 import { whyTranslations } from "./locales/why"
 import { heroTranslations } from "./locales/hero"
-import { benefitsOfficeTranslations } from "./locales/benefits"
+import { benefitsOfficeTranslations } from "./locales/benefitsOffice"
+import { benefitsSiteTranslations } from "./locales/benefitsSite"
 
 function HomePage() {
   const { lang = "sv" } = useParams();
@@ -23,6 +24,7 @@ function HomePage() {
   const whyT = whyTranslations[lang as keyof typeof whyTranslations] || whyTranslations.sv;
   const heroT = heroTranslations[lang as keyof typeof heroTranslations] || heroTranslations.sv;
   const benefitsOfficeT = benefitsOfficeTranslations[lang as keyof typeof benefitsOfficeTranslations] || benefitsOfficeTranslations.sv;
+  const benefitsSiteT = benefitsSiteTranslations[lang as keyof typeof benefitsSiteTranslations] || benefitsSiteTranslations.sv;
 
   return (
     <>
@@ -30,7 +32,7 @@ function HomePage() {
       <Hero heroT={heroT}/>
       <Why whyT={whyT} />
       <BenefitsForOffice benefitsOfficeT={benefitsOfficeT} />
-      <BenefitsForSite />
+      <BenefitsForSite benefitsSiteT={benefitsSiteT} />
       <HowDark />
       <HowLight />
       <FinalBenefits />
