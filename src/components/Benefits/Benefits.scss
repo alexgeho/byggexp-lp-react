@@ -22,6 +22,13 @@
   justify-content: center;
 }
 
+@media (max-width: 800px) {
+  .benefitsBoth {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .benefits-office {
   display: flex;
   flex-direction: column;
@@ -77,7 +84,7 @@
   display: grid;
   grid-template-columns: repeat(2, 260px);
   gap: 20px;
-  justify-content: center;
+  justify-items: center;
 }
 
 .eyebrow {
@@ -120,11 +127,26 @@ h2 em {
   border-radius: 24px;
   padding: 24px 24px;
   text-align: left;
-
   transition:
     transform 0.2s,
     border-color 0.2s,
     background 0.2s;
+}
+
+@media (max-width: 800px) {
+  .benefit-card,
+  .benefit-card-team {
+    min-height: 180px;
+    width: 80%;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 24px;
+    padding: 24px 24px;
+    text-align: left;
+    transition:
+      transform 0.2s,
+      border-color 0.2s,
+      background 0.2s;
+  }
 }
 
 .benefit-card {
@@ -156,8 +178,6 @@ h2 em {
   margin-bottom: 24px;
 }
 
-
-
 .benefit-icon-blue {
   width: 52px;
   height: 52px;
@@ -169,7 +189,6 @@ h2 em {
   justify-content: center;
   margin-bottom: 24px;
 }
-
 
 .benefit-icon-blue svg {
   width: 24px;
