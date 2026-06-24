@@ -74,7 +74,7 @@ function Benefits({ benefitsT }: BenefitsProps) {
         {/* FOR TEAM */}
 
         <div className="benefits-office">
-          <p className="solution-lead">{benefitsT.site.benefitsSiteLead}</p>
+          <div className="solution-lead">{benefitsT.site.benefitsSiteLead}</div>
           <div className="benefits-grid">
 
             {/* 5 CARD */}

@@ -106,7 +106,7 @@ export const benefitsTranslations = {
       benefitsOfficeHeading2:
         "på telefonsamtal, manuell insamling och registrering av timmar samt påminnelser",
 
-      benefitsOfficeLead: "Detta förändras för arbetsledningen:",
+      benefitsOfficeLead: "För arbetsledningen:",
 
       benefitsOfficeCard1Title: "Timmar direkt i systemet",
       benefitsOfficeCard1Text:
@@ -126,11 +126,11 @@ export const benefitsTranslations = {
     },
 
     site: {
-      benefitsSiteLead: "Vad får byggteamet:",
+      benefitsSiteLead: "För får byggteamet:",
 
-      benefitsSiteCard1Title: "Tidsrapportering i mobilen",
+      benefitsSiteCard1Title: "Auto tidrapportering",
       benefitsSiteCard1Text:
-        "Registrera start och slut på arbetspasset på några sekunder.",
+        "Ingen manuell rapportering. Telefonen behöver bara vara påslagen.",
 
       benefitsSiteCard2Title: "Uppgifter utan telefonsamtal",
       benefitsSiteCard2Text:
