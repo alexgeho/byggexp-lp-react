@@ -8,7 +8,7 @@ export const benefitsTranslations = {
       benefitsOfficeHeading2:
         "на звонки, ручной сбор/ввод часов и напоминаниями",
 
-      benefitsOfficeLead: "Что изменится для офиса и руководителя:",
+      benefitsOfficeLead: "Что изменится для руководства:",
 
       benefitsOfficeCard1Title: "Часы сразу в системе",
       benefitsOfficeCard1Text:
@@ -57,7 +57,7 @@ export const benefitsTranslations = {
       benefitsOfficeHeading2:
         "on calls, manual time collection, data entry, and reminders",
 
-      benefitsOfficeLead: "What changes for the office and management:",
+      benefitsOfficeLead: "What changes for the management:",
 
       benefitsOfficeCard1Title: "Hours Instantly in the System",
       benefitsOfficeCard1Text:
@@ -106,7 +106,7 @@ export const benefitsTranslations = {
       benefitsOfficeHeading2:
         "på telefonsamtal, manuell insamling och registrering av timmar samt påminnelser",
 
-      benefitsOfficeLead: "Detta förändras för kontoret och arbetsledningen:",
+      benefitsOfficeLead: "Detta förändras för arbetsledningen:",
 
       benefitsOfficeCard1Title: "Timmar direkt i systemet",
       benefitsOfficeCard1Text:

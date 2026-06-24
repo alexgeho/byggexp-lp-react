@@ -155,10 +155,27 @@ h2 em {
   justify-content: center;
   margin-bottom: 24px;
 }
-.benefit-icon svg {
+
+
+
+.benefit-icon-blue {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: rgba(35, 148, 255, 0.18);
+  color: var(--blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+
+.benefit-icon-blue svg {
   width: 24px;
   height: 24px;
 }
+
 .benefit-card h3 {
   font-size: 24px;
   font-weight: 600;
