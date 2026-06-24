@@ -24,6 +24,7 @@ function Benefits({ benefitsT }: BenefitsProps) {
 
       {/* BENEFITS-BOTH */}
       <div className="benefitsBoth">
+        
         {/* FOR OFFICE */}
 
         <div className="benefits-office">
@@ -114,6 +115,7 @@ function Benefits({ benefitsT }: BenefitsProps) {
             </div>
           </div>
         </div>
+
       </div>
     </section>
   );
