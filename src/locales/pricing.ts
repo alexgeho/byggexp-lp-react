@@ -12,6 +12,7 @@ export const pricingTranslations = {
     pricingPer1: "1–10 пользователей",
     pricingPer10: "10–20 пользователей",
     pricingPer20: "20–40 пользователей",
+    pricingPer40: "40+ пользователей",
     pricingCustom: "Давайте обсудим",
 
     pricingDescription:
@@ -36,9 +37,11 @@ export const pricingTranslations = {
 
     pricingTag: "First Month Free",
 
-    pricingPer: "/ month for 1–10 users",
-    pricingPer10: "/ month for 10–20 users",
-    pricingPer20: "/ month for 20–40 users",
+    pricingPer: "/ month",
+    pricingPer1: "1–10 users",
+    pricingPer10: "10–20 users",
+    pricingPer20: "20–40 users",
+    pricingPer40: "40+ users",
     pricingCustom: "Let's Talk",
 
     pricingDescription: "You only pay for the number of users.",
