@@ -18,7 +18,7 @@ export const pricingTranslations = {
 
     pricingItem1: "Все функции включены",
     pricingItem2: "Неограниченное количество проектов",
-    pricingItem3: "Неограниченное хранилище",
+    pricingItem3: "Без подписки",
     pricingItem4: "Мобильное приложение + админ-панель",
 
     pricingButton: "Попробовать бесплатно",
@@ -44,7 +44,7 @@ export const pricingTranslations = {
 
     pricingItem1: "All features included",
     pricingItem2: "Unlimited projects",
-    pricingItem3: "Unlimited storage",
+    pricingItem3: "No subscription",
     pricingItem4: "Mobile app + Admin Panel",
 
     pricingButton: "Try for Free",
@@ -72,7 +72,7 @@ export const pricingTranslations = {
 
     pricingItem1: "Alla funktioner ingår",
     pricingItem2: "Obegränsat antal projekt",
-    pricingItem3: "Obegränsad lagrin",
+    pricingItem3: "Ingen bindningstid",
     pricingItem4: "Mobilapp + Adminpanel",
 
     pricingButton: "Prova gratis",
