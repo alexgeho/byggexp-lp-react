@@ -1,7 +1,7 @@
 import "./features.scss";
 import shiftsExport from "../../assets/features/shiftsExport.png";
 
-import skull from "../../assets/emoji-skull.gif"
+import skull from "../../assets/emoji-skull.gif";
 
 type FeaturesProps = {
   featuresT: {
@@ -37,17 +37,21 @@ function FeaturesDark({ featuresT }: FeaturesProps) {
   return (
     <section className="features" id="features">
       <div className="container">
+
+        {/* HEADER */}
         <div className="features-head">
           <span className="eyebrow">{featuresT.featuresTitle}</span>
 
           <h2>
-            {featuresT.featuresHeading1} <em>{featuresT.featuresHeadingAccent}</em>{" "}
+            {featuresT.featuresHeading1}{" "}
+            <em>{featuresT.featuresHeadingAccent}</em>{" "}
             {featuresT.featuresHeading2}
           </h2>
 
           <p className="section-sub">{featuresT.featuresSub}</p>
         </div>
 
+         {/* STEP */}
         <div className="step">
           <div className="step-text-block">
             <h3>{featuresT.featuresCard1Title}</h3>
@@ -79,6 +83,7 @@ function FeaturesDark({ featuresT }: FeaturesProps) {
           </div>
         </div>
 
+        {/* STEP */}
         <div className="step">
           <div className="step-text-block">
             <h3>{featuresT.featuresCard2Title}</h3>
@@ -113,6 +118,7 @@ function FeaturesDark({ featuresT }: FeaturesProps) {
           </div>
         </div>
 
+        {/* STEP */}
         <div className="step">
           <div className="step-text-block">
             <h3>{featuresT.featuresCard3Title}</h3>
@@ -145,21 +151,14 @@ function FeaturesDark({ featuresT }: FeaturesProps) {
 
                 {featuresT.featuresCard3Step3}
 
-                <img
-                  src={skull}
-                  alt=""
-                  className="inline-skull"
-                />
+                <img src={skull} alt="" className="inline-skull" />
               </li>
             </ul>
           </div>
 
           <div className="step-visual">
             <div className="phone-shell">
-              <img
-                src="assets/screen-documents.png"
-                alt="Документы по объекту в Byggexp"
-              />
+              <img src="assets/screen-documents.png" alt="" />
             </div>
           </div>
         </div>
