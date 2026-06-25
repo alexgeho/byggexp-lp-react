@@ -36,9 +36,6 @@
     color: var(--blue);
   }
 
-  p {
-    color: var(--muted);
-  }
   .section-sub {
     font-size: 19px;
     line-height: 1.5;
@@ -46,11 +43,6 @@
     margin-top: 18px;
     max-width: 640px;
   }
-
-  /*   h2,
-  p {
-    color: white;
-  } */
 }
 .features-head .section-sub {
   margin-left: auto;
@@ -181,7 +173,6 @@
   border-radius: 22px;
   height: 420px;
   overflow: hidden;
-
 }
 .step-visual::after {
   content: "";
@@ -207,3 +198,4 @@
   height: auto;
   filter: drop-shadow(0 30px 50px rgba(15, 34, 54, 0.25));
 }
+ 

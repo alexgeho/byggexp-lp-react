@@ -16,8 +16,8 @@ type FinalBenefitsProps = {
 
 function FinalBenefits({ finalBenefitsT }: FinalBenefitsProps) {
   return (
-    <section className="benefits">
-      <div className="container benefits-inner">
+    <section className="final-benefits">
+      <div className="container final-benefits-inner">
         <span className="eyebrow">
           {finalBenefitsT.finalBenefitsTitle}
         </span>
@@ -28,7 +28,7 @@ function FinalBenefits({ finalBenefitsT }: FinalBenefitsProps) {
         </h2>
 
         <div className="finalBenefits-grid">
-          <div className="benefit-card">
+          <div className="final-benefit-card">
             <div className="benefit-icon">
               <svg
                 viewBox="0 0 24 24"
@@ -45,7 +45,7 @@ function FinalBenefits({ finalBenefitsT }: FinalBenefitsProps) {
             <p>{finalBenefitsT.finalBenefitsItem1}</p>
           </div>
 
-          <div className="benefit-card">
+          <div className="final-benefit-card">
             <div className="benefit-icon">
               <svg
                 viewBox="0 0 24 24"
@@ -62,7 +62,7 @@ function FinalBenefits({ finalBenefitsT }: FinalBenefitsProps) {
             <p>{finalBenefitsT.finalBenefitsItem2}</p>
           </div>
 
-          <div className="benefit-card">
+          <div className="final-benefit-card">
             <div className="benefit-icon">
               <svg
                 viewBox="0 0 24 24"
@@ -79,7 +79,7 @@ function FinalBenefits({ finalBenefitsT }: FinalBenefitsProps) {
             <p>{finalBenefitsT.finalBenefitsItem3}</p>
           </div>
 
-          <div className="benefit-card">
+          <div className="final-benefit-card">
             <div className="benefit-icon">
               <svg
                 viewBox="0 0 24 24"
