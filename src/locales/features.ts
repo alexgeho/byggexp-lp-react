@@ -2,7 +2,7 @@ export const featuresTranslations = {
   ru: {
     featuresTitle: "Как это выглядит",
 
-    featuresHeading1: "3 инструмента, которые",
+    featuresHeading1: "9 инструмента, которые",
     featuresHeadingAccent: "закрывают 60%",
     featuresHeading2: "работы администрации",
 
@@ -40,7 +40,7 @@ export const featuresTranslations = {
   en: {
     featuresTitle: "features It Works",
 
-    featuresHeading1: "3 tools that",
+    featuresHeading1: "9 tools that",
     featuresHeadingAccent: "eliminate 60%",
     featuresHeading2: "of administrative work",
 
@@ -77,7 +77,7 @@ export const featuresTranslations = {
   sv: {
     featuresTitle: "Så fungerar det",
 
-    featuresHeading1: "3 verktyg som",
+    featuresHeading1: "9 verktyg som",
     featuresHeadingAccent: "eliminerar 60 %",
     featuresHeading2: "av administrationens arbete",
 
