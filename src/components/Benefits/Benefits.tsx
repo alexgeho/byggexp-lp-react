@@ -16,7 +16,7 @@ function Benefits({ benefitsT }: BenefitsProps) {
       <div className="benefits-header">
         <span className="eyebrow">{benefitsT.office.benefitsOfficeTitle} </span>
         <h2>
-          {benefitsT.office.benefitsOfficeHeading1}{" "}
+          {benefitsT.office.benefitsOfficeHeading1}
           <em>{benefitsT.office.benefitsOfficeAccent}</em>
           {benefitsT.office.benefitsOfficeHeading2}
         </h2>

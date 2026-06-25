@@ -18,7 +18,20 @@
   --blue-soft: #dbeeff;
   --green: #45b36b;
   --danger: #e5556a;
+
+    /* Heading */
+  --fs-h1: clamp(2rem, 4vw, 3.5rem); // 32px → 56px
+  --fs-h2: clamp(1.75rem, 3vw, 3rem); // 28px → 48px
+  --fs-h3: clamp(1.5rem, 2.2vw, 2.25rem); // 24px → 36px
+
+  /* Body */
+  --fs-body-lg: 1.25rem; // 20px
+  --fs-body: 1rem; // 16px
+  --fs-small: 0.875rem; // 14px
+  
 }
+
+
 
 * {
   box-sizing: border-box;
@@ -73,3 +86,4 @@ a {
 section {
   padding: 50px 0;
 }
+

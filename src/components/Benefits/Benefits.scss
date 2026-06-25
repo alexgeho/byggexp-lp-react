@@ -58,17 +58,43 @@
 }
 
 .benefits-header {
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
-  max-width: 1200px;
+  max-width: 632px;
   text-align: center;
-  gap: 30px;
+  gap: 50px;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--blue);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
 }
 
 .benefits h2 {
   color: var(--white);
   font-weight: 500;
+  font-size: var(--fs-h1);
+
+  letter-spacing: -0.02em;
+  line-height: 1.05;
 }
+
+/* h2 {
+  font-size: 30px;
+} */
+
+h2 em {
+  font-size: var(--fs-h1);
+  font-weight: 600;
+  color: var(--blue);
+  font-style: normal;
+}
+
 .benefits-grid {
   display: grid;
   grid-template-columns: repeat(2, 260px);
@@ -92,27 +118,8 @@
   }
 }
 
-.eyebrow {
-  display: inline-block;
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--blue);
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-}
 
-h2 {
-  font-size: clamp(32px, 4vw, 52px);
-  line-height: 1.05;
-  font-weight: 600;
-  letter-spacing: -0.02em;
-  color: var(--ink);
-}
-h2 em {
-  font-style: italic;
-  font-weight: 400;
-  color: var(--blue);
-}
+
 .section-sub {
   font-size: 19px;
   line-height: 1.5;
@@ -263,10 +270,10 @@ benefit-card-team p {
 }
 .solution-lead,
 .solution-lead-team {
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   line-height: 1.5;
   max-width: 740px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .solution-lead {

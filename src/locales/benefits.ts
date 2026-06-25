@@ -3,10 +3,9 @@ export const benefitsTranslations = {
     office: {
       benefitsOfficeTitle: "Что Вам даст работа с нами?",
 
-      benefitsOfficeHeading1: "С 1-й недели, ",
-      benefitsOfficeAccent: "Вы больше не тратите время",
-      benefitsOfficeHeading2:
-        "на звонки, ручной сбор/ввод часов и напоминаниями",
+      benefitsOfficeHeading1: "Уже с первого дня ",
+      benefitsOfficeAccent: "вы начнете экономить время ",
+      benefitsOfficeHeading2: "на том, что раньше приходилось делать вручную.",
 
       benefitsOfficeLead: "Что изменится для руководства:",
 
@@ -15,8 +14,7 @@ export const benefitsTranslations = {
         "Счета можно выставлять без ожиданий и напоминаний.",
 
       benefitsOfficeCard2Title: "Экспорт в Excel",
-      benefitsOfficeCard2Text:
-        "Готовые часы для зарплат и счетов в один клик.",
+      benefitsOfficeCard2Text: "Готовые часы для зарплат и счетов в один клик.",
 
       benefitsOfficeCard3Title: "Автонапоминания по задачам",
       benefitsOfficeCard3Text:
@@ -52,10 +50,9 @@ export const benefitsTranslations = {
     office: {
       benefitsOfficeTitle: "What Will You Gain From Working With Us?",
 
-      benefitsOfficeHeading1: "From the first week, ",
-      benefitsOfficeAccent: "you no longer waste time",
-      benefitsOfficeHeading2:
-        "on calls, manual time collection, data entry, and reminders",
+      benefitsOfficeHeading1: "From day one ",
+      benefitsOfficeAccent: "you'll start saving time ",
+      benefitsOfficeHeading2: "on tasks that were previously done manually.",
 
       benefitsOfficeLead: "What changes for the management:",
 
@@ -68,8 +65,7 @@ export const benefitsTranslations = {
         "Ready-to-use hours for payroll and invoicing in one click.",
 
       benefitsOfficeCard3Title: "Automatic Task Reminders",
-      benefitsOfficeCard3Text:
-        "No need to call and remind employees manually.",
+      benefitsOfficeCard3Text: "No need to call and remind employees manually.",
 
       benefitsOfficeCard4Title: "Site Monitoring",
       benefitsOfficeCard4Text:
@@ -80,8 +76,7 @@ export const benefitsTranslations = {
       benefitsSiteLead: "What the construction crew gets:",
 
       benefitsSiteCard1Title: "Time Tracking on the Phone",
-      benefitsSiteCard1Text:
-        "Clock in and out in just a few seconds.",
+      benefitsSiteCard1Text: "Clock in and out in just a few seconds.",
 
       benefitsSiteCard2Title: "Tasks Without Calls",
       benefitsSiteCard2Text:
@@ -101,10 +96,9 @@ export const benefitsTranslations = {
     office: {
       benefitsOfficeTitle: "Vad får ni genom att arbeta med oss?",
 
-      benefitsOfficeHeading1: "Redan från första veckan ",
-      benefitsOfficeAccent: "slipper ni lägga tid ",
-      benefitsOfficeHeading2:
-        "på telefonsamtal, manuell insamling och registrering av timmar samt påminnelser",
+      benefitsOfficeHeading1: "Redan från första dagen ",
+      benefitsOfficeAccent: "sparar ni tid ",
+      benefitsOfficeHeading2: "på allt som tidigare gjordes manuellt.",
 
       benefitsOfficeLead: "För arbetsledningen:",
 
