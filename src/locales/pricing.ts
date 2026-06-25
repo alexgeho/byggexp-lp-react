@@ -8,9 +8,10 @@ export const pricingTranslations = {
 
     pricingTag: "Первый месяц бесплатно",
 
-    pricingPer: "/ месяц за 1–10 пользователей",
-    pricingPer10: "/ месяц за 10–20 пользователей",
-    pricingPer20: "/ месяц за 20–40 пользователей",
+    pricingPer: "/ месяц",
+    pricingPer1: "1–10 пользователей",
+    pricingPer10: "10–20 пользователей",
+    pricingPer20: "20–40 пользователей",
     pricingCustom: "Давайте обсудим",
 
     pricingDescription:
