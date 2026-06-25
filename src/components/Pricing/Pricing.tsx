@@ -8,8 +8,11 @@ type PricingProps = {
 
     pricingTag: string;
 
-    pricingPrice: string;
     pricingPer: string;
+    pricingPer1: string;
+    pricingPer10: string;
+    pricingPer20: string;
+    pricingCustom: string;
 
     pricingDescription: string;
 
@@ -27,6 +30,7 @@ function Pricing({ pricingT }: PricingProps) {
   return (
     <section className="pricing" id="pricing">
       <div className="container">
+
         <div className="pricing-head">
           <span className="eyebrow">{pricingT.pricingTitle}</span>
 
@@ -37,14 +41,19 @@ function Pricing({ pricingT }: PricingProps) {
           </p>
         </div>
 
+        {/* CARDs */}
+
+        <div className="pricingOptions">
+
+         {/* CARD 1 */}
         <div className="pricing-card">
           <span className="pricing-tag">
-            {pricingT.pricingTag}
+            {pricingT.pricingPer1}
           </span>
 
           <div className="pricing-price">
             <span className="num">
-              {pricingT.pricingPrice}
+              €50
             </span>
 
             <span className="per">
@@ -126,6 +135,280 @@ function Pricing({ pricingT }: PricingProps) {
             {pricingT.pricingTrial}
           </span>
         </div>
+
+          {/* CARD 2 */}
+        <div className="pricing-card">
+          <span className="pricing-tag">
+            {pricingT.pricingPer10}
+          </span>
+
+          <div className="pricing-price">
+            <span className="num">
+              €90
+            </span>
+
+            <span className="per">
+              {pricingT.pricingPer}
+            </span>
+          </div>
+
+          <p className="pricing-sub">
+            {pricingT.pricingDescription}
+          </p>
+
+          <ul className="pricing-list">
+            <li>
+              <span className="check">
+                <svg viewBox="0 0 14 10" fill="none">
+                  <path
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="m1 5 4 4 8-8"
+                  />
+                </svg>
+              </span>
+              {pricingT.pricingItem1}
+            </li>
+
+            <li>
+              <span className="check">
+                <svg viewBox="0 0 14 10" fill="none">
+                  <path
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="m1 5 4 4 8-8"
+                  />
+                </svg>
+              </span>
+              {pricingT.pricingItem2}
+            </li>
+
+            <li>
+              <span className="check">
+                <svg viewBox="0 0 14 10" fill="none">
+                  <path
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="m1 5 4 4 8-8"
+                  />
+                </svg>
+              </span>
+              {pricingT.pricingItem3}
+            </li>
+
+            <li>
+              <span className="check">
+                <svg viewBox="0 0 14 10" fill="none">
+                  <path
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="m1 5 4 4 8-8"
+                  />
+                </svg>
+              </span>
+              {pricingT.pricingItem4}
+            </li>
+          </ul>
+
+          <a href="#cta" className="btn-primary">
+            {pricingT.pricingButton}
+          </a>
+
+          <span className="pricing-trial">
+            {pricingT.pricingTrial}
+          </span>
+        </div>
+
+          {/* CARD 3 */}
+        <div className="pricing-card">
+          <span className="pricing-tag">
+            {pricingT.pricingPer20}
+          </span>
+
+          <div className="pricing-price">
+            <span className="num">
+             €180
+            </span>
+
+            <span className="per">
+              {pricingT.pricingPer}
+            </span>
+          </div>
+
+          <p className="pricing-sub">
+            {pricingT.pricingDescription}
+          </p>
+
+          <ul className="pricing-list">
+            <li>
+              <span className="check">
+                <svg viewBox="0 0 14 10" fill="none">
+                  <path
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="m1 5 4 4 8-8"
+                  />
+                </svg>
+              </span>
+              {pricingT.pricingItem1}
+            </li>
+
+            <li>
+              <span className="check">
+                <svg viewBox="0 0 14 10" fill="none">
+                  <path
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="m1 5 4 4 8-8"
+                  />
+                </svg>
+              </span>
+              {pricingT.pricingItem2}
+            </li>
+
+            <li>
+              <span className="check">
+                <svg viewBox="0 0 14 10" fill="none">
+                  <path
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="m1 5 4 4 8-8"
+                  />
+                </svg>
+              </span>
+              {pricingT.pricingItem3}
+            </li>
+
+            <li>
+              <span className="check">
+                <svg viewBox="0 0 14 10" fill="none">
+                  <path
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="m1 5 4 4 8-8"
+                  />
+                </svg>
+              </span>
+              {pricingT.pricingItem4}
+            </li>
+          </ul>
+
+          <a href="#cta" className="btn-primary">
+            {pricingT.pricingButton}
+          </a>
+
+          <span className="pricing-trial">
+            {pricingT.pricingTrial}
+          </span>
+        </div>
+
+            {/* CARD 4 */}
+        <div className="pricing-card">
+          <span className="pricing-tag">
+            {pricingT.pricingPer40}
+          </span>
+
+          <div className="pricing-price">
+            <span className="num">
+              {pricingT.pricingCustom}
+            </span>
+
+           
+          </div>
+
+          <p className="pricing-sub">
+            {pricingT.pricingDescription}
+          </p>
+
+          <ul className="pricing-list">
+            <li>
+              <span className="check">
+                <svg viewBox="0 0 14 10" fill="none">
+                  <path
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="m1 5 4 4 8-8"
+                  />
+                </svg>
+              </span>
+              {pricingT.pricingItem1}
+            </li>
+
+            <li>
+              <span className="check">
+                <svg viewBox="0 0 14 10" fill="none">
+                  <path
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="m1 5 4 4 8-8"
+                  />
+                </svg>
+              </span>
+              {pricingT.pricingItem2}
+            </li>
+
+            <li>
+              <span className="check">
+                <svg viewBox="0 0 14 10" fill="none">
+                  <path
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="m1 5 4 4 8-8"
+                  />
+                </svg>
+              </span>
+              {pricingT.pricingItem3}
+            </li>
+
+            <li>
+              <span className="check">
+                <svg viewBox="0 0 14 10" fill="none">
+                  <path
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="m1 5 4 4 8-8"
+                  />
+                </svg>
+              </span>
+              {pricingT.pricingItem4}
+            </li>
+          </ul>
+
+          <a href="#cta" className="btn-primary">
+            {pricingT.pricingButton}
+          </a>
+
+          <span className="pricing-trial">
+            {pricingT.pricingTrial}
+          </span>
+        </div>
+
+        </div>
+
       </div>
     </section>
   );
