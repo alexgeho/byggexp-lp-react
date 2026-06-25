@@ -12,6 +12,7 @@ type PricingProps = {
     pricingPer1: string;
     pricingPer10: string;
     pricingPer20: string;
+    pricingPer40: string;
     pricingCustom: string;
 
     pricingDescription: string;
