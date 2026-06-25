@@ -1,4 +1,5 @@
 import "./CTA.scss";
+import { useState } from "react";
 
 type CTAProps = {
   ctaT: {
@@ -38,6 +39,14 @@ type CTAProps = {
 };
 
 function CTA({ ctaT }: CTAProps) {
+  const [isSuccess, setIsSuccess] = useState(false);
+
+  function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+
+    setIsSuccess(true);
+  }
+
   return (
     <section className="cta" id="cta">
       <div className="container cta-inner">
@@ -101,78 +110,84 @@ function CTA({ ctaT }: CTAProps) {
         {/* FORM */}
 
         <div className="form-card" id="form-card">
-          <div id="form-view">
-            <h3>{ctaT.ctaFormTitle}</h3>
+          {!isSuccess && (
+            <div id="form-view">
+              <h3>{ctaT.ctaFormTitle}</h3>
 
-            <form id="demo-form" noValidate>
-              <div className="form-group" data-field="name">
-                <label htmlFor="f-name">{ctaT.ctaNameLabel}</label>
+              <form id="demo-form" noValidate onSubmit={handleSubmit}>
+                <div className="form-group" data-field="name">
+                  <label htmlFor="f-name">{ctaT.ctaNameLabel}</label>
 
-                <input
-                  id="f-name"
-                  name="name"
-                  type="text"
-                  placeholder={ctaT.ctaNamePlaceholder}
-                  autoComplete="name"
-                />
+                  <input
+                    id="f-name"
+                    name="name"
+                    type="text"
+                    placeholder={ctaT.ctaNamePlaceholder}
+                    autoComplete="name"
+                  />
 
-                <div className="err-msg">{ctaT.ctaNameError}</div>
-              </div>
+                  <div className="err-msg">{ctaT.ctaNameError}</div>
+                </div>
 
-              <div className="form-group" data-field="email">
-                <label htmlFor="f-email">{ctaT.ctaEmailLabel}</label>
+                <div className="form-group" data-field="email">
+                  <label htmlFor="f-email">{ctaT.ctaEmailLabel}</label>
 
-                <input
-                  id="f-email"
-                  name="email"
-                  type="email"
-                  placeholder={ctaT.ctaEmailPlaceholder}
-                  autoComplete="email"
-                />
+                  <input
+                    id="f-email"
+                    name="email"
+                    type="email"
+                    placeholder={ctaT.ctaEmailPlaceholder}
+                    autoComplete="email"
+                  />
 
-                <div className="err-msg">{ctaT.ctaEmailError}</div>
-              </div>
+                  <div className="err-msg">{ctaT.ctaEmailError}</div>
+                </div>
 
-              <div className="form-group" data-field="phone">
-                <label htmlFor="f-phone">{ctaT.ctaPhoneLabel}</label>
+                <div className="form-group" data-field="phone">
+                  <label htmlFor="f-phone">{ctaT.ctaPhoneLabel}</label>
 
-                <input
-                  id="f-phone"
-                  name="phone"
-                  type="tel"
-                  placeholder={ctaT.ctaPhonePlaceholder}
-                  autoComplete="tel"
-                />
+                  <input
+                    id="f-phone"
+                    name="phone"
+                    type="tel"
+                    placeholder={ctaT.ctaPhonePlaceholder}
+                    autoComplete="tel"
+                  />
 
-                <div className="err-msg">{ctaT.ctaPhoneError}</div>
-              </div>
+                  <div className="err-msg">{ctaT.ctaPhoneError}</div>
+                </div>
 
-              <button type="submit" className="form-submit">
-                {ctaT.ctaButton}
-              </button>
+                {/* SUBMIT */}
+                <button type="submit" className="form-submit">
+                  {ctaT.ctaButton}
+                </button>
 
-              <p className="form-fine">{ctaT.ctaPrivacy}</p>
-            </form>
-          </div>
-
-          <div id="form-success" className="form-success">
-            <div className="form-success-icon">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <polyline points="20 6 9 17 4 12"></polyline>
-              </svg>
+                <p className="form-fine">{ctaT.ctaPrivacy}</p>
+              </form>
             </div>
+          )}
 
-            <h3>{ctaT.ctaSuccessTitle}</h3>
+          {/* SUCCESS */}
+          {isSuccess && (
+            <div id="form-success" className="form-success">
+              <div className="form-success-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
 
-            <p id="success-msg">{ctaT.ctaSuccessText}</p>
-          </div>
+              <h3>{ctaT.ctaSuccessTitle}</h3>
+
+              <p id="success-msg">{ctaT.ctaSuccessText}</p>
+            </div>
+          )}
         </div>
       </div>
     </section>
