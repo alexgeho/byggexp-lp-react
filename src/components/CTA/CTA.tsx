@@ -41,15 +41,15 @@ function CTA({ ctaT }: CTAProps) {
   return (
     <section className="cta" id="cta">
       <div className="container cta-inner">
-        <div>
+        <div className="ctaLeft">
           <span className="eyebrow">{ctaT.ctaTitle}</span>
 
           <h2>
             {ctaT.ctaHeading1} <em>{ctaT.ctaAccent}</em> {ctaT.ctaHeading2}
           </h2>
 
-          <p className="cta-lead">{ctaT.ctaLead}</p>
-
+          {/*           <p className="cta-lead">{ctaT.ctaLead}</p>
+           */}
           <ul className="cta-list">
             <li>
               <span className="check">
@@ -98,6 +98,8 @@ function CTA({ ctaT }: CTAProps) {
           </ul>
         </div>
 
+        {/* FORM */}
+
         <div className="form-card" id="form-card">
           <div id="form-view">
             <h3>{ctaT.ctaFormTitle}</h3>
@@ -114,9 +116,7 @@ function CTA({ ctaT }: CTAProps) {
                   autoComplete="name"
                 />
 
-                <div className="err-msg">
-                  {ctaT.ctaNameError}
-                </div>
+                <div className="err-msg">{ctaT.ctaNameError}</div>
               </div>
 
               <div className="form-group" data-field="email">
@@ -130,9 +130,7 @@ function CTA({ ctaT }: CTAProps) {
                   autoComplete="email"
                 />
 
-                <div className="err-msg">
-                  {ctaT.ctaEmailError}
-                </div>
+                <div className="err-msg">{ctaT.ctaEmailError}</div>
               </div>
 
               <div className="form-group" data-field="phone">
@@ -146,18 +144,14 @@ function CTA({ ctaT }: CTAProps) {
                   autoComplete="tel"
                 />
 
-                <div className="err-msg">
-                  {ctaT.ctaPhoneError}
-                </div>
+                <div className="err-msg">{ctaT.ctaPhoneError}</div>
               </div>
 
               <button type="submit" className="form-submit">
                 {ctaT.ctaButton}
               </button>
 
-              <p className="form-fine">
-                {ctaT.ctaPrivacy}
-              </p>
+              <p className="form-fine">{ctaT.ctaPrivacy}</p>
             </form>
           </div>
 
@@ -177,9 +171,7 @@ function CTA({ ctaT }: CTAProps) {
 
             <h3>{ctaT.ctaSuccessTitle}</h3>
 
-            <p id="success-msg">
-              {ctaT.ctaSuccessText}
-            </p>
+            <p id="success-msg">{ctaT.ctaSuccessText}</p>
           </div>
         </div>
       </div>

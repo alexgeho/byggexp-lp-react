@@ -23,6 +23,12 @@
   gap: 80px;
   align-items: center;
 }
+
+.ctaLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
 @media (max-width: 900px) {
   .cta-inner {
     grid-template-columns: 1fr;
