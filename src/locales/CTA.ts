@@ -9,9 +9,9 @@ export const ctaTranslations = {
     ctaLead:
       "Покажем, как ByggExp работает на твоём объекте, ответим на вопросы и поможем настроить первый чат с бригадой.",
 
-    ctaItem1: "Бесплатно и без обязательств",
-    ctaItem2: "Свяжемся в течение часа в рабочее время",
-    ctaItem3: "Поможем перенести данные с твоей системы",
+    ctaItem1: "Поможем настроить ByggExp для вас и вашей команды",
+    ctaItem2: "Вы сможете попробовать все функции бесплатно",
+    ctaItem3: "Адаптируем систему под ваши бизнес-процессы",
 
     ctaFormTitle: "Оставь заявку на демо",
 
@@ -33,8 +33,7 @@ export const ctaTranslations = {
       "Отправляя форму, ты соглашаешься с обработкой персональных данных. Не передаём третьим лицам.",
 
     ctaSuccessTitle: "Заявка отправлена!",
-    ctaSuccessText:
-      "Свяжемся с тобой в течение часа в рабочее время.",
+    ctaSuccessText: "Свяжемся с тобой в течение часа в рабочее время.",
   },
 
   en: {
@@ -47,9 +46,9 @@ export const ctaTranslations = {
     ctaLead:
       "We'll show how ByggExp works on your projects, answer your questions, and help set up your first crew chat.",
 
-    ctaItem1: "Free and without obligation",
-    ctaItem2: "We will contact you within one hour during business hours",
-    ctaItem3: "We'll help migrate data from your current system",
+    ctaItem1: "We'll help you set up ByggExp for you and your team",
+    ctaItem2: "Try all features for free",
+    ctaItem3: "We'll adapt ByggExp to fit your workflow",
 
     ctaFormTitle: "Request a Demo",
 
@@ -85,9 +84,9 @@ export const ctaTranslations = {
     ctaLead:
       "Vi visar hur ByggExp fungerar på era projekt, svarar på frågor och hjälper er att skapa den första gruppchatten.",
 
-    ctaItem1: "Gratis och utan förpliktelser",
-    ctaItem2: "Vi kontaktar dig inom en timme under arbetstid",
-    ctaItem3: "Vi hjälper till att flytta data från ert nuvarande system",
+    ctaItem1: "Vi hjälper dig att sätta upp ByggExp för dig och ditt team",
+    ctaItem2: "Du får prova alla funktioner",
+    ctaItem3: "Vi anpassar ByggExp efter ert arbetssätt",
 
     ctaFormTitle: "Boka en demo",
 
@@ -109,7 +108,6 @@ export const ctaTranslations = {
       "Genom att skicka formuläret godkänner du behandlingen av personuppgifter. Vi delar inte uppgifterna med tredje part.",
 
     ctaSuccessTitle: "Ansökan skickad!",
-    ctaSuccessText:
-      "Vi kontaktar dig inom en timme under arbetstid.",
+    ctaSuccessText: "Vi kontaktar dig inom en timme under arbetstid.",
   },
 } as const;
