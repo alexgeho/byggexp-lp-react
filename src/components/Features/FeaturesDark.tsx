@@ -1,5 +1,5 @@
 import "./features.scss";
-import shiftsExport from "../../assets/features/shiftsExport.png";
+import shiftsExport from "../../assets/features/shiftsExport.svg";
 
 import skull from "../../assets/emoji-skull.gif";
 
@@ -51,7 +51,7 @@ function FeaturesDark({ featuresT }: FeaturesProps) {
           <p className="section-sub">{featuresT.featuresSub}</p>
         </div>
 
-         {/* STEP */}
+         {/* STEP 1*/}
         <div className="step">
           <div className="step-text-block">
             <h3>{featuresT.featuresCard1Title}</h3>
@@ -83,7 +83,7 @@ function FeaturesDark({ featuresT }: FeaturesProps) {
           </div>
         </div>
 
-        {/* STEP */}
+        {/* STEP 2*/}
         <div className="step">
           <div className="step-text-block">
             <h3>{featuresT.featuresCard2Title}</h3>
@@ -118,7 +118,7 @@ function FeaturesDark({ featuresT }: FeaturesProps) {
           </div>
         </div>
 
-        {/* STEP */}
+        {/* STEP 3*/}
         <div className="step">
           <div className="step-text-block">
             <h3>{featuresT.featuresCard3Title}</h3>
