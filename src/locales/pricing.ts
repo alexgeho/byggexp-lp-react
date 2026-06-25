@@ -14,15 +14,12 @@ export const pricingTranslations = {
     pricingCustom: "Давайте обсудим",
 
     pricingDescription:
-      "Один объект, вся бригада, неограниченное количество фото и документов.",
+      "Вы платите только за количество пользователей.",
 
-    pricingItem1: "Чат, документы, фотофиксация, смены",
-
-    pricingItem2: "Неограниченное хранилище для объекта",
-
-    pricingItem3: "Поддержка в чате с 8:00 до 22:00",
-
-    pricingItem4: "Без обязательств — отменишь в любой момент",
+    pricingItem1: "Все функции включены",
+    pricingItem2: "Неограниченное количество проектов",
+    pricingItem3: "Неограниченное хранилище",
+    pricingItem4: "Мобильное приложение + админ-панель",
 
     pricingButton: "Попробовать бесплатно",
 
@@ -43,16 +40,12 @@ export const pricingTranslations = {
     pricingPer20: "/ month for 20–40 users",
     pricingCustom: "Let's Talk",
 
-    pricingDescription:
-      "One project, the whole crew, unlimited photos and documents.",
+    pricingDescription: "You only pay for the number of users.",
 
-    pricingItem1: "Chat, documents, photo documentation, and shifts",
-
-    pricingItem2: "Unlimited storage for your projects",
-
-    pricingItem3: "Chat support from 08:00 to 22:00",
-
-    pricingItem4: "No commitment — cancel anytime",
+    pricingItem1: "All features included",
+    pricingItem2: "Unlimited projects",
+    pricingItem3: "Unlimited storage",
+    pricingItem4: "Mobile app + Admin Panel",
 
     pricingButton: "Try for Free",
 
@@ -75,19 +68,15 @@ export const pricingTranslations = {
     pricingPer40: "40+ användare",
     pricingCustom: "Låt oss prata",
 
-    pricingDescription:
-      "Ett projekt, hela arbetslaget, obegränsat antal bilder och dokument.",
+    pricingDescription: "Du betalar bara för antalet användare.",
 
-    pricingItem1: "Chatt, dokument, fotodokumentation och arbetspass",
-
-    pricingItem2: "Obegränsad lagring för projekt",
-
-    pricingItem3: "Chattsupport mellan 08:00 och 22:00",
-
-    pricingItem4: "Ingen bindningstid — avsluta när som helst",
+    pricingItem1: "Alla funktioner ingår",
+    pricingItem2: "Obegränsat antal projekt",
+    pricingItem3: "Obegränsad lagrin",
+    pricingItem4: "Mobilapp + Adminpanel",
 
     pricingButton: "Prova gratis",
 
-    pricingTrial: "Inget kort krävs. Kom igång på 15 minuter.",
+    pricingTrial: "Kom igång på 15 minuter.",
   },
 } as const;
