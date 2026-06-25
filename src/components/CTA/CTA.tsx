@@ -1,5 +1,5 @@
 import "./CTA.scss";
-import { useState } from "react";
+import { useState, type FormEvent, type ChangeEvent } from "react";
 
 type CTAProps = {
   ctaT: {
@@ -39,13 +39,48 @@ type CTAProps = {
 };
 
 function CTA({ ctaT }: CTAProps) {
+  /* ON SUBMIT/SUCCCES OPENS */
   const [isSuccess, setIsSuccess] = useState(false);
 
-  function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+  function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-
     setIsSuccess(true);
   }
+  /* END */
+
+  /* INPUT NAME */
+  const [name, setName] = useState("");
+
+  function handleNameChange(event: ChangeEvent<HTMLInputElement>) {
+    setName(event.currentTarget.value);
+  }
+  /* END */
+
+  /* INPUT EMAIL */
+  const [email, setEmail] = useState("");
+
+  function handleEmailChange(event: ChangeEvent<HTMLInputElement>) {
+    setEmail(event.currentTarget.value);
+  }
+  /* END */
+
+  /* INPUT PHONE */
+  const [phone, setPhone] = useState("");
+
+  function handlePhoneChange(event: ChangeEvent<HTMLInputElement>) {
+    setPhone(event.currentTarget.value);
+  }
+  /* END */
+
+  /* INPUTED DATA(OBJECT) */
+
+  const formData = {
+    name,
+    email,
+    phone,
+  };
+
+  console.log(formData);
 
   return (
     <section className="cta" id="cta">
@@ -118,17 +153,21 @@ function CTA({ ctaT }: CTAProps) {
                 <div className="form-group" data-field="name">
                   <label htmlFor="f-name">{ctaT.ctaNameLabel}</label>
 
+                  {/* NAME */}
                   <input
                     id="f-name"
                     name="name"
                     type="text"
                     placeholder={ctaT.ctaNamePlaceholder}
                     autoComplete="name"
+                    onChange={handleNameChange}
+                    value={name}
                   />
 
                   <div className="err-msg">{ctaT.ctaNameError}</div>
                 </div>
 
+                {/* EMAIL */}
                 <div className="form-group" data-field="email">
                   <label htmlFor="f-email">{ctaT.ctaEmailLabel}</label>
 
@@ -138,11 +177,14 @@ function CTA({ ctaT }: CTAProps) {
                     type="email"
                     placeholder={ctaT.ctaEmailPlaceholder}
                     autoComplete="email"
+                    onChange={handleEmailChange}
+                    value={email}
                   />
 
                   <div className="err-msg">{ctaT.ctaEmailError}</div>
                 </div>
 
+                {/* PHONE */}
                 <div className="form-group" data-field="phone">
                   <label htmlFor="f-phone">{ctaT.ctaPhoneLabel}</label>
 
@@ -152,6 +194,8 @@ function CTA({ ctaT }: CTAProps) {
                     type="tel"
                     placeholder={ctaT.ctaPhonePlaceholder}
                     autoComplete="tel"
+                    onChange={handlePhoneChange}
+                    value={phone}
                   />
 
                   <div className="err-msg">{ctaT.ctaPhoneError}</div>
