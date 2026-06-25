@@ -13,7 +13,7 @@ export const pricingTranslations = {
     pricingPer10: "10–20 пользователей",
     pricingPer20: "20–40 пользователей",
     pricingPer40: "40+ пользователей",
-    pricingCustom: "Давайте обсудим",
+    pricingCustom: "Индивидуально",
 
     pricingDescription:
       "Вы платите только за количество пользователей.",
