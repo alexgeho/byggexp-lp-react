@@ -3,15 +3,9 @@ import logo from "../../assets/header/logo.svg";
 import { useState } from "react";
 import { useNavigate, useParams, Link } from "react-router-dom";
 import { languages } from "../../locales/languages";
+import type { HeaderProps } from "../../types/header";
 
-type HeaderProps = {
-  headerT: {
-    how: string;
-    pricing: string;
-    company: string;
-    demo: string;
-  };
-};
+
 
 function Header({ headerT }: HeaderProps) {
   const { lang = "sv" } = useParams();
@@ -63,7 +57,7 @@ function Header({ headerT }: HeaderProps) {
           <a href="#pricing">{headerT.pricing}</a>
           <a href="#cta">{headerT.company}</a>
 
-          <a href="#demo" className="nav-cta">
+          <a href="#cta" className="nav-cta">
             {headerT.demo}
           </a>
         </div>

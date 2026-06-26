@@ -1,19 +1,8 @@
 import "./Hero.scss";
 import phone from "../../assets/hero/phone-3d.png";
+import type { HeroProps } from "../../types/hero";
 
-type HeroProps = {
-  heroT: {
-    heroPill: string;
-    heroTitle: string;
-    heroTitleAccent: string;
-    heroSubtitle: string;
-    heroDemo: string;
-    heroHow: string;
-    heroFeature1: string;
-    heroFeature2: string;
-    heroFeature3: string;
-  };
-};
+
 
 function Hero({ heroT }: HeroProps) {
   return (

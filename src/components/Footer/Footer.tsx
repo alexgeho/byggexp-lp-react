@@ -1,12 +1,8 @@
 import "./Footer.scss";
 import logo from "../../assets/header/logo.svg";
+import type { FooterProps } from "../../types/footer";
 
-type FooterProps = {
-  footerT: {
-    footerPrivacy: string;
-    footerTerms: string;
-  };
-};
+
 
 function Footer({ footerT }: FooterProps) {
   return (
