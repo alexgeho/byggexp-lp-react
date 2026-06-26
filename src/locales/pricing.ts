@@ -33,7 +33,7 @@ export const pricingTranslations = {
     pricingHeading: "One Plan, Everything Included",
 
     pricingSub:
-      "No hidden fees, chat limits, or extra charges for photo documentation.",
+      "No hidden fees. No surprises. No setup fees. Cancel anytime.",
 
     pricingTag: "First Month Free",
 

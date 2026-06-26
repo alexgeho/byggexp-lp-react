@@ -37,17 +37,19 @@ function Pricing({ pricingT }: PricingProps) {
   }
 
   const basePrice50 = 50;
-  const price50 = !isYearly ? basePrice50 : basePrice50 * 0.9;
 
   const basePrice90 = 90;
-  const price90 = !isYearly ? basePrice90 : basePrice90 * 0.9;
 
   const basePrice180 = 180;
-  const price180 = !isYearly ? basePrice180 : basePrice180 * 0.9;
+
+  function priceDeducter(price:number) {
+    return !isYearly ? price : price * 0.9
+  }
 
   return (
     <section className="pricing" id="pricing">
       <div className="container">
+        
         <div className="pricing-head">
           <span className="eyebrow">{pricingT.pricingTitle}</span>
 
@@ -80,7 +82,7 @@ function Pricing({ pricingT }: PricingProps) {
             <span className="pricing-tag">{pricingT.pricingPer1}</span>
 
             <div className="pricing-price">
-              <span className="num">{price50}</span>
+              <span className="num">{priceDeducter(basePrice50)}</span>
 
               <span className="per">{pricingT.pricingPer}</span>
             </div>
@@ -161,7 +163,7 @@ function Pricing({ pricingT }: PricingProps) {
             <span className="pricing-tag">{pricingT.pricingPer10}</span>
 
             <div className="pricing-price">
-              <span className="num">{price90}</span>
+              <span className="num">{priceDeducter(basePrice90)}</span>
 
               <span className="per">{pricingT.pricingPer}</span>
             </div>
@@ -242,7 +244,7 @@ function Pricing({ pricingT }: PricingProps) {
             <span className="pricing-tag">{pricingT.pricingPer20}</span>
 
             <div className="pricing-price">
-              <span className="num">{price180}</span>
+              <span className="num">{priceDeducter(basePrice180)}</span>
 
               <span className="per">{pricingT.pricingPer}</span>
             </div>
