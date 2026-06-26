@@ -7,8 +7,10 @@ import type { HeroProps } from "../../types/hero";
 function Hero({ heroT }: HeroProps) {
   return (
     <section className="hero">
+
       <div className="container hero-inner">
-        <div>
+
+        <div className="hero-content">
           <span className="pill">
             <span className="pill-dot"></span>
             {heroT.heroPill}
@@ -36,7 +38,7 @@ function Hero({ heroT }: HeroProps) {
                 <path d="M5 12h14M13 5l7 7-7 7"></path>
               </svg>
             </a>
-            <a href="#how" className="btn-ghost">
+            <a href="#features" className="btn-ghost">
               {heroT.heroHow}
             </a>
           </div>
@@ -82,6 +84,7 @@ function Hero({ heroT }: HeroProps) {
             </span>
           </div>
         </div>
+
         <div className="hero-visual">
           <img src={phone} alt="Byggexp mobile" className="hero-phone" />
         </div>

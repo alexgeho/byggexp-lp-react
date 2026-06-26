@@ -53,7 +53,7 @@ function Header({ headerT }: HeaderProps) {
             )}
           </div>
 
-          <a href="#how">{headerT.how}</a>
+          <a href="#features">{headerT.how}</a>
           <a href="#pricing">{headerT.pricing}</a>
           <a href="#cta">{headerT.company}</a>
 

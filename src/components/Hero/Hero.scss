@@ -21,6 +21,13 @@
         gap: 48px;
         align-items: center;
       }
+
+      .hero-content{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      }
+
       @media (max-width: 960px) {
         .hero-inner {
           grid-template-columns: 1fr;
@@ -31,12 +38,13 @@
       .pill {
         display: inline-flex;
         align-items: center;
+        width: 40%;
         gap: 8px;
         padding: 7px 14px 7px 10px;
         background: rgba(35, 148, 255, 0.14);
         border: 1px solid rgba(35, 148, 255, 0.32);
         border-radius: 999px;
-        font-size: 13px;
+        font-size: 1.1rem;
         font-weight: 500;
         color: #9bd0ff;
         letter-spacing: 0.01em;
@@ -60,7 +68,7 @@
       }
 
       .hero h1 {
-        font-size: clamp(22px, 5.6vw, 39px);
+        font-size: clamp(22px, 5.6vw, 52px);
         line-height: 1.02;
         font-weight: 600;
         letter-spacing: -0.025em;
@@ -72,7 +80,7 @@
         color: #6bb6ff;
       }
       .hero-sub {
-        font-size: 19px;
+        font-size: clamp(16px, 5.6vw, 24px);
         line-height: 1.45;
         color: rgba(255, 255, 255, 0.7);
         max-width: 520px;
@@ -88,8 +96,8 @@
         color: var(--white);
         padding: 16px 28px;
         border-radius: 999px;
-        font-size: 16px;
-        font-weight: 600;
+        font-size: 1.3rem;
+        font-weight: 400;
         transition:
           background 0.2s,
           transform 0.15s,
@@ -110,7 +118,8 @@
         color: var(--white);
         padding: 16px 24px;
         border-radius: 999px;
-        font-size: 16px;
+                font-size: 1.3rem;
+
         font-weight: 500;
         border: 1px solid rgba(255, 255, 255, 0.18);
         transition:
