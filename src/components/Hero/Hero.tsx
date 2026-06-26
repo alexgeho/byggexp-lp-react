@@ -42,6 +42,8 @@ function Hero({ heroT }: HeroProps) {
               {heroT.heroHow}
             </a>
           </div>
+
+          {/* META */}
           <div className="hero-meta">
             <span>
               <svg

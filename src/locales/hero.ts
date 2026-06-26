@@ -16,7 +16,7 @@ export const heroTranslations = {
 
     heroFeature1: "Первый месяц бесплатно",
     heroFeature2: "Запуск за 15 минут",
-    heroFeature3: "Без обучения бригады",
+    heroFeature3: "Без подписки",
   },
 
   en: {
@@ -36,7 +36,7 @@ export const heroTranslations = {
 
     heroFeature1: "First Month Free",
     heroFeature2: "Setup in 15 Minutes",
-    heroFeature3: "No Crew Training Required",
+    heroFeature3: "No subscription",
   },
 
   sv: {
@@ -56,6 +56,6 @@ export const heroTranslations = {
 
     heroFeature1: "Första månaden gratis",
     heroFeature2: "Kom igång på 15 minuter",
-    heroFeature3: "Ingen utbildning av personal krävs",
+    heroFeature3: "Ingen bindningstid",
   },
 } as const;
