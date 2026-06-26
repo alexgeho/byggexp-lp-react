@@ -1,4 +1,4 @@
-.why {
+.pain {
   background: var(--bg);
   color: var(--white);
   padding: 50px 0;
@@ -6,7 +6,7 @@
   overflow: hidden;
 }
 
-.why::before {
+.pain::before {
   content: "";
   position: absolute;
   top: -30%;
@@ -22,7 +22,7 @@
   pointer-events: none;
 }
 
-.why-top {
+.pain-top {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
@@ -30,7 +30,7 @@
   justify-content: center;
 }
 
-.eyebrowWhy {
+.eyebrowpain {
   color: var(--danger);
   font-size: 1.2rem;
 }
@@ -55,20 +55,20 @@
   vertical-align: top;
 }
 
-.why-header h2 {
+.pain-header h2 {
   color: var(--ink);
   margin-top: 12px;
   font-size: 2rem;
 }
 
-.why-list {
+.pain-list {
   margin-top: 48px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 24px 64px;
 }
 
-.why-item {
+.pain-item {
   display: flex;
   gap: 14px;
   align-items: flex-start;
@@ -84,7 +84,7 @@
   margin-top: 14px;
 }
 
-.why-conclusion {
+.pain-conclusion {
   max-width: 700px;
   margin: 40px auto 0;
   padding: 24px 28px;
@@ -95,23 +95,23 @@
   color: var(--ink);
 }
 
-.why-conclusion strong {
+.pain-conclusion strong {
   color: #e5556a;
   font-weight: 600;
 }
 
 @media (max-width: 900px) {
-  .why-top {
+  .pain-top {
     grid-template-columns: 1fr;
     gap: 40px;
   }
 
-  .why-list {
+  .pain-list {
     grid-template-columns: 1fr;
     gap: 16px;
   }
 
-  .why-header h2 {
+  .pain-header h2 {
   font-size: 1.6rem;
 }
 }

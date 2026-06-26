@@ -4,10 +4,10 @@ import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Pricing from "./components/Pricing/Pricing";
-import Why from "./components/Why/Why";
+import Pain from "./components/Pain/Pain";
 import { Routes, Route, Navigate, useParams } from "react-router-dom";
 import { headerTranslations } from "./locales/header"
-import { whyTranslations } from "./locales/why"
+import { painTranslations } from "./locales/pain"
 import { heroTranslations } from "./locales/hero"
 import { benefitsTranslations } from "./locales/benefits"
 import { featuresTranslations } from "./locales/features"
@@ -23,7 +23,7 @@ function HomePage() {
 
 
   const headerT = headerTranslations[lang as keyof typeof headerTranslations] || headerTranslations.sv;
-  const whyT = whyTranslations[lang as keyof typeof whyTranslations] || whyTranslations.sv;
+  const painT = painTranslations[lang as keyof typeof painTranslations] || painTranslations.sv;
   const heroT = heroTranslations[lang as keyof typeof heroTranslations] || heroTranslations.sv;
   const benefitsT = benefitsTranslations[lang as keyof typeof benefitsTranslations] || benefitsTranslations.sv;
   const featuresT = featuresTranslations[lang as keyof typeof featuresTranslations] || featuresTranslations.sv;
@@ -36,7 +36,7 @@ function HomePage() {
     <>
       <Header headerT={headerT} />
       <Hero heroT={heroT}/>
-      <Why whyT={whyT} />
+      <Pain painT={painT} />
       <Benefits benefitsT={benefitsT} />
       <Features featuresT={featuresT} />
       <FinalBenefits finalBenefitsT={finalBenefitsT} />

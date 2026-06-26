@@ -1,12 +1,12 @@
-export type WhyProps = {
-  whyT: {
-    whyTitle: string;
-    whyHeading: string;
-    whyItem1: string;
-    whyItem2: string;
-    whyItem3: string;
-    whyItem4: string;
-    whyResult: string;
-    whyResultText: string;
+export type PainProps = {
+  painT: {
+    painTitle: string;
+    painHeading: string;
+    painItem1: string;
+    painItem2: string;
+    painItem3: string;
+    painItem4: string;
+    painResult: string;
+    painResultText: string;
   };
 };
