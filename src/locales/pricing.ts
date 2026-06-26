@@ -4,7 +4,7 @@ export const pricingTranslations = {
     pricingHeading: "Один тариф, всё включено",
 
     pricingSub:
-      "Никаких скрытых платежей, лимитов на чаты или доплат за фотофиксацию.",
+      "Никаких скрытых платежей. Никаких сюрпризов. Без платы за подключение. Отменить можно в любой момент.",
 
     pricingTag: "Первый месяц бесплатно",
 
@@ -61,7 +61,7 @@ export const pricingTranslations = {
     pricingHeading: "Ett abonnemang, allt ingår",
 
     pricingSub:
-      "Inga dolda avgifter, begränsningar på chattar eller extra kostnader för fotodokumentation.",
+      "Inga dolda avgifter. Inga överraskningar. Ingen startavgift. Avsluta när du vill.",
 
     pricingTag: "Första månaden gratis",
 
