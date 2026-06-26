@@ -28,12 +28,19 @@ type PricingProps = {
   };
 };
 
+/* BUTTONS */
 function Pricing({ pricingT }: PricingProps) {
+
   const [isYearly, setYearly] = useState(false);
 
-  function togglePeriod(event) {
+  function togglePeriod() {
     setYearly(!isYearly);
   }
+
+  const basePrice50 = 50;
+  const basePrice90 = 90;
+  const basePrice180 = 180;
+
 
   return (
     <section className="pricing" id="pricing">
@@ -47,13 +54,19 @@ function Pricing({ pricingT }: PricingProps) {
         </div>
 
         {/* CARDs */}
+        {/* BUTTONS */}
         <div className="toggleMonthYearPrice">
-          <button onClick={togglePeriod}
+
+          <button 
+          onClick={togglePeriod}
           className={!isYearly ? "toggleButtonActive" : "toggleButton"}>
             Monthly
           </button>
-          <button className={isYearly ? "toggleButtonActive" : "toggleButton"}>
-            Yearly
+
+          <button 
+          onClick={togglePeriod} 
+          className={isYearly ? "toggleButtonActive" : "toggleButton"}>
+            Yearly - 10% off
           </button>
         </div>
 
@@ -63,7 +76,7 @@ function Pricing({ pricingT }: PricingProps) {
             <span className="pricing-tag">{pricingT.pricingPer1}</span>
 
             <div className="pricing-price">
-              <span className="num">€50</span>
+              <span className="num">{!isYearly ? basePrice50 : basePrice50*0.9}</span>
 
               <span className="per">{pricingT.pricingPer}</span>
             </div>
@@ -144,7 +157,7 @@ function Pricing({ pricingT }: PricingProps) {
             <span className="pricing-tag">{pricingT.pricingPer10}</span>
 
             <div className="pricing-price">
-              <span className="num">€90</span>
+              <span className="num">{!isYearly ? basePrice90 : basePrice90*0.9}</span>
 
               <span className="per">{pricingT.pricingPer}</span>
             </div>
@@ -225,7 +238,7 @@ function Pricing({ pricingT }: PricingProps) {
             <span className="pricing-tag">{pricingT.pricingPer20}</span>
 
             <div className="pricing-price">
-              <span className="num">€180</span>
+              <span className="num">{!isYearly ? basePrice180 : basePrice180*0.9}</span>
 
               <span className="per">{pricingT.pricingPer}</span>
             </div>
