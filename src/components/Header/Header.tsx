@@ -1,11 +1,10 @@
 import "./Header.scss";
 import logo from "../../assets/header/logo.svg";
+import burger from "../../assets/header/burger.svg";
 import { useState } from "react";
 import { useNavigate, useParams, Link } from "react-router-dom";
 import { languages } from "../../locales/languages";
 import type { HeaderProps } from "../../types/header";
-
-
 
 function Header({ headerT }: HeaderProps) {
   const { lang = "sv" } = useParams();
@@ -22,44 +21,52 @@ function Header({ headerT }: HeaderProps) {
   return (
     <header className="site-header">
       <nav className="nav">
+        {/* LOGO */}
         <Link to={`/${lang}`} className="nav-logo">
           <img src={logo} alt="ByggExp" />
         </Link>
+        {/* NAV RIGHT */}
+        <div className="nav-right">
+          <div className="nav-links">
+            <div className="language-switcher">
+              <button
+                type="button"
+                className="language-selector"
+                onClick={() => setIsOpen(!isOpen)}
+              >
+                <img src={currentLanguage.flag} alt="" />
+                <span>{currentLanguage.label}</span>
+              </button>
 
-        <div className="nav-links">
-          <div className="language-switcher">
-            <button
-              type="button"
-              className="language-selector"
-              onClick={() => setIsOpen(!isOpen)}
-            >
-              <img src={currentLanguage.flag} alt="" />
-              <span>{currentLanguage.label}</span>
-            </button>
+              {isOpen && (
+                <div className="language-dropdown">
+                  {Object.entries(languages).map(([code, language]) => (
+                    <button
+                      key={code}
+                      type="button"
+                      onClick={() => changeLanguage(code)}
+                    >
+                      <img src={language.flag} alt="" />
+                      <span>{language.label}</span>
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
 
-            {isOpen && (
-              <div className="language-dropdown">
-                {Object.entries(languages).map(([code, language]) => (
-                  <button
-                    key={code}
-                    type="button"
-                    onClick={() => changeLanguage(code)}
-                  >
-                    <img src={language.flag} alt="" />
-                    <span>{language.label}</span>
-                  </button>
-                ))}
-              </div>
-            )}
+            <a href="#features">{headerT.how}</a>
+            <a href="#pricing">{headerT.pricing}</a>
+            <a href="#cta">{headerT.company}</a>
+
+            <a href="#cta" className="nav-cta">
+              {headerT.demo}
+            </a>
           </div>
 
-          <a href="#features">{headerT.how}</a>
-          <a href="#pricing">{headerT.pricing}</a>
-          <a href="#cta">{headerT.company}</a>
-
-          <a href="#cta" className="nav-cta">
-            {headerT.demo}
-          </a>
+          {/* BURGER */}
+          <div className="burger" id="burger">
+            <img src={burger} alt="" />
+          </div>
         </div>
       </nav>
     </header>

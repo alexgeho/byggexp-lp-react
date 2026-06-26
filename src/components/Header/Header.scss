@@ -2,6 +2,7 @@
 
 .language-switcher {
   position: relative;
+  align-self: flex-end;
 }
 
 .language-dropdown {
@@ -30,7 +31,7 @@
   background: transparent;
   border: none;
 
-  color: #ffffff; 
+  color: #ffffff;
   cursor: pointer;
 
   text-align: left;
@@ -119,8 +120,33 @@
 .nav-cta:active {
   transform: scale(0.97);
 }
+
+/* BURGER */
+
+.burger {
+  display: none;
+}
+/* 
+  .nav-right {
+    display: flex;
+    flex-direction: column;
+  } */
+
 @media (max-width: 720px) {
-  .nav-links a:not(.nav-cta) {
+  .nav-links a {
     display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+
+
+
+  .nav-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
   }
 }
