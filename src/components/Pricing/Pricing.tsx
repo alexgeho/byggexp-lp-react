@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./Pricing.scss";
 
 type PricingProps = {
@@ -28,6 +29,12 @@ type PricingProps = {
 };
 
 function Pricing({ pricingT }: PricingProps) {
+  const [isYearly, setYearly] = useState(false);
+
+  function togglePeriod(event) {
+    setYearly(!isYearly);
+  }
+
   return (
     <section className="pricing" id="pricing">
       <div className="container">
@@ -41,10 +48,15 @@ function Pricing({ pricingT }: PricingProps) {
 
         {/* CARDs */}
         <div className="toggleMonthYearPrice">
-          <button>Month</button>
-          <button>Year</button>
+          <button onClick={togglePeriod}
+          className={!isYearly ? "toggleButtonActive" : "toggleButton"}>
+            Monthly
+          </button>
+          <button className={isYearly ? "toggleButtonActive" : "toggleButton"}>
+            Yearly
+          </button>
         </div>
-        
+
         <div className="pricingOptions">
           {/* CARD 1 */}
           <div className="pricing-card">
