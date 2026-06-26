@@ -28,17 +28,10 @@
   gap: 30px;
 }
 
-@media (max-width: 960px) {
-  .hero-inner {
-    grid-template-columns: 1fr;
-    gap: 24px;
-  }
-}
-
 .pill {
   display: inline-flex;
   align-items: center;
-  width: 40%;
+  width: 80%;
   gap: 8px;
   padding: 7px 14px 7px 10px;
   background: rgba(35, 148, 255, 0.14);
@@ -49,6 +42,19 @@
   color: #9bd0ff;
   letter-spacing: 0.01em;
 }
+
+@media (max-width: 960px) {
+  .hero-inner {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+  .pill {
+    width: 70%;
+  }
+
+
 .pill-dot {
   width: 8px;
   height: 8px;
@@ -160,6 +166,9 @@
   .hero-visual {
     height: auto;
     padding-top: 16px;
+  }
+    .pill {
+    width: 70%;
   }
 }
 .hero-phone {

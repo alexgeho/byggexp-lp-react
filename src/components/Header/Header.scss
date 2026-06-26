@@ -2,7 +2,6 @@
 
 .language-switcher {
   position: relative;
-  align-self: flex-end;
 }
 
 .language-dropdown {
@@ -44,6 +43,7 @@
 .language-selector {
   display: flex;
   align-items: center;
+  
   gap: 6px;
 
   background: transparent;
@@ -90,6 +90,8 @@
   display: flex;
   gap: 32px;
   align-items: center;
+  justify-content: center;
+  align-content: center;
 }
 .nav-links a {
   color: var(--white);
@@ -140,8 +142,6 @@
   .burger {
     display: block;
   }
-
-
 
   .nav-right {
     display: flex;
