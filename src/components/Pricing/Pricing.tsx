@@ -40,7 +40,11 @@ function Pricing({ pricingT }: PricingProps) {
         </div>
 
         {/* CARDs */}
-
+        <div className="toggleMonthYearPrice">
+          <button>Month</button>
+          <button>Year</button>
+        </div>
+        
         <div className="pricingOptions">
           {/* CARD 1 */}
           <div className="pricing-card">
