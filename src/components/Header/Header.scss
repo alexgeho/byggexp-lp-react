@@ -43,7 +43,7 @@
 .language-selector {
   display: flex;
   align-items: center;
-  
+
   gap: 6px;
 
   background: transparent;
@@ -73,6 +73,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
   padding: 18px 32px;
   max-width: 1240px;
   margin: 0 auto;
@@ -139,12 +140,20 @@
     display: none;
   }
 
-   .nav-links.open{
+  .nav-links.open {
     display: flex;
     flex-direction: column;
-    margin-top: 200px;
-    position: fixed;
+    position: absolute;
+    top: 100%;
+    right: 10;
     gap: 10px;
+    background-color: #08101d;
+    padding: 0 20px 20px;
+    border-radius: 20px;
+  }
+
+  .nav-links.open a {
+    font-size: 1.1rem;
   }
 
   .burger {
