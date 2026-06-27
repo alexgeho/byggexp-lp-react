@@ -1,4 +1,4 @@
-import "./features.scss";
+import "./Features.scss";
 import shiftsExport from "../../assets/features/shiftsExport.svg";
 
 import skull from "../../assets/emoji-skull.gif";
