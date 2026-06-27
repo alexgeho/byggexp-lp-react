@@ -2,8 +2,6 @@ import type { CTAProps } from "../../types/cta";
 import "./CTA.scss";
 import { useState, type FormEvent, type ChangeEvent } from "react";
 
-
-
 function CTA({ ctaT }: CTAProps) {
   /* ON SUBMIT/SUCCCES OPENS */
   const [isSuccess, setIsSuccess] = useState(false);
