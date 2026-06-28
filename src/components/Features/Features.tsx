@@ -6,7 +6,7 @@ import type { FeaturesProps } from "../../types/features";
 
 
 
-function Features({ featuresT1_3, featuresT4_6 }: FeaturesProps) {
+function Features({ featuresT1_3, featuresT4_6, featuresT7_9 }: FeaturesProps) {
   return (
     <section className="features" id="features">
       <div className="container">
@@ -231,19 +231,19 @@ function Features({ featuresT1_3, featuresT4_6 }: FeaturesProps) {
         {/* STEP 7*/}
         <div className="step">
           <div className="step-text-block">
-            <h3>{featuresT1_3.featuresCard3Title}</h3>
+            <h3>{featuresT7_9.featuresCard7Title}</h3>
 
-            <p className="step-text">{featuresT1_3.featuresCard3Text}</p>
+            <p className="step-text">{featuresT7_9.featuresCard7Text}</p>
 
             <ul className="step-bullets">
               <li>
                 <span className="number">1</span>
-                {featuresT1_3.featuresCard3Step1}
+                {featuresT7_9.featuresCard7Step1}
               </li>
 
               <li>
                 <span className="number">2</span>
-                {featuresT1_3.featuresCard3Step2}
+                {featuresT7_9.featuresCard7Step2}
               </li>
 
               <li>
@@ -259,7 +259,7 @@ function Features({ featuresT1_3, featuresT4_6 }: FeaturesProps) {
                   </svg>
                 </span>
 
-                {featuresT1_3.featuresCard3Step3}
+                {featuresT7_9.featuresCard7Step3}
 
                 <img src={skull} alt="" className="inline-skull" />
               </li>
@@ -276,24 +276,24 @@ function Features({ featuresT1_3, featuresT4_6 }: FeaturesProps) {
         {/* STEP 8*/}
         <div className="step">
           <div className="step-text-block">
-            <h3>{featuresT1_3.featuresCard1Title}</h3>
+            <h3>{featuresT7_9.featuresCard8Title}</h3>
 
-            <p className="step-text">{featuresT1_3.featuresCard1Text}</p>
+            <p className="step-text">{featuresT7_9.featuresCard8Text}</p>
 
             <ul className="step-bullets">
               <li>
                 <span className="number">1</span>
-                {featuresT1_3.featuresCard1Step1}
+                {featuresT7_9.featuresCard8Step1}
               </li>
 
               <li>
                 <span className="number">2</span>
-                {featuresT1_3.featuresCard1Step2}
+                {featuresT7_9.featuresCard8Step2}
               </li>
 
               <li>
                 <span className="number">3</span>
-                {featuresT1_3.featuresCard1Step3}
+                {featuresT7_9.featuresCard8Step3}
               </li>
             </ul>
           </div>
@@ -308,24 +308,24 @@ function Features({ featuresT1_3, featuresT4_6 }: FeaturesProps) {
         {/* STEP 9*/}
         <div className="step">
           <div className="step-text-block">
-            <h3>{featuresT1_3.featuresCard1Title}</h3>
+            <h3>{featuresT7_9.featuresCard9Title}</h3>
 
-            <p className="step-text">{featuresT1_3.featuresCard1Text}</p>
+            <p className="step-text">{featuresT7_9.featuresCard9Text}</p>
 
             <ul className="step-bullets">
               <li>
                 <span className="number">1</span>
-                {featuresT1_3.featuresCard1Step1}
+                {featuresT7_9.featuresCard9Step1}
               </li>
 
               <li>
                 <span className="number">2</span>
-                {featuresT1_3.featuresCard1Step2}
+                {featuresT7_9.featuresCard9Step2}
               </li>
 
               <li>
                 <span className="number">3</span>
-                {featuresT1_3.featuresCard1Step3}
+                {featuresT7_9.featuresCard9Step3}
               </li>
             </ul>
           </div>

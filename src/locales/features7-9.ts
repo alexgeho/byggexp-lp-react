@@ -1,115 +1,74 @@
-export const featuresTranslations = {
+export const featuresTranslations7_9 = {
   ru: {
-    featuresTitle: "Как это выглядит",
+    featuresCard7Title: "Выставление офферт",
+    featuresCard7Text:
+      "Создавайте профессиональные офферты за несколько минут. Все данные о проекте и клиенте уже подставлены — остается только отправить.",
 
-    featuresHeading1: "9 инструмента, которые",
-    featuresHeadingAccent: "закрывают 60%",
-    featuresHeading2: "работы администрации",
+    featuresCard7Step1: "Создайте оффер прямо в проекте",
+    featuresCard7Step2: "Данные заполняются автоматически",
+    featuresCard7Step3: "Отправьте клиенту за пару кликов",
 
-    featuresSub:
-      "Можно без ноутбука, можно без секретарши. Нужен только смартфон, который и так лежит в кармане.",
+    featuresCard8Title: "Выставление счетов",
+    featuresCard8Text:
+      "Преобразуйте отработанные часы в готовый счет без ручных расчетов. Экономьте время и получайте оплату быстрее.",
 
-    featuresCard1Title: "Авто сбор и экспорт часов в Excel",
-    featuresCard1Text:
-      "Сотрудник выбирает проект и нажимает «Старт». ByggExp автоматически фиксирует рабочее время и определяет по GPS, находится ли человек на объекте.",
+    featuresCard8Step1: "Выберите проект и период",
+    featuresCard8Step2: "Часы подтянутся автоматически",
+    featuresCard8Step3: "Счет готов к отправке клиенту",
 
-    featuresCard1Step1: "Создай проект и назначь сотрудников",
-    featuresCard1Step2: "Рабочий запускает смену одним нажатием",
-    featuresCard1Step3: "Несколько кликов и готовые отчёты выгружены в Excel",
+    featuresCard9Title: "Все документы в одном месте",
+    featuresCard9Text:
+      "Фотографии, чертежи, документы и файлы всегда привязаны к нужному проекту. Вся информация хранится в одном месте и доступна всей команде.",
 
-    featuresCard2Title: "Задачи с авто контролем",
-    featuresCard2Text:
-      "Задача ставится всем на проекте, выбранным сотрудникам или одному исполнителю. Если задача не выполнена — приложение будет отправлять напоминания через заданные интервалы времени.",
-
-    featuresCard2Step1:
-      "Внутри проекта перейдите в задачи и нажмите «Создать»",
-    featuresCard2Step2:
-      "Добавьте получателей, сроки и интервал напоминаний",
-    featuresCard2Step3:
-      "Напоминания отключатся после выполнения задачи",
-
-    featuresCard3Title: "Бригады в Live режиме",
-    featuresCard3Text:
-      "Контроль сотрудников и объектов в реальном времени. В панели администратора сразу видно кто начал смену, кто отсутствует и на каком объекте работает.",
-
-    featuresCard3Step1: "Зайдите в панель администратора",
-    featuresCard3Step2: "Откройте вкладку Live",
-    featuresCard3Step3: "Прогульщиков сразу видно",
+    featuresCard9Step1: "Загрузите документы в проект",
+    featuresCard9Step2: "Добавляйте фото и чертежи прямо со смены",
+    featuresCard9Step3: "Все материалы всегда под рукой",
   },
 
   en: {
-    featuresTitle: "features It Works",
+    featuresCard7Title: "Create quotes",
+    featuresCard7Text:
+      "Create professional quotes in minutes. Project and customer information is filled in automatically, so you can send your offer faster.",
+    featuresCard7Step1: "Create a quote from the project",
+    featuresCard7Step2: "Project data is filled in automatically",
+    featuresCard7Step3: "Send it to the customer in a few clicks",
 
-    featuresHeading1: "9 tools that",
-    featuresHeadingAccent: "eliminate 60%",
-    featuresHeading2: "of administrative work",
+    featuresCard8Title: "Create invoices",
+    featuresCard8Text:
+      "Turn recorded work hours into ready-to-send invoices without manual calculations. Save time and get paid faster.",
+    featuresCard8Step1: "Select the project and period",
+    featuresCard8Step2: "Hours are added automatically",
+    featuresCard8Step3: "Send the invoice to the customer",
 
-    featuresSub:
-      "No laptop required. No secretary required. Just a smartphone already in your pocket.",
-
-    featuresCard1Title: "Automatic Time Tracking and Excel Export",
-    featuresCard1Text:
-      "Employees select a project and press Start. ByggExp automatically tracks working hours and verifies via GPS whether the employee is on site.",
-
-    featuresCard1Step1: "Create a project and assign employees",
-    featuresCard1Step2: "Employees start a shift with one tap",
-    featuresCard1Step3: "Export ready-to-use Excel reports in a few clicks",
-
-    featuresCard2Title: "Tasks with Automatic Follow-Up",
-    featuresCard2Text:
-      "Tasks can be assigned to everyone on a project, selected employees, or a single worker. If a task is not completed, the app automatically sends reminders at your chosen intervals.",
-
-    featuresCard2Step1: "Open the project and click Create Task",
-    featuresCard2Step2:
-      "Set recipients, deadlines, and reminder intervals",
-    featuresCard2Step3:
-      "Reminders stop automatically when the task is completed",
-
-    featuresCard3Title: "Live Workforce Monitoring",
-    featuresCard3Text:
-      "Monitor employees and sites in real time. The admin panel instantly sfeaturess who has started work, who is absent, and where everyone is working.",
-
-    featuresCard3Step1: "Open the admin panel",
-    featuresCard3Step2: "Go to the Live tab",
-    featuresCard3Step3: "Absent workers are immediately visible",
+    featuresCard9Title: "All project documents in one place",
+    featuresCard9Text:
+      "Photos, drawings and documents are always linked to the correct project. Everything is stored in one place and available to your entire team.",
+    featuresCard9Step1: "Upload documents to the project",
+    featuresCard9Step2: "Add photos and drawings directly from the shift",
+    featuresCard9Step3: "Access everything in one place",
   },
 
   sv: {
-    featuresTitle: "Så fungerar det",
+    featuresCard7Title: "Skapa offerter",
+    featuresCard7Text:
+      "Skapa professionella offerter på några minuter. Projekt- och kundinformation fylls i automatiskt så att du kan skicka offerten snabbare.",
+    featuresCard7Step1: "Skapa en offert från projektet",
+    featuresCard7Step2: "Projektdata fylls i automatiskt",
+    featuresCard7Step3: "Skicka offerten med några klick",
 
-    featuresHeading1: "9 verktyg som",
-    featuresHeadingAccent: "eliminerar 60 %",
-    featuresHeading2: "av administrationens arbete",
+    featuresCard8Title: "Skapa fakturor",
+    featuresCard8Text:
+      "Förvandla registrerade arbetstimmar till färdiga fakturor utan manuella beräkningar. Spara tid och få betalt snabbare.",
+    featuresCard8Step1: "Välj projekt och period",
+    featuresCard8Step2: "Timmarna hämtas automatiskt",
+    featuresCard8Step3: "Skicka fakturan till kunden",
 
-    featuresSub:
-      "Ingen dator behövs. Ingen sekreterare behövs. Bara en smartphone som redan finns i fickan.",
-
-    featuresCard1Title: "Automatisk tidsrapportering och Excel-export",
-    featuresCard1Text:
-      "Medarbetaren väljer projekt och trycker på Start. ByggExp registrerar arbetstiden automatiskt och kontrollerar via GPS att personen befinner sig på arbetsplatsen.",
-
-    featuresCard1Step1: "Skapa ett projekt och tilldela medarbetare",
-    featuresCard1Step2: "Medarbetaren startar sitt arbetspass med ett klick",
-    featuresCard1Step3:
-      "Exportera färdiga Excel-rapporter med några få klick",
-
-    featuresCard2Title: "Uppgifter med automatisk uppföljning",
-    featuresCard2Text:
-      "Uppgifter kan tilldelas hela projektet, utvalda medarbetare eller en enskild person. Om uppgiften inte slutförs skickar appen automatiskt påminnelser enligt det intervall du väljer.",
-
-    featuresCard2Step1:
-      "Öppna projektet och klicka på Skapa uppgift",
-    featuresCard2Step2:
-      "Lägg till mottagare, deadline och påminnelseintervall",
-    featuresCard2Step3:
-      "Påminnelserna stängs av när uppgiften är slutförd",
-
-    featuresCard3Title: "Live-översikt över arbetslagen",
-    featuresCard3Text:
-      "Följ medarbetare och arbetsplatser i realtid. I adminpanelen ser du direkt vem som har startat sitt pass, vem som saknas och var alla arbetar.",
-
-    featuresCard3Step1: "Öppna adminpanelen",
-    featuresCard3Step2: "Gå till fliken Live",
-    featuresCard3Step3: "Frånvarande syns direkt",
+    featuresCard9Title: "Alla projektdokument på ett ställe",
+    featuresCard9Text:
+      "Foton, ritningar och dokument kopplas alltid till rätt projekt. All information finns samlad på ett ställe och är tillgänglig för hela teamet.",
+    featuresCard9Step1: "Ladda upp dokument till projektet",
+    featuresCard9Step2:
+      "Lägg till foton och ritningar direkt från arbetspasset",
+    featuresCard9Step3: "Hitta allt på ett ställe",
   },
 } as const;
