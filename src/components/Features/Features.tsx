@@ -261,7 +261,6 @@ function Features({ featuresT1_3, featuresT4_6, featuresT7_9 }: FeaturesProps) {
 
                 {featuresT7_9.featuresCard7Step3}
 
-                <img src={skull} alt="" className="inline-skull" />
               </li>
             </ul>
           </div>
