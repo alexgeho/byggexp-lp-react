@@ -1,6 +1,6 @@
 import "./Features.scss";
-import shiftsExport from "../../assets/features/shiftsExport.svg";
-import tasks from "../../assets/features/tasks.svg";
+import shiftsExport from "../../assets/features/shiftsExport.png";
+import tasks from "../../assets/features/tasks.png";
 import live from "../../assets/features/live.svg";
 
 import skull from "../../assets/emoji-skull.gif";
