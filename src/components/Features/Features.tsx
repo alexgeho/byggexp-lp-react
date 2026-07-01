@@ -1,5 +1,7 @@
 import "./Features.scss";
 import shiftsExport from "../../assets/features/shiftsExport.svg";
+import tasks from "../../assets/features/tasks.svg";
+import live from "../../assets/features/live.svg";
 
 import skull from "../../assets/emoji-skull.gif";
 import type { FeaturesProps } from "../../types/features";
@@ -82,7 +84,7 @@ function Features({ featuresT1_3, featuresT4_6, featuresT7_9 }: FeaturesProps) {
 
           <div className="step-visual">
             <div className="phone-shell">
-              <img src={shiftsExport} alt="" />
+              <img src={tasks} alt="" />
             </div>
           </div>
         </div>
@@ -127,7 +129,7 @@ function Features({ featuresT1_3, featuresT4_6, featuresT7_9 }: FeaturesProps) {
 
           <div className="step-visual">
             <div className="phone-shell">
-              <img src={shiftsExport} alt="" />
+              <img src={live} alt="" />
             </div>
           </div>
         </div>
