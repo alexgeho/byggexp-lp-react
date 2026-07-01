@@ -1,7 +1,13 @@
 import "./Features.scss";
 import shiftsExport from "../../assets/features/shiftsExport.png";
 import tasks from "../../assets/features/tasks.png";
-import live from "../../assets/features/live.svg";
+import live from "../../assets/features/live.png";
+import photo from "../../assets/features/photo.png";
+import planing from "../../assets/features/planing.png";
+import tools from "../../assets/features/tools.png";
+import offert from "../../assets/features/offert.png";
+import invoice from "../../assets/features/invoice.png";
+import project from "../../assets/features/project.png";
 
 import skull from "../../assets/emoji-skull.gif";
 import type { FeaturesProps } from "../../types/features";
@@ -161,7 +167,7 @@ function Features({ featuresT1_3, featuresT4_6, featuresT7_9 }: FeaturesProps) {
 
           <div className="step-visual">
             <div className="phone-shell">
-              <img src={shiftsExport} alt="" />
+              <img src={photo} alt="" />
             </div>
           </div>
         </div>
@@ -193,7 +199,7 @@ function Features({ featuresT1_3, featuresT4_6, featuresT7_9 }: FeaturesProps) {
 
           <div className="step-visual">
             <div className="phone-shell">
-              <img src={shiftsExport} alt="" />
+              <img src={planing} alt="" />
             </div>
           </div>
         </div>
@@ -225,7 +231,7 @@ function Features({ featuresT1_3, featuresT4_6, featuresT7_9 }: FeaturesProps) {
 
           <div className="step-visual">
             <div className="phone-shell">
-              <img src={shiftsExport} alt="" />
+              <img src={tools} alt="" />
             </div>
           </div>
         </div>
@@ -269,7 +275,7 @@ function Features({ featuresT1_3, featuresT4_6, featuresT7_9 }: FeaturesProps) {
 
           <div className="step-visual">
             <div className="phone-shell">
-              <img src={shiftsExport} alt="" />
+              <img src={offert} alt="" />
             </div>
           </div>
         </div>
@@ -301,7 +307,7 @@ function Features({ featuresT1_3, featuresT4_6, featuresT7_9 }: FeaturesProps) {
 
           <div className="step-visual">
             <div className="phone-shell">
-              <img src={shiftsExport} alt="" />
+              <img src={invoice} alt="" />
             </div>
           </div>
         </div>
@@ -333,7 +339,7 @@ function Features({ featuresT1_3, featuresT4_6, featuresT7_9 }: FeaturesProps) {
 
           <div className="step-visual">
             <div className="phone-shell">
-              <img src={shiftsExport} alt="" />
+              <img src={project} alt="" />
             </div>
           </div>
         </div>
