@@ -6,6 +6,24 @@
   overflow: hidden;
 }
 
+.final-benefits::before {
+  content: "";
+  position: absolute;
+
+  width: 1800px;
+  height: 1200px;
+
+  left: 50%;
+  top: 50%;
+  transform: translate(-35%, -40%);
+
+  background: url("../../assets/glow/glow.svg") no-repeat center;
+  background-size: contain;
+
+  pointer-events: none;
+  z-index: 0;
+}
+
 .final-benefits-header {
   display: flex;
   flex-direction: column;
