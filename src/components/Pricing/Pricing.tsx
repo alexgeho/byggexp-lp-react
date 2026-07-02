@@ -11,7 +11,7 @@ function Pricing({ pricingT }: PricingProps) {
     setYearly(!isYearly);
   }
 
-  const basePrice50 = 50;
+  const basePrice50 = 499;
 
   const basePrice90 = 90;
 
@@ -57,7 +57,8 @@ function Pricing({ pricingT }: PricingProps) {
             <span className="pricing-tag pricing-tag-starter">{pricingT.pricingPer1}</span>
 
             <div className="pricing-price">
-              <span className="num">{priceDeducter(basePrice50)}</span>
+              <span className="num">
+                {priceDeducter(basePrice50)} </span>
 
               <span className="per">{pricingT.pricingPer}</span>
             </div>

@@ -1,8 +1,8 @@
 export const ctaTranslations = {
   ru: {
-    ctaTitle: "Готов попробовать?",
+    ctaTitle: "Готовы попробовать?",
 
-    ctaHeading1: "Запишись на демо —",
+    ctaHeading1: "Запишитесь на демо —",
     ctaAccent: "15 минут",
     ctaHeading2: "по видеосвязи",
 
@@ -13,9 +13,9 @@ export const ctaTranslations = {
     ctaItem2: "Вы сможете попробовать все функции бесплатно",
     ctaItem3: "Адаптируем систему под ваши бизнес-процессы",
 
-    ctaFormTitle: "Оставь заявку на демо",
+    ctaFormTitle: "Оставьте заявку на демо",
 
-    ctaNameLabel: "Как тебя зовут",
+    ctaNameLabel: "Как Вас зовут",
     ctaNamePlaceholder: "Имя Фамилия",
     ctaNameError: "Укажи имя",
 
@@ -30,7 +30,7 @@ export const ctaTranslations = {
     ctaButton: "Записаться на демо",
 
     ctaPrivacy:
-      "Отправляя форму, ты соглашаешься с обработкой персональных данных. Не передаём третьим лицам.",
+      "Отправляя форму, Вы соглашаетесь с обработкой персональных данных. Не передаём третьим лицам.",
 
     ctaSuccessTitle: "Заявка отправлена!",
     ctaSuccessText: "Свяжемся с тобой в течение часа в рабочее время.",

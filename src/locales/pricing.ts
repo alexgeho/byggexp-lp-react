@@ -8,7 +8,7 @@ export const pricingTranslations = {
 
     pricingTag: "Первый месяц бесплатно",
 
-    pricingPer: "/ месяц",
+    pricingPer: "SEK",
     pricingPer1: "Starter",
     pricingPer10: "Growth",
     pricingPer20: "Proffesional",
@@ -16,7 +16,7 @@ export const pricingTranslations = {
 
     pricingCustom: "Индивидуально",
 
-    priceDescription1: "1–10 пользователей",
+    priceDescription1: "1–10 пользователей в месяц",
 
     priceDescription2: "10–20 пользователей",
 

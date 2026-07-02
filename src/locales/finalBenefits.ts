@@ -1,6 +1,6 @@
 export const finalBenefitsTranslations = {
   ru: {
-    finalBenefitsTitle: "Итого, что ты получаешь",
+    finalBenefitsTitle: "Итого, что Вы получаете",
 
     finalBenefitsHeading1: "Объект под контролем —",
     finalBenefitsAccent: "и спокойный сон",
