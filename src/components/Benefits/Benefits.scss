@@ -14,40 +14,27 @@
 .benefits::before {
   content: "";
   position: absolute;
-  left: 20%;
-  top: 45%;
-  width: 500px;
-  height: 500px;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  background: radial-gradient(
-    circle,
-    rgba(35, 148, 255, 0.14) 0%,
-    rgba(35, 148, 255, 0.08) 35%,
-    transparent 75%
-  );
-  filter: blur(80px);
+
+  width: 1800px;
+  height: 1200px;
+
+  left: 50%;
+  top: 50%;
+  transform: translate(-35%, -40%);
+
+  background: url("../../assets/glow/glow.svg") no-repeat center;
+  background-size: contain;
+
   pointer-events: none;
+  z-index: 0;
 }
 
-.benefits::after {
-  content: "";
-  position: absolute;
-  right: 20%;
-  bottom: 10%;
-  width: 500px;
-  height: 500px;
-  transform: translate(50%, 50%);
-  border-radius: 50%;
-  background: radial-gradient(
-    circle,
-    rgba(35, 148, 255, 0.14) 0%,
-    rgba(35, 148, 255, 0.08) 35%,
-    transparent 75%
-  );
-  filter: blur(80px);
-  pointer-events: none;
+.benefits > * {
+  position: relative;
+  z-index: 1;
 }
+
+
 
 .benefitsBoth {
   display: grid;
@@ -95,21 +82,6 @@
   align-items: center;
 }
 
-.benefits::before {
-  content: "";
-  position: absolute;
-  bottom: -40%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 1400px;
-  height: 900px;
-  background: radial-gradient(
-    ellipse at center,
-    rgba(35, 148, 255, 0.22) 0%,
-    transparent 55%
-  );
-  pointer-events: none;
-}
 
 .benefits-header {
   margin-top: 50px;
@@ -183,6 +155,8 @@ h2 em {
 .benefit-card,
 .benefit-card-team {
   min-height: 280px;
+      color: var(--white);
+
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 24px;
   padding: 24px 24px;
@@ -196,6 +170,8 @@ h2 em {
 @media (max-width: 1150) {
   .benefit-card,
   .benefit-card-team {
+        color: var(--white);
+
     min-height: 180px;
     width: 280px;
   }
@@ -213,8 +189,10 @@ h2 em {
       transform 0.2s,
       border-color 0.2s,
       background 0.2s;
+    color: var(--white);
   }
   .benefit-card h3 {
+    color: var(--white);
     font-size: 1.1rem;
     font-weight: 600;
     letter-spacing: -0.01em;
@@ -277,15 +255,13 @@ h2 em {
   height: 24px;
 }
 
-.benefit-card,
+.benefit-card p,
 benefit-card-team p {
   font-size: 16px;
   line-height: 1.5;
+  color: #ffffff99;
 }
 
-.benefit-card {
-  color: rgba(255, 255, 255, 0.6);
-}
 .benefit-card-team {
   color: var(--ink);
   background: linear-gradient(
