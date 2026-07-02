@@ -96,7 +96,7 @@
   }
 }
 .pricing-card {
-  max-width: 520px;
+  width: 350px;
   margin: 0 auto;
   background: var(--white);
   border-radius: 32px;
