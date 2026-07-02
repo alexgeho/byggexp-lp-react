@@ -113,6 +113,8 @@
   border-radius: 999px;
   font-size: 15px;
   font-weight: 600;
+  white-space: nowrap;
+
   transition:
     background 0.2s,
     transform 0.15s;
@@ -130,13 +132,13 @@
   display: none;
 }
 
-  .nav-right {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-  }
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
 
-@media (max-width: 720px) {
+@media (max-width: 840px) {
   .nav-links {
     display: none;
   }
@@ -146,11 +148,12 @@
     flex-direction: column;
     position: absolute;
     top: 85%;
-    right: 10;
-    gap: 10px;
     background-color: #08101d;
     padding: 0 20px 20px;
     border-radius: 10px;
+    margin-right: 50px;
+      white-space: nowrap;
+
   }
 
   .nav-links.open a {
