@@ -62,7 +62,7 @@ function Pricing({ pricingT }: PricingProps) {
               <span className="per">{pricingT.pricingPer}</span>
             </div>
 
-            <p className="pricing-sub">{pricingT.pricingDescription}</p>
+            <p className="pricing-sub">{pricingT.priceDescription1}</p>
 
             <ul className="pricing-list">
               <li>
@@ -143,7 +143,7 @@ function Pricing({ pricingT }: PricingProps) {
               <span className="per">{pricingT.pricingPer}</span>
             </div>
 
-            <p className="pricing-sub">{pricingT.pricingDescription}</p>
+            <p className="pricing-sub">{pricingT.priceDescription2}</p>
 
             <ul className="pricing-list">
               <li>
@@ -224,7 +224,7 @@ function Pricing({ pricingT }: PricingProps) {
               <span className="per">{pricingT.pricingPer}</span>
             </div>
 
-            <p className="pricing-sub">{pricingT.pricingDescription}</p>
+            <p className="pricing-sub">{pricingT.priceDescription3}</p>
 
             <ul className="pricing-list">
               <li>
@@ -303,7 +303,7 @@ function Pricing({ pricingT }: PricingProps) {
               <span className="num">{pricingT.pricingCustom}</span>
             </div>
 
-            <p className="pricing-sub">{pricingT.pricingDescription}</p>
+            <p className="pricing-sub">{pricingT.priceDescription4}</p>
 
             <ul className="pricing-list">
               <li>

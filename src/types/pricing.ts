@@ -13,7 +13,11 @@ export type PricingProps = {
     pricingPer40: string;
     pricingCustom: string;
 
-    pricingDescription: string;
+    priceDescription1: string;
+    priceDescription2: string;
+    priceDescription3: string;
+    priceDescription4: string;
+    
 
     pricingItem1: string;
     pricingItem2: string;

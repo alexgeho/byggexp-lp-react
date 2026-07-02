@@ -9,14 +9,20 @@ export const pricingTranslations = {
     pricingTag: "Первый месяц бесплатно",
 
     pricingPer: "/ месяц",
-    pricingPer1: "1–10 пользователей",
-    pricingPer10: "10–20 пользователей",
-    pricingPer20: "20–40 пользователей",
-    pricingPer40: "40+ пользователей",
+    pricingPer1: "Starter",
+    pricingPer10: "Growth",
+    pricingPer20: "Proffesional",
+    pricingPer40: "Enterprise",
+
     pricingCustom: "Индивидуально",
 
-    pricingDescription:
-      "Вы платите только за количество пользователей.",
+    priceDescription1: "1–10 пользователей",
+
+    priceDescription2: "10–20 пользователей",
+
+    priceDescription3: "20–40 пользователей",
+
+    priceDescription4: "40+ пользователей",
 
     pricingItem1: "Все функции включены",
     pricingItem2: "Неограниченное количество проектов",
@@ -32,19 +38,25 @@ export const pricingTranslations = {
     pricingTitle: "How Much Does It Cost?",
     pricingHeading: "One Plan, Everything Included",
 
-    pricingSub:
-      "No hidden fees. No surprises. No setup fees. Cancel anytime.",
+    pricingSub: "No hidden fees. No surprises. No setup fees. Cancel anytime.",
 
     pricingTag: "First Month Free",
 
     pricingPer: "/ month",
-    pricingPer1: "1–10 users",
-    pricingPer10: "10–20 users",
-    pricingPer20: "20–40 users",
-    pricingPer40: "40+ users",
+    pricingPer1: "Starter",
+    pricingPer10: "Growth",
+    pricingPer20: "Proffesional",
+    pricingPer40: "Enterprise",
+
     pricingCustom: "Let's Talk",
 
-    pricingDescription: "You only pay for the number of users.",
+    priceDescription1: "1–10 users",
+
+    priceDescription2: "10–20 users",
+
+    priceDescription3: "20–40 users",
+
+    priceDescription4: "40+ users",
 
     pricingItem1: "All features included",
     pricingItem2: "Unlimited projects",
@@ -66,13 +78,20 @@ export const pricingTranslations = {
     pricingTag: "Första månaden gratis",
 
     pricingPer: "/ månad",
-    pricingPer1: "1-10 användare",
-    pricingPer10: "10-20 användare",
-    pricingPer20: "20-40 användare",
-    pricingPer40: "40+ användare",
+    pricingPer1: "Start",
+    pricingPer10: "Tillväxt",
+    pricingPer20: "Professionell",
+    pricingPer40: "Anpassad",
     pricingCustom: "Låt oss prata",
 
-    pricingDescription: "Du betalar bara för antalet användare.",
+   
+    priceDescription1: "1-10 användare",
+
+    priceDescription2: "10-20 användare",
+
+    priceDescription3: "20-40 användare",
+
+    priceDescription4: "40+ användare",
 
     pricingItem1: "Alla funktioner ingår",
     pricingItem2: "Obegränsat antal projekt",
