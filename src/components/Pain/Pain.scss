@@ -13,12 +13,7 @@
   left: 50%;
   transform: translateX(-50%);
   width: 1400px;
-  height: 800px;
-  background: radial-gradient(
-    ellipse at center,
-    rgba(35, 148, 255, 0.18) 0%,
-    transparent 60%
-  );
+  height: 800px
   pointer-events: none;
 }
 
