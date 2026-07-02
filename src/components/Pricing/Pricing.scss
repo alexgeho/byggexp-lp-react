@@ -124,6 +124,29 @@
   font-weight: 600;
   margin-bottom: 24px;
 }
+
+.pricing-tag-starter {
+  display: inline-block;
+  padding: 6px 14px;
+  background: var(--green-1);
+  color: var(--green-2);
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.pricing-tag-orange {
+  display: inline-block;
+  padding: 6px 14px;
+  background: var(--orange-1);
+  color: var(--orange-2);
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
 .pricing-price {
   display: flex;
   align-items: baseline;
@@ -161,21 +184,44 @@
   font-size: 16px;
   color: var(--ink-2);
 }
-.pricing-list .check {
+
+/* GREEN - STARTER */
+.pricing-list .check-green {
   flex-shrink: 0;
   width: 22px;
   height: 22px;
   border-radius: 50%;
-  background: rgba(69, 179, 107, 0.14);
-  color: var(--green);
+  background: var(--green-1);
+  color: var(--green-2);
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.pricing-list .check svg {
+.pricing-list .check-green svg {
   width: 12px;
   height: 12px;
 }
+
+/* ORANGE - GROWTH */
+
+.pricing-list .check-orange {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--orange-1);
+  color: var(--orange-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pricing-list .check-orange svg {
+  width: 12px;
+  height: 12px;
+}
+
+
+
 .pricing-card .btn-primary {
   width: 100%;
   justify-content: center;

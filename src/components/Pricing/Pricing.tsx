@@ -54,7 +54,7 @@ function Pricing({ pricingT }: PricingProps) {
         <div className="pricingOptions">
           {/* CARD 1 */}
           <div className="pricing-card">
-            <span className="pricing-tag">{pricingT.pricingPer1}</span>
+            <span className="pricing-tag-starter">{pricingT.pricingPer1}</span>
 
             <div className="pricing-price">
               <span className="num">{priceDeducter(basePrice50)}</span>
@@ -66,7 +66,7 @@ function Pricing({ pricingT }: PricingProps) {
 
             <ul className="pricing-list">
               <li>
-                <span className="check">
+                <span className="check-green">
                   <svg viewBox="0 0 14 10" fill="none">
                     <path
                       stroke="currentColor"
@@ -81,7 +81,7 @@ function Pricing({ pricingT }: PricingProps) {
               </li>
 
               <li>
-                <span className="check">
+                <span className="check-green">
                   <svg viewBox="0 0 14 10" fill="none">
                     <path
                       stroke="currentColor"
@@ -96,7 +96,7 @@ function Pricing({ pricingT }: PricingProps) {
               </li>
 
               <li>
-                <span className="check">
+                <span className="check-green">
                   <svg viewBox="0 0 14 10" fill="none">
                     <path
                       stroke="currentColor"
@@ -111,7 +111,7 @@ function Pricing({ pricingT }: PricingProps) {
               </li>
 
               <li>
-                <span className="check">
+                <span className="check-green">
                   <svg viewBox="0 0 14 10" fill="none">
                     <path
                       stroke="currentColor"
@@ -135,7 +135,7 @@ function Pricing({ pricingT }: PricingProps) {
 
           {/* CARD 2 */}
           <div className="pricing-card">
-            <span className="pricing-tag">{pricingT.pricingPer10}</span>
+            <span className="pricing-tag-orange">{pricingT.pricingPer10}</span>
 
             <div className="pricing-price">
               <span className="num">{priceDeducter(basePrice90)}</span>
@@ -147,7 +147,7 @@ function Pricing({ pricingT }: PricingProps) {
 
             <ul className="pricing-list">
               <li>
-                <span className="check">
+                <span className="check-orange">
                   <svg viewBox="0 0 14 10" fill="none">
                     <path
                       stroke="currentColor"
@@ -162,7 +162,7 @@ function Pricing({ pricingT }: PricingProps) {
               </li>
 
               <li>
-                <span className="check">
+                <span className="check-orange">
                   <svg viewBox="0 0 14 10" fill="none">
                     <path
                       stroke="currentColor"
@@ -177,7 +177,7 @@ function Pricing({ pricingT }: PricingProps) {
               </li>
 
               <li>
-                <span className="check">
+                <span className="check-orange">
                   <svg viewBox="0 0 14 10" fill="none">
                     <path
                       stroke="currentColor"
@@ -192,7 +192,7 @@ function Pricing({ pricingT }: PricingProps) {
               </li>
 
               <li>
-                <span className="check">
+                <span className="check-orange">
                   <svg viewBox="0 0 14 10" fill="none">
                     <path
                       stroke="currentColor"

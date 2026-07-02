@@ -17,7 +17,11 @@
   --blue-2: #1378e0;
   --blue-soft: #dbeeff;
   --green: #45b36b;
+  --green-1: #E5F6E8;
+  --green-2: #04B251;
   --danger: #e5556a;
+  --orange-1: #FEF1E5;
+  --orange-2: #FD8603;
   /* Heading */
   --fs-h1: clamp(2rem, 4vw, 3.5rem);
   --fs-h2: clamp(1.75rem, 3vw, 3rem);
