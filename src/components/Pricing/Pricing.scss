@@ -56,8 +56,9 @@
 }
 
 .toggleButton {
-  border: 1px solid var(--muted-2);
-  color: var(--muted-2);
+  border: 1px solid var(--white);
+  background-color: var(--white);
+  color: var(--muted);
   padding: 10px 20px;
   border-radius: 20px;
   margin-bottom: 10px;
@@ -71,6 +72,7 @@
   margin-bottom: 10px;
   font-size: 1rem;
   color: black;
+  background-color: var(--white);
 }
 
 /* .toggleMonthYearPrice button {
