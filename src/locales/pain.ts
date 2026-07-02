@@ -36,7 +36,13 @@ export const painTranslations = {
   sv: {
     painTitle: "Grundproblemet",
     painHeading:
-      "Företag förlorar pengar inte på grund av dåliga medarbetare, utan för att de gör manuellt det som framgångsrika företag redan har automatiserat",
+      "Företag förlorar pengar inte på grund av dåliga medarbetare, utan för att de gör ",
+
+    painTitleAccent1: "manuellt",
+
+    painHeading2: " det som framgångsrika företag redan har ",
+
+    painTitleAccent2: "automatiserat",
 
     painItem1:
       "Timmar skickas via SMS eller på papper — administrationen för över dem manuellt till Excel",
