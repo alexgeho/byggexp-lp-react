@@ -12,10 +12,21 @@
 
 .benefitsBoth {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: start;
-  margin: 0 auto;
+  grid-template-columns: 1fr 1px 1fr;
   gap: 40px;
+  align-items: start;
+}
+
+.divider {
+  width: 1px;
+  align-self: stretch;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.18) 0px,
+    rgba(255, 255, 255, 0.18) 8px,
+    transparent 8px,
+    transparent 18px
+  );
 }
 
 @media (max-width: 800px) {
@@ -31,6 +42,10 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+  }
+
+  .divider {
+    display: none;
   }
 }
 

@@ -71,6 +71,10 @@ function Benefits({ benefitsT }: BenefitsProps) {
           </div>
         </div>
 
+        {/* DEVIDER */}
+
+        <div className="divider"></div>
+
         {/* FOR TEAM */}
 
         <div className="benefits-office">
