@@ -194,76 +194,39 @@
   color: var(--ink-2);
 }
 
-/* GREEN - STARTER */
-.pricing-list .check-green {
+.pricing-list .check {
   flex-shrink: 0;
   width: 22px;
   height: 22px;
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pricing-list .check svg {
+  width: 12px;
+  height: 12px;
+}
+
+.check-green {
   background: var(--green-1);
   color: var(--green-2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.pricing-list .check-green svg {
-  width: 12px;
-  height: 12px;
-}
-
-/* ORANGE - GROWTH */
-.pricing-list .check-orange {
-  flex-shrink: 0;
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
+.check-orange {
   background: var(--orange-1);
   color: var(--orange-2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.pricing-list .check-orange svg {
-  width: 12px;
-  height: 12px;
-}
-
-/* BLUE - Proffesional*/
-.pricing-list .check-blue {
-  flex-shrink: 0;
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
+.check-blue {
   background: var(--blue-soft);
   color: var(--blue-2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.pricing-list .check-blue svg {
-  width: 12px;
-  height: 12px;
-}
-
-/* PURPLE - Enterprise*/
-.pricing-list .check-purple {
-  flex-shrink: 0;
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
+.check-purple {
   background: var(--purple-1);
   color: var(--purple-2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.pricing-list .check-purple svg {
-  width: 12px;
-  height: 12px;
 }
 
 .pricing-card .btn-primary {

@@ -66,7 +66,7 @@ function Pricing({ pricingT }: PricingProps) {
 
             <ul className="pricing-list">
               <li>
-                <span className="check-green">
+                <span className="check check-green">
                   <svg viewBox="0 0 14 10" fill="none">
                     <path
                       stroke="currentColor"
@@ -81,7 +81,7 @@ function Pricing({ pricingT }: PricingProps) {
               </li>
 
               <li>
-                <span className="check-green">
+                <span className="check check-green">
                   <svg viewBox="0 0 14 10" fill="none">
                     <path
                       stroke="currentColor"
@@ -96,7 +96,7 @@ function Pricing({ pricingT }: PricingProps) {
               </li>
 
               <li>
-                <span className="check-green">
+                <span className="check check-green">
                   <svg viewBox="0 0 14 10" fill="none">
                     <path
                       stroke="currentColor"
@@ -111,7 +111,7 @@ function Pricing({ pricingT }: PricingProps) {
               </li>
 
               <li>
-                <span className="check-green">
+                <span className="check check-green">
                   <svg viewBox="0 0 14 10" fill="none">
                     <path
                       stroke="currentColor"
@@ -147,7 +147,7 @@ function Pricing({ pricingT }: PricingProps) {
 
             <ul className="pricing-list">
               <li>
-                <span className="check-orange">
+                <span className="check check-orange">
                   <svg viewBox="0 0 14 10" fill="none">
                     <path
                       stroke="currentColor"
@@ -162,7 +162,7 @@ function Pricing({ pricingT }: PricingProps) {
               </li>
 
               <li>
-                <span className="check-orange">
+                <span className="check check-orange">
                   <svg viewBox="0 0 14 10" fill="none">
                     <path
                       stroke="currentColor"
@@ -177,7 +177,7 @@ function Pricing({ pricingT }: PricingProps) {
               </li>
 
               <li>
-                <span className="check-orange">
+                <span className="check check-orange">
                   <svg viewBox="0 0 14 10" fill="none">
                     <path
                       stroke="currentColor"
@@ -192,7 +192,7 @@ function Pricing({ pricingT }: PricingProps) {
               </li>
 
               <li>
-                <span className="check-orange">
+                <span className="check check-orange">
                   <svg viewBox="0 0 14 10" fill="none">
                     <path
                       stroke="currentColor"
@@ -228,7 +228,7 @@ function Pricing({ pricingT }: PricingProps) {
 
             <ul className="pricing-list">
               <li>
-                <span className="check-blue">
+                <span className="check check-blue">
                   <svg viewBox="0 0 14 10" fill="none">
                     <path
                       stroke="currentColor"
@@ -243,7 +243,7 @@ function Pricing({ pricingT }: PricingProps) {
               </li>
 
               <li>
-                <span className="check-blue">
+                <span className="check check-blue">
                   <svg viewBox="0 0 14 10" fill="none">
                     <path
                       stroke="currentColor"
@@ -258,7 +258,7 @@ function Pricing({ pricingT }: PricingProps) {
               </li>
 
               <li>
-                <span className="check-blue">
+                <span className="check check-blue">
                   <svg viewBox="0 0 14 10" fill="none">
                     <path
                       stroke="currentColor"
@@ -273,7 +273,7 @@ function Pricing({ pricingT }: PricingProps) {
               </li>
 
               <li>
-                <span className="check-blue">
+                <span className="check check-blue">
                   <svg viewBox="0 0 14 10" fill="none">
                     <path
                       stroke="currentColor"
@@ -307,7 +307,7 @@ function Pricing({ pricingT }: PricingProps) {
 
             <ul className="pricing-list">
               <li>
-                <span className="check-purple">
+                <span className="check check-purple">
                   <svg viewBox="0 0 14 10" fill="none">
                     <path
                       stroke="currentColor"
@@ -322,7 +322,7 @@ function Pricing({ pricingT }: PricingProps) {
               </li>
 
               <li>
-                <span className="check-purple">
+                <span className="check check-purple">
                   <svg viewBox="0 0 14 10" fill="none">
                     <path
                       stroke="currentColor"
@@ -337,7 +337,7 @@ function Pricing({ pricingT }: PricingProps) {
               </li>
 
               <li>
-                <span className="check-purple">
+                <span className="check check-purple">
                   <svg viewBox="0 0 14 10" fill="none">
                     <path
                       stroke="currentColor"
@@ -352,7 +352,7 @@ function Pricing({ pricingT }: PricingProps) {
               </li>
 
               <li>
-                <span className="check-purple">
+                <span className="check check-purple">
                   <svg viewBox="0 0 14 10" fill="none">
                     <path
                       stroke="currentColor"
