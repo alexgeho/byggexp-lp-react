@@ -13,7 +13,8 @@
   gap: var(--h-gap);
   text-align: center;
   max-width: 720px;
-  margin: 0 auto 30px;
+  margin: 0 auto;
+  margin-bottom: var(--h-gap);
 }
 .features-head .eyebrow {
   display: inline-block;
