@@ -107,7 +107,7 @@
   overflow: hidden;
 }
 
-.pricing-tag {
+.pricing-tag-proffesional {
   display: inline-block;
   padding: 6px 14px;
   background: var(--blue-soft);
@@ -134,6 +134,17 @@
   padding: 6px 14px;
   background: var(--orange-1);
   color: var(--orange-2);
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.pricing-tag-purple {
+  display: inline-block;
+  padding: 6px 14px;
+  background: var(--purple-1);
+  color: var(--purple-2);
   border-radius: 999px;
   font-size: 13px;
   font-weight: 600;
@@ -215,6 +226,24 @@
 }
 
 .pricing-list .check-orange svg {
+  width: 12px;
+  height: 12px;
+}
+
+/* BLUE - Proffesional*/
+.pricing-list .check-blue {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--blue-soft);
+  color: var(--blue-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pricing-list .check-blue svg {
   width: 12px;
   height: 12px;
 }

@@ -216,7 +216,7 @@ function Pricing({ pricingT }: PricingProps) {
 
           {/* CARD 3 */}
           <div className="pricing-card">
-            <span className="pricing-tag">{pricingT.pricingPer20}</span>
+            <span className="pricing-tag-proffesional">{pricingT.pricingPer20}</span>
 
             <div className="pricing-price">
               <span className="num">{priceDeducter(basePrice180)}</span>
@@ -228,7 +228,7 @@ function Pricing({ pricingT }: PricingProps) {
 
             <ul className="pricing-list">
               <li>
-                <span className="check">
+                <span className="check-blue">
                   <svg viewBox="0 0 14 10" fill="none">
                     <path
                       stroke="currentColor"
@@ -243,7 +243,7 @@ function Pricing({ pricingT }: PricingProps) {
               </li>
 
               <li>
-                <span className="check">
+                <span className="check-blue">
                   <svg viewBox="0 0 14 10" fill="none">
                     <path
                       stroke="currentColor"
@@ -258,7 +258,7 @@ function Pricing({ pricingT }: PricingProps) {
               </li>
 
               <li>
-                <span className="check">
+                <span className="check-blue">
                   <svg viewBox="0 0 14 10" fill="none">
                     <path
                       stroke="currentColor"
@@ -273,7 +273,7 @@ function Pricing({ pricingT }: PricingProps) {
               </li>
 
               <li>
-                <span className="check">
+                <span className="check-blue">
                   <svg viewBox="0 0 14 10" fill="none">
                     <path
                       stroke="currentColor"
@@ -297,7 +297,7 @@ function Pricing({ pricingT }: PricingProps) {
 
           {/* CARD 4 */}
           <div className="pricing-card">
-            <span className="pricing-tag">{pricingT.pricingPer40}</span>
+            <span className="pricing-tag-purple">{pricingT.pricingPer40}</span>
 
             <div className="pricing-price">
               <span className="num">{pricingT.pricingCustom}</span>
