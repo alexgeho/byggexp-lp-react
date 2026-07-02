@@ -2,8 +2,13 @@ export const painTranslations = {
   ru: {
     painTitle: "Корень проблемы",
     painHeading:
-      "Компании теряют деньги не из-за плохих работников, а потому что делают вручную то, что успешные давно автоматизировали",
+      "Компании теряют деньги не из-за плохих работников, а потому что делают ",
 
+    painTitleAccent1: "вручную",
+
+    painHeading2: "то, что успешные компании уже давно ",
+
+    painTitleAccent2: "автоматизировали",
     painItem1:
       "Часы присылают в SMS или на бумаге — администрация вручную переносит их в Excel",
     painItem2: "Рабочий забыл отправить часы — приходится звонить и напоминать",
@@ -18,8 +23,13 @@ export const painTranslations = {
   en: {
     painTitle: "Root cause",
     painHeading:
-      "Companies lose money not because of bad workers, but because they still do manually what successful companies have already automated",
+      "Companies lose money not because of bad workers, but because they still do ",
 
+    painTitleAccent1: "manually",
+
+    painHeading2: "what successful companies have already ",
+
+    painTitleAccent2: "automated",
     painItem1:
       "Timesheets are sent via SMS or paper — administration manually transfers them into Excel",
     painItem2:
