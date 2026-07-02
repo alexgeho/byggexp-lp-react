@@ -307,7 +307,7 @@ function Pricing({ pricingT }: PricingProps) {
 
             <ul className="pricing-list">
               <li>
-                <span className="check">
+                <span className="check-purple">
                   <svg viewBox="0 0 14 10" fill="none">
                     <path
                       stroke="currentColor"
@@ -322,7 +322,7 @@ function Pricing({ pricingT }: PricingProps) {
               </li>
 
               <li>
-                <span className="check">
+                <span className="check-purple">
                   <svg viewBox="0 0 14 10" fill="none">
                     <path
                       stroke="currentColor"
@@ -337,7 +337,7 @@ function Pricing({ pricingT }: PricingProps) {
               </li>
 
               <li>
-                <span className="check">
+                <span className="check-purple">
                   <svg viewBox="0 0 14 10" fill="none">
                     <path
                       stroke="currentColor"
@@ -352,7 +352,7 @@ function Pricing({ pricingT }: PricingProps) {
               </li>
 
               <li>
-                <span className="check">
+                <span className="check-purple">
                   <svg viewBox="0 0 14 10" fill="none">
                     <path
                       stroke="currentColor"
