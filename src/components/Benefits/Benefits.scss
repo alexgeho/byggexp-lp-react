@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   background: var(--navy-900);
-  gap: 40px;
+
   position: relative;
   overflow: hidden;
 }
@@ -84,12 +84,12 @@
 
 
 .benefits-header {
-  margin-top: 50px;
   display: flex;
   flex-direction: column;
   max-width: 1000px;
   text-align: center;
-  gap: 50px;
+  gap: var(--h-gap);
+  margin-bottom: var(--h-gap);
 }
 
 .eyebrow {
@@ -142,14 +142,6 @@ h2 em {
     gap: 40px;
     justify-content: center;
   }
-}
-
-.section-sub {
-  font-size: 19px;
-  line-height: 1.5;
-  color: var(--muted);
-  margin-top: 18px;
-  max-width: 640px;
 }
 
 .benefit-card,

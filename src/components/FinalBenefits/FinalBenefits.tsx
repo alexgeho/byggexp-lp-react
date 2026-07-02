@@ -1,21 +1,19 @@
 import type { FinalBenefitsProps } from "../../types/finalbenefits";
 import "./FinalBenefits.scss";
 
-
-
 function FinalBenefits({ finalBenefitsT }: FinalBenefitsProps) {
   return (
     <section className="final-benefits">
       <div className="container final-benefits-inner">
-        <span className="eyebrow">
-          {finalBenefitsT.finalBenefitsTitle}
-        </span>
+        <div className="final-benefits-header">
+          <span className="eyebrow">{finalBenefitsT.finalBenefitsTitle}</span>
 
-        <h2>
-          {finalBenefitsT.finalBenefitsHeading1}{" "}
-          <em>{finalBenefitsT.finalBenefitsAccent}</em>
-        </h2>
-
+          <h2>
+            {finalBenefitsT.finalBenefitsHeading1}{" "}
+            <em>{finalBenefitsT.finalBenefitsAccent}</em>
+          </h2>
+        </div>
+        
         <div className="finalBenefits-grid">
           <div className="final-benefit-card">
             <div className="benefit-icon">
@@ -85,6 +83,7 @@ function FinalBenefits({ finalBenefitsT }: FinalBenefitsProps) {
             <p>{finalBenefitsT.finalBenefitsItem4}</p>
           </div>
         </div>
+        
       </div>
     </section>
   );
