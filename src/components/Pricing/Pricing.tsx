@@ -54,7 +54,7 @@ function Pricing({ pricingT }: PricingProps) {
         <div className="pricingOptions">
           {/* CARD 1 */}
           <div className="pricing-card">
-            <span className="pricing-tag-starter">{pricingT.pricingPer1}</span>
+            <span className="pricing-tag pricing-tag-starter">{pricingT.pricingPer1}</span>
 
             <div className="pricing-price">
               <span className="num">{priceDeducter(basePrice50)}</span>
@@ -135,7 +135,7 @@ function Pricing({ pricingT }: PricingProps) {
 
           {/* CARD 2 */}
           <div className="pricing-card">
-            <span className="pricing-tag-orange">{pricingT.pricingPer10}</span>
+            <span className="pricing-tag pricing-tag-orange">{pricingT.pricingPer10}</span>
 
             <div className="pricing-price">
               <span className="num">{priceDeducter(basePrice90)}</span>
@@ -216,7 +216,7 @@ function Pricing({ pricingT }: PricingProps) {
 
           {/* CARD 3 */}
           <div className="pricing-card">
-            <span className="pricing-tag-proffesional">{pricingT.pricingPer20}</span>
+            <span className="pricing-tag pricing-tag-proffesional">{pricingT.pricingPer20}</span>
 
             <div className="pricing-price">
               <span className="num">{priceDeducter(basePrice180)}</span>
@@ -297,7 +297,7 @@ function Pricing({ pricingT }: PricingProps) {
 
           {/* CARD 4 */}
           <div className="pricing-card">
-            <span className="pricing-tag-purple">{pricingT.pricingPer40}</span>
+            <span className="pricing-tag pricing-tag-purple">{pricingT.pricingPer40}</span>
 
             <div className="pricing-price">
               <span className="num">{pricingT.pricingCustom}</span>

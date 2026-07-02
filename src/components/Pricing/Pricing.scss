@@ -116,7 +116,7 @@
 
 
 
-.pricing-tag-starter {
+.pricing-tag {
   display: inline-block;
   padding: 6px 14px;
   background: var(--green-1);
@@ -127,37 +127,24 @@
   margin-bottom: 24px;
 }
 
+.pricing-tag-starter {
+  background: var(--green-1);
+  color: var(--green-2);
+}
+
 .pricing-tag-orange {
-  display: inline-block;
-  padding: 6px 14px;
   background: var(--orange-1);
   color: var(--orange-2);
-  border-radius: 999px;
-  font-size: 13px;
-  font-weight: 600;
-  margin-bottom: 24px;
 }
 
 .pricing-tag-proffesional {
-  display: inline-block;
-  padding: 6px 14px;
   background: var(--blue-soft);
   color: var(--blue-2);
-  border-radius: 999px;
-  font-size: 13px;
-  font-weight: 600;
-  margin-bottom: 24px;
 }
 
 .pricing-tag-purple {
-  display: inline-block;
-  padding: 6px 14px;
   background: var(--purple-1);
   color: var(--purple-2);
-  border-radius: 999px;
-  font-size: 13px;
-  font-weight: 600;
-  margin-bottom: 24px;
 }
 
 .pricing-price {
