@@ -19,7 +19,7 @@ function Features({ featuresT1_3, featuresT4_6, featuresT7_9 }: FeaturesProps) {
     <section className="features" id="features">
       <div className="container">
         {/* HEADER */}
-        <div className="features-head">
+        <div className="section-head">
           <span className="eyebrow">{featuresT1_3.featuresTitle}</span>
 
           <h2>

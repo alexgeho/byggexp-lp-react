@@ -13,7 +13,7 @@ function Benefits({ benefitsT }: BenefitsProps) {
   return (
     <section className="benefits">
       {/* HEADER */}
-      <div className="benefits-header">
+      <div className="section-head section-head--dark">
         <span className="eyebrow">{benefitsT.office.benefitsOfficeTitle} </span>
         <h2>
           {benefitsT.office.benefitsOfficeHeading1}

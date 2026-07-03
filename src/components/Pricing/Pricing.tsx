@@ -25,7 +25,7 @@ function Pricing({ pricingT }: PricingProps) {
     <section className="pricing" id="pricing">
       <div className="container">
         
-        <div className="pricing-head">
+        <div className="section-head">
           <span className="eyebrow">{pricingT.pricingTitle}</span>
 
           <h2>{pricingT.pricingHeading}</h2>

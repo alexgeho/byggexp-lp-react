@@ -7,47 +7,6 @@
   background: var(--bg);
 }
 
-.features-head {
-  display: flex;
-  flex-direction: column;
-  gap: var(--h-gap);
-  text-align: center;
-  max-width: 720px;
-  margin: 0 auto;
-  margin-bottom: var(--h-gap);
-
-  .eyebrow {
-    display: inline-block;
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--blue);
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-  }
-
-  h2 {
-    font-size: var(--fs-h1);
-    line-height: 1.05;
-    font-weight: 500;
-    letter-spacing: -0.02em;
-    color: var(--ink);
-  }
-  h2 em {
-    font-weight: 500;
-    color: var(--blue);
-  }
-
-  .section-sub {
-    font-size: 19px;
-    line-height: 1.5;
-    color: var(--muted);
-    max-width: 640px;
-  }
-}
-.features-head .section-sub {
-  margin-left: auto;
-  margin-right: auto;
-}
 
 .step {
   display: grid;

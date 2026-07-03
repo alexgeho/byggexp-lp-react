@@ -24,21 +24,10 @@
   z-index: 0;
 }
 
-.final-benefits-header {
-  display: flex;
-  flex-direction: column;
-  max-width: 1000px;
-  text-align: center;
-  gap: var(--h-gap);
-  margin-bottom: var(--h-MB);
+.section-head--dark {
 
   h2 {
     color: var(--white);
-    font-weight: 500;
-    font-size: var(--fs-h1);
-
-    letter-spacing: -0.02em;
-    line-height: 1.05;
   }
 
   em {

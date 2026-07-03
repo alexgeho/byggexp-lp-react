@@ -82,44 +82,6 @@
 }
 
 
-.benefits-header {
-  display: flex;
-  flex-direction: column;
-  max-width: 1000px;
-  text-align: center;
-  gap: var(--h-gap);
-  margin-bottom: var(--h-gap);
-}
-
-.eyebrow {
-  display: inline-block;
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--blue);
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-}
-
-.benefits h2 {
-  color: var(--white);
-  font-weight: 500;
-  font-size: var(--fs-h1);
-
-  letter-spacing: -0.02em;
-  line-height: 1.05;
-}
-
-/* h2 {
-  font-size: 30px;
-} */
-
-h2 em {
-  font-size: var(--fs-h1);
-  font-weight: 600;
-  color: var(--blue);
-  font-style: normal;
-}
-
 .benefits-grid {
   display: grid;
   grid-template-columns: repeat(2, 260px);

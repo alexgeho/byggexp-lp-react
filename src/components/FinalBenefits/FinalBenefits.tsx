@@ -5,7 +5,7 @@ function FinalBenefits({ finalBenefitsT }: FinalBenefitsProps) {
   return (
     <section className="final-benefits">
       <div className="container final-benefits-inner">
-        <div className="final-benefits-header">
+        <div className="section-head section-head--dark">
           <span className="eyebrow">{finalBenefitsT.finalBenefitsTitle}</span>
 
           <h2>

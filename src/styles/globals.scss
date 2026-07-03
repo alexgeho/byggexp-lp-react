@@ -42,6 +42,49 @@
   /* Headers */
 }
 
+/* section-head */
+.section-head {
+  display: flex;
+  flex-direction: column;
+  gap: var(--h-gap);
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-bottom: var(--h-MB);
+
+  .eyebrow {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--blue);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+  }
+
+  h2 {
+    font-size: var(--fs-h1);
+    line-height: 1.05;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+  }
+  h2 em {
+    font-weight: 500;
+    color: var(--blue);
+  }
+
+  .section-sub {
+    align-self: center;
+    width: 60%;
+    margin-top: 4px;
+    font-size: 19px;
+    line-height: 1.5;
+    color: var(--muted);
+    max-width: 640px;
+  }
+}
+/* section-head END */
+
 * {
   box-sizing: border-box;
   margin: 0;
