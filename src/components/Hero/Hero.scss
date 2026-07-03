@@ -11,6 +11,7 @@
     var(--navy-900);
   color: var(--white);
   overflow: hidden;
+  padding-bottom: 60px;
 }
 .hero-inner {
   position: relative;
@@ -212,6 +213,14 @@
     font-weight: 300;
   }
 
+  .hero-sub {
+  font-size: clamp(16px, 3.6vw, 24px);
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 520px;
+  margin-bottom: 34px;
+}
+
   .hero-visual {
     align-self: start;
     position: relative;
@@ -223,4 +232,42 @@
   
     max-width: 100%;
   }
+
+
+/* BTN */
+
+.btn-primary {
+  background: var(--blue);
+  color: var(--white);
+  padding: 10px 17px;
+  border-radius: 999px;
+  font-size: 1.1rem;
+  font-weight: 400;
+  transition:
+    background 0.2s,
+    transform 0.15s,
+    box-shadow 0.2s;
+  box-shadow: 0 8px 32px rgba(35, 148, 255, 0.35);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.btn-ghost {
+  color: var(--white);
+  padding: 10px 17px;
+  border-radius: 999px;
+  font-size: 1.1rem;
+
+  font-weight: 500;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition:
+    background 0.2s,
+    border-color 0.2s;
+}
+
+/*  */
+
+
 }

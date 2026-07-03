@@ -3,7 +3,7 @@ export const heroTranslations = {
     heroPill: "Управление строительными проектами",
 
     heroTitle:
-      "Автоматический учёт рабочего времени",
+      "Автоматический учет рабочего времени и управление проектами",
 
     heroTitleAccent:
       "для строительных компаний",
@@ -23,7 +23,7 @@ export const heroTranslations = {
     heroPill: "Construction Project Management",
 
     heroTitle:
-      "Automatic Time Tracking",
+      "Automated time tracking and project management",
 
     heroTitleAccent:
       "for Construction Companies",
@@ -43,7 +43,7 @@ export const heroTranslations = {
     heroPill: "System för hantering av byggprojekt",
 
     heroTitle:
-      "Automatisk tidsrapportering",
+      "Automatisk tidsrapportering och projekthantering",
 
     heroTitleAccent:
       "för byggföretag",
