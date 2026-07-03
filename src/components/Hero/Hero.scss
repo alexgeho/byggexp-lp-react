@@ -11,7 +11,6 @@
     var(--navy-900);
   color: var(--white);
   overflow: hidden;
-  padding: 80px 0 60px;
 }
 .hero-inner {
   position: relative;
@@ -51,7 +50,6 @@
     gap: 24px;
   }
 } */
-
 
 .pill-dot {
   width: 8px;
@@ -165,7 +163,6 @@
     height: auto;
     padding-top: 16px;
   }
-
 }
 .hero-phone {
   width: 460px;
@@ -184,6 +181,16 @@
   }
 }
 @media (max-width: 560px) {
+  .hero {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-visual {
+    align-self: start;
+  }
+
   .hero-phone {
     width: 300px;
     max-width: 70%;

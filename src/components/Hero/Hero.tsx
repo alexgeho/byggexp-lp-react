@@ -2,25 +2,29 @@ import "./Hero.scss";
 import phone from "../../assets/hero/phone-3d.png";
 import type { HeroProps } from "../../types/hero";
 
-
-
 function Hero({ heroT }: HeroProps) {
   return (
-    <section className="hero">
+    <section className="container hero">
+      
+      <span className="pill">
+        <span className="pill-dot"></span>
+        {heroT.heroPill}
+      </span>
 
-      <div className="container hero-inner">
 
+      <div className="hero-inner">
         <div className="hero-content">
-          <span className="pill">
-            <span className="pill-dot"></span>
-            {heroT.heroPill}
-          </span>
-
           <h1>
             {heroT.heroTitle}
             <em> {heroT.heroTitleAccent}</em>
           </h1>
-          <p className="hero-sub">{heroT.heroSubtitle}</p>
+        </div>
+        <div className="hero-visual">
+          <img src={phone} alt="Byggexp mobile" className="hero-phone" />
+        </div>
+      </div>
+
+      <div>          <p className="hero-sub">{heroT.heroSubtitle}</p>
 
           <div className="hero-ctas">
             <a href="#cta" className="btn-primary">
@@ -85,12 +89,8 @@ function Hero({ heroT }: HeroProps) {
               {heroT.heroFeature3}
             </span>
           </div>
-        </div>
+</div>
 
-        <div className="hero-visual">
-          <img src={phone} alt="Byggexp mobile" className="hero-phone" />
-        </div>
-      </div>
     </section>
   );
 }
