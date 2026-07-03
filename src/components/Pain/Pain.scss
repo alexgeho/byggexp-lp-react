@@ -26,7 +26,7 @@
 }
 
 .eyebrowpain {
-   color: var(--danger);
+  color: var(--danger);
   font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -36,7 +36,6 @@
 .stat-big {
   display: flex;
   align-self: center;
-  /* justify-content: center; */
 
   font-size: clamp(120px, 18vw, 220px);
   font-weight: 600;
@@ -56,16 +55,12 @@
 .pain-header h2 {
   color: var(--ink);
   margin-top: 12px;
-  font-size: 2rem;
   line-height: 1.4;
-  
-  
 }
 
 .pain-header h2 em {
   font-weight: 600;
   color: var(--danger);
-   font-size: 2rem;  
 }
 
 .pain-list {
@@ -109,8 +104,20 @@
 
 @media (max-width: 900px) {
   .pain-top {
-    grid-template-columns: 1fr;
-    gap: 40px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .eyebrowpain {
+    font-size: 0.8rem;
+  }
+
+  .stat-big {
+    font-size: 5rem;
+    padding: 1px;
   }
 
   .pain-list {
@@ -119,6 +126,20 @@
   }
 
   .pain-header h2 {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
+  }
+
+  /* SUB */
+
+  .pain-item {
+    font-size: 0.9rem;
+  }
+
+  .dash {
+    flex-shrink: 0;
+    width: 14px;
+    height: 2px;
+    background: var(--danger);
+    margin-top: 14px;
   }
 }

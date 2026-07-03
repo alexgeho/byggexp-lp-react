@@ -5,6 +5,7 @@ function Pain({ painT }: PainProps) {
   return (
     <section className="pain">
       <div className="container">
+        
         <div className="pain-top">
           <div className="stat-big">
             80<span>%</span>
