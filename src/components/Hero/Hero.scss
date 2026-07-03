@@ -77,7 +77,6 @@
   margin: 22px 0 22px;
 }
 .hero h1 em {
-  font-style: italic;
   font-weight: 600;
   color: #6bb6ff;
 }
@@ -180,15 +179,39 @@
     transform: translateY(-12px);
   }
 }
+
+/* MOBILE */
+
 @media (max-width: 560px) {
   .hero {
-    padding-top: 40px;
+    padding-top: 30px;
     display: flex;
     flex-direction: column;
+    gap: 30px;
+  }
+
+  .hero-inner {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 1.6fr;
+    gap: 8px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+    font-weight: 300;
+  }
+
+  .hero h1 em {
+    font-weight: 300;
   }
 
   .hero-visual {
     align-self: start;
+    position: relative;
+    display: flex;
+    justify-content: center;
   }
 
   .hero-phone {
