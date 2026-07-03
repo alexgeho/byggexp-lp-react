@@ -7,7 +7,6 @@
   background: var(--bg);
 }
 
-
 .step {
   display: grid;
   grid-template-columns: 1fr 1.05fr;
@@ -156,4 +155,39 @@
   width: 100%;
   height: auto;
   filter: drop-shadow(0 30px 50px rgba(15, 34, 54, 0.25));
+}
+
+@media (max-width: 600px) {
+  .section-head .section-sub {
+    width: 90%;
+  }
+
+  .step {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .step-visual {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    height: auto;
+    padding: 20px 0 0;
+
+    overflow: hidden;
+  }
+
+  .phone-shell {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+  }
+
+  .phone-shell img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transform: none;
+  }
 }

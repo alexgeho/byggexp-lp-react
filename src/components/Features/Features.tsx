@@ -12,8 +12,6 @@ import project from "../../assets/features/project.png";
 import skull from "../../assets/emoji-skull.gif";
 import type { FeaturesProps } from "../../types/features";
 
-
-
 function Features({ featuresT1_3, featuresT4_6, featuresT7_9 }: FeaturesProps) {
   return (
     <section className="features" id="features">
@@ -268,7 +266,6 @@ function Features({ featuresT1_3, featuresT4_6, featuresT7_9 }: FeaturesProps) {
                 </span>
 
                 {featuresT7_9.featuresCard7Step3}
-
               </li>
             </ul>
           </div>
