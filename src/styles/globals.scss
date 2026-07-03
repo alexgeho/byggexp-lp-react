@@ -83,6 +83,20 @@
     max-width: 640px;
   }
 }
+
+/* DARK */
+
+.section-head--dark {
+
+  h2 {
+    color: var(--white);
+  }
+
+  em {
+    color: var(--blue);
+  }
+}
+
 /* section-head END */
 
 * {

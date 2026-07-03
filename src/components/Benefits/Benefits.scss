@@ -34,12 +34,10 @@
   z-index: 1;
 }
 
-
 .benefitsBoth {
   display: grid;
   grid-template-columns: 1fr 1px 1fr;
-  gap: 40px;
-  align-items: start;
+  gap: 10px;
 }
 
 .divider {
@@ -81,7 +79,6 @@
   align-items: center;
 }
 
-
 .benefits-grid {
   display: grid;
   grid-template-columns: repeat(2, 260px);
@@ -100,7 +97,7 @@
 
 @media (max-width: 800px) {
   .benefits-grid {
-    gap: 40px;
+    gap: 20px;
     justify-content: center;
   }
 }
@@ -108,7 +105,7 @@
 .benefit-card,
 .benefit-card-team {
   min-height: 280px;
-      color: var(--white);
+  color: var(--white);
 
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 24px;
@@ -123,7 +120,7 @@
 @media (max-width: 1150) {
   .benefit-card,
   .benefit-card-team {
-        color: var(--white);
+    color: var(--white);
 
     min-height: 180px;
     width: 280px;
@@ -224,103 +221,11 @@ benefit-card-team p {
   );
 }
 
-/* ============ SOLUTION ============ */
-.solution {
-  background: var(--navy-900);
-  color: var(--white);
-  padding: 120px 0;
-  position: relative;
-  overflow: hidden;
-}
-.solution::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: url("../../assets/hero/bg-glow-wide.png") no-repeat center 60% /
-    110% auto;
-  opacity: 0.5;
-  pointer-events: none;
-}
-.solution-inner {
-  position: relative;
-  text-align: center;
-  margin: 0 auto;
-}
-.solution h2 {
-  color: var(--white);
-  font-size: clamp(38px, 5vw, 64px);
-}
 .solution-lead,
 .solution-lead-team {
   font-size: 1.1rem;
   line-height: 1.5;
   max-width: 740px;
   margin: 30px;
-}
-
-.solution-lead {
-  color: rgba(255, 255, 255, 0.78);
-}
-
-.solution-lead-team {
-  color: var(--ink);
-}
-
-.solution-lead strong {
   color: var(--white);
-  font-weight: 600;
-}
-
-.solution-features {
-  margin-top: 64px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 14px;
-}
-@media (max-width: 800px) {
-  .solution-features {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-.feature-chip {
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 18px;
-  padding: 24px 20px;
-  text-align: left;
-  backdrop-filter: blur(8px);
-  transition:
-    background 0.2s,
-    border-color 0.2s,
-    transform 0.2s;
-}
-.feature-chip:hover {
-  background: rgba(35, 148, 255, 0.08);
-  border-color: rgba(35, 148, 255, 0.32);
-  transform: translateY(-3px);
-}
-.feature-chip-icon {
-  width: 36px;
-  height: 36px;
-  border-radius: 10px;
-  background: rgba(35, 148, 255, 0.18);
-  color: #6bb6ff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 14px;
-}
-.feature-chip-icon svg {
-  width: 20px;
-  height: 20px;
-}
-.feature-chip h4 {
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 4px;
-}
-.feature-chip p {
-  font-size: 14px;
-  color: rgba(255, 255, 255, 0.55);
-  line-height: 1.4;
 }
