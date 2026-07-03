@@ -190,6 +190,11 @@
     gap: 30px;
   }
 
+.pill {
+  font-size: 0.7rem;
+  align-self: center;
+}
+
   .hero-inner {
     position: relative;
     z-index: 1;
@@ -199,7 +204,7 @@
   }
 
   .hero h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 300;
   }
 
@@ -215,7 +220,7 @@
   }
 
   .hero-phone {
-    width: 300px;
-    max-width: 70%;
+  
+    max-width: 100%;
   }
 }

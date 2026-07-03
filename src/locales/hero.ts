@@ -1,6 +1,6 @@
 export const heroTranslations = {
   ru: {
-    heroPill: "Система управления строительными проектами",
+    heroPill: "Управление строительными проектами",
 
     heroTitle:
       "Автоматический учёт рабочего времени",
@@ -20,7 +20,7 @@ export const heroTranslations = {
   },
 
   en: {
-    heroPill: "Construction Project Management System",
+    heroPill: "Construction Project Management",
 
     heroTitle:
       "Automatic Time Tracking",
