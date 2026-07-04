@@ -50,12 +50,13 @@ function CTA({ ctaT }: CTAProps) {
     <section className="cta" id="cta">
       <div className="container cta-inner">
         <div className="ctaLeft">
-          <span className="eyebrow">{ctaT.ctaTitle}</span>
+          <div className="section-head">
+            <span className="eyebrow">{ctaT.ctaTitle}</span>
 
-          <h2>
-            {ctaT.ctaHeading1} <em>{ctaT.ctaAccent}</em> {ctaT.ctaHeading2}
-          </h2>
-
+            <h2>
+              {ctaT.ctaHeading1} <em>{ctaT.ctaAccent}</em> {ctaT.ctaHeading2}
+            </h2>
+          </div>
           {/*           <p className="cta-lead">{ctaT.ctaLead}</p>
            */}
           <ul className="cta-list">
