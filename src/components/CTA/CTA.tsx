@@ -49,7 +49,10 @@ function CTA({ ctaT }: CTAProps) {
   return (
     <section className="cta" id="cta">
       <div className="container cta-inner">
+
+        {/* LEFT CONTENT */}
         <div className="ctaLeft">
+          
           <div className="section-head">
             <span className="eyebrow">{ctaT.ctaTitle}</span>
 
@@ -57,8 +60,7 @@ function CTA({ ctaT }: CTAProps) {
               {ctaT.ctaHeading1} <em>{ctaT.ctaAccent}</em> {ctaT.ctaHeading2}
             </h2>
           </div>
-          {/*           <p className="cta-lead">{ctaT.ctaLead}</p>
-           */}
+        
           <ul className="cta-list">
             <li>
               <span className="check">
@@ -107,7 +109,7 @@ function CTA({ ctaT }: CTAProps) {
           </ul>
         </div>
 
-        {/* FORM */}
+        {/* RIGHT FORM */}
 
         <div className="form-card" id="form-card">
           {!isSuccess && (
