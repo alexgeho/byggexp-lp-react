@@ -76,7 +76,7 @@
 .hero-sub {
   font-size: clamp(16px, 5.6vw, 24px);
   line-height: 1.45;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--muted-2);
   max-width: 520px;
   margin-bottom: 34px;
 }
@@ -152,19 +152,6 @@
 }
 
 .pill-mobile {
-  display: inline-flex;
-  align-self: flex-start;
-
-  align-items: center;
-  gap: 8px;
-  padding: 8px 20px;
-  background: rgba(35, 148, 255, 0.14);
-  border: 1px solid rgba(35, 148, 255, 0.32);
-  border-radius: 999px;
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: #9bd0ff;
-  letter-spacing: 0.01em;
   display: none;
 }
 
@@ -181,6 +168,18 @@
   .pill-mobile {
     display: inline-block;
     margin-bottom: 20px;
+    display: inline-flex;
+    align-self: flex-start;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 20px;
+    background: rgba(35, 148, 255, 0.14);
+    border: 1px solid rgba(35, 148, 255, 0.32);
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #9bd0ff;
+    letter-spacing: 0.01em;
   }
 
   .pill-dot-mobile {
@@ -247,12 +246,23 @@
     font-weight: 600;
   }
 
+  .hero-sub-toggle {
+    background: none;
+    border: none;
+    padding: 0;
+    margin-bottom: 20px;
+
+    color: var(--muted-2);
+    font-size: 0.95rem;
+    font-weight: 500;
+
+    cursor: pointer;
+  }
+
   .hero-sub {
     font-size: clamp(16px, 3.6vw, 24px);
     line-height: 1.45;
-    color: rgba(255, 255, 255, 0.7);
-    max-width: 520px;
-    margin-bottom: 34px;
+    margin-bottom: 20px;
   }
 
   .hero-visual {
@@ -271,7 +281,7 @@
   .btn-primary {
     background: var(--blue);
     color: var(--white);
-    padding: 10px 17px;
+    padding: 10px 14px;
     border-radius: 999px;
     font-size: 1.1rem;
     font-weight: 400;
@@ -287,7 +297,7 @@
 
   .btn-ghost {
     color: var(--white);
-    padding: 10px 17px;
+    padding: 10px 14px;
     border-radius: 999px;
     font-size: 1.1rem;
 

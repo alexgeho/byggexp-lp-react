@@ -4,6 +4,7 @@ export type HeroProps = {
     heroTitle: string;
     heroTitleAccent: string;
     heroSubtitle: string;
+    heroSubtitleShort: string;
     heroDemo: string;
     heroHow: string;
     heroFeature1: string;

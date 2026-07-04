@@ -1,12 +1,14 @@
 import "./Hero.scss";
 import phone from "../../assets/hero/phone-3d.png";
 import type { HeroProps } from "../../types/hero";
+import { useState } from "react";
 
 function Hero({ heroT }: HeroProps) {
+  const [wholeText, setWholeText] = useState(false);
+
   return (
     <section className="hero">
       <div className="container">
-
         <span className="pill-mobile">
           <span className="pill-dot-mobile">●</span>
           {heroT.heroPill}
@@ -101,7 +103,19 @@ function Hero({ heroT }: HeroProps) {
 
         <div className="footer-mobile">
           {" "}
-          <p className="hero-sub">{heroT.heroSubtitle}</p>
+          <div className="hero-sub">
+            <span>
+              {wholeText ? heroT.heroSubtitle : heroT.heroSubtitleShort}
+            </span>
+
+            <button
+              type="button"
+              className="hero-sub-toggle"
+              onClick={() => setWholeText(!wholeText)}
+            >
+              {wholeText ? "Show less ▲" : "Read more ▼"}
+            </button>
+          </div>
           <div className="hero-ctas">
             <a href="#cta" className="btn-primary">
               {heroT.heroDemo}

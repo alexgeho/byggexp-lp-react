@@ -2,14 +2,15 @@ export const heroTranslations = {
   ru: {
     heroPill: "Управление строительными проектами",
 
-    heroTitle:
-      "Автоматический учет рабочего времени и управление проектами",
+    heroTitle: "Автоматический учет рабочего времени и управление проектами",
 
-    heroTitleAccent:
-      "для строительных компаний",
+    heroTitleAccent: "для строительных компаний",
 
     heroSubtitle:
-      "Быстрое выставление счетов и зарплат, задачи с автонапоминаниями, контроль смен в режиме онлайн, планирование и многое другое …",
+      "Быстрое выставление счетов и зарплат, задачи с автонапоминаниями,  контроль смен в режиме онлайн, планирование. ",
+
+    heroSubtitleShort:
+      "Быстрое выставление счетов и зарплат, задачи с автонапоминаниями, ... ",
 
     heroDemo: "Записаться на демо",
     heroHow: "Как это работает",
@@ -22,14 +23,13 @@ export const heroTranslations = {
   en: {
     heroPill: "Construction Project Management",
 
-    heroTitle:
-      "Automated time tracking and project management",
+    heroTitle: "Automated time tracking and project management",
 
-    heroTitleAccent:
-      "for Construction Companies",
+    heroTitleAccent: "for Construction Companies",
 
     heroSubtitle:
-      "Faster invoicing and payroll, tasks with automatic reminders, real-time shift monitoring, planning, and much more…",
+      "Faster invoicing and payroll, tasks with automatic reminders real-time shift monitoring, planning. ",
+    heroSubtitleShort: "Faster invoicing and payroll, tasks with automatic reminders, ... ",
 
     heroDemo: "Book a Demo",
     heroHow: "How It Works",
@@ -42,15 +42,14 @@ export const heroTranslations = {
   sv: {
     heroPill: "System för hantering av byggprojekt",
 
-    heroTitle:
-      "Automatisk tidsrapportering och projekthantering",
+    heroTitle: "Automatisk tidsrapportering och projekthantering",
 
-    heroTitleAccent:
-      "för byggföretag",
+    heroTitleAccent: "för byggföretag",
 
     heroSubtitle:
-      "Snabbare fakturering och lönehantering, uppgifter med automatiska påminnelser, kontroll av arbetspass i realtid, planering och mycket mer…",
-
+      "Snabbare fakturering och lönehantering, automatiska påminnelser i uppgifter, kontroll av arbetspass i realtid, planering. ",
+    heroSubtitleShort:
+      "Snabbare fakturering och lönehantering, automatiska påminnelser ... ",
     heroDemo: "Boka demo",
     heroHow: "Hur det fungerar",
 
