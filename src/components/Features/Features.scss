@@ -15,7 +15,7 @@
   background: var(--white);
   border: 1px solid var(--line);
   border-radius: 32px;
-  padding: 24px;
+  padding: 20px;
   margin-bottom: 20px;
   box-shadow: 0 1px 0 rgba(15, 34, 54, 0.02);
   transition:
@@ -59,8 +59,8 @@
 @media (max-width: 900px) {
   .step {
     grid-template-columns: 1fr;
-    gap: 16px;
-    padding: 24px;
+    gap: 20px;
+    padding: 20px;
   }
   .step:nth-child(even) .step-visual {
     order: 0;
@@ -79,14 +79,14 @@
   font-weight: 600;
   letter-spacing: -0.015em;
   line-height: 1.15;
-  margin-bottom: 16px;
+  margin-bottom: 6px;
   color: var(--ink);
 }
 .step-text {
   color: var(--muted);
   font-size: 17px;
   line-height: 1.55;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 }
 .step-bullets {
   list-style: none;
@@ -167,10 +167,8 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
-
     height: auto;
     padding: 20px 0 0;
-
     overflow: hidden;
   }
 
