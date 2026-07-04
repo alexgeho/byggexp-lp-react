@@ -15,6 +15,7 @@ function FinalBenefits({ finalBenefitsT }: FinalBenefitsProps) {
         </div>
         
         <div className="finalBenefits-grid">
+          
           <div className="final-benefit-card">
             <div className="benefit-icon">
               <svg

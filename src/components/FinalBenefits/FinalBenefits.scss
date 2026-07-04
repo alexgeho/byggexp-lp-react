@@ -76,3 +76,12 @@
   font-size: 1.2rem;
   line-height: 1.5;
 }
+
+@media (max-width: 600px){
+.finalBenefits-grid {
+  display: flex;
+ flex-direction: column;
+  gap: 40px;
+  margin-top: 24px;
+}
+}
