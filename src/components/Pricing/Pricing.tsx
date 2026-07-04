@@ -112,6 +112,16 @@ function Pricing({ pricingT }: PricingProps) {
         </div>
 
         <div className="pricing-slider">
+          {/* BUTTON ARROW LEFT */}
+          <button
+            type="button"
+            className="pricing-arrow pricing-arrow-left"
+            onClick={showPreviousSlide}
+            disabled={activeSlide === 0}
+          >
+            ‹
+          </button>
+
           {/* PRICING OPTIONS */}
           <div
             className="pricingOptions"
@@ -448,18 +458,20 @@ function Pricing({ pricingT }: PricingProps) {
               <span className="pricing-trial">{pricingT.pricingTrial}</span>
             </div>
           </div>
+
+          {/* BUTTON ARROW RIGHT */}
+          <button
+            type="button"
+            className="pricing-arrow pricing-arrow-right"
+            onClick={showNextSlide}
+            disabled={activeSlide === 3}
+          >
+            ›
+          </button>
         </div>
         {/*  */}
         {/* Mobile controls */}
         <div className="pricing-controls">
-          <button
-            type="button"
-            className="pricing-arrow pricing-arrow-left"
-            onClick={showPreviousSlide}
-          >
-            ‹
-          </button>
-
           <div className="pricing-dots">
             {[0, 1, 2, 3].map((index) => (
               <span
@@ -469,14 +481,6 @@ function Pricing({ pricingT }: PricingProps) {
               />
             ))}
           </div>
-
-          <button
-            type="button"
-            className="pricing-arrow pricing-arrow-right"
-            onClick={showNextSlide}
-          >
-            ›
-          </button>
         </div>
         {/*  */}
       </div>

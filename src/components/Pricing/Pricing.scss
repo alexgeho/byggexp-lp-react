@@ -267,6 +267,12 @@
     right: 10px;
   }
 
+  .pricing-arrow:disabled {
+    opacity: 0.35;
+    cursor: default;
+    pointer-events: none;
+  }
+
   /* DOTS */
 
   .pricing-controls {
