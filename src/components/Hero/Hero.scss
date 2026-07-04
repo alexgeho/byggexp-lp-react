@@ -180,6 +180,14 @@
 
   .pill-mobile {
     display: inline-block;
+    margin-bottom: 20px;
+  }
+
+  .pill-dot-mobile {
+    color: var(--blue);
+    font-size: 10px;
+    line-height: 1;
+    margin-right: 8px;
   }
 
   .footer-desktop {
@@ -192,7 +200,7 @@
 
   .footer-mobile {
     display: block;
-    margin-top: 40px;
+    margin-top: 30px;
   }
 }
 .hero-phone {
@@ -227,11 +235,11 @@
     z-index: 1;
     display: grid;
     grid-template-columns: 1fr 1.6fr;
-    gap: 8px;
+    gap: 20px;
   }
 
   .hero h1 {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-weight: 600;
   }
 

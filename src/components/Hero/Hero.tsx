@@ -6,9 +6,9 @@ function Hero({ heroT }: HeroProps) {
   return (
     <section className="hero">
       <div className="container">
-        
+
         <span className="pill-mobile">
-          <span className="pill-dot"></span>
+          <span className="pill-dot-mobile">●</span>
           {heroT.heroPill}
         </span>
 
