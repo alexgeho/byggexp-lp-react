@@ -60,7 +60,7 @@
   .step {
     grid-template-columns: 1fr;
     gap: 16px;
-    padding: 20px;
+    padding: 24px;
   }
   .step:nth-child(even) .step-visual {
     order: 0;
@@ -68,16 +68,12 @@
 }
 
 .step-text-block {
-  padding: 28px 24px 28px 32px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-@media (max-width: 900px) {
-  .step-text-block {
-    padding: 16px 12px 24px;
-  }
-}
+
+
 .step h3 {
   font-size: clamp(26px, 2.6vw, 34px);
   font-weight: 600;
