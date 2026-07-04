@@ -37,37 +37,45 @@ function Benefits({ benefitsT }: BenefitsProps) {
             <div className="benefits-grid">
               {/* 1 CARD */}
               <div className="benefit-card">
-                <div className="benefit-icon">
-                  <img src={card1} alt="" />
+                <div className="benefit-head">
+                  <div className="benefit-icon">
+                    <img src={card1} alt="" />
+                  </div>
+                  <h3>{benefitsT.office.benefitsOfficeCard1Title}</h3>
                 </div>
-                <h3>{benefitsT.office.benefitsOfficeCard1Title}</h3>
                 <p>{benefitsT.office.benefitsOfficeCard1Text}</p>
               </div>
 
               {/* 2 CARD */}
               <div className="benefit-card">
-                <div className="benefit-icon">
-                  <img src={card2} alt="" />
+                <div className="benefit-head">
+                  <div className="benefit-icon">
+                    <img src={card2} alt="" />
+                  </div>
+                  <h3>{benefitsT.office.benefitsOfficeCard2Title}</h3>
                 </div>
-                <h3>{benefitsT.office.benefitsOfficeCard2Title}</h3>
                 <p>{benefitsT.office.benefitsOfficeCard2Text}</p>
               </div>
 
               {/* 3 CARD */}
               <div className="benefit-card">
-                <div className="benefit-icon">
-                  <img src={card3} alt="" />
+                <div className="benefit-head">
+                  <div className="benefit-icon">
+                    <img src={card3} alt="" />
+                  </div>
+                  <h3>{benefitsT.office.benefitsOfficeCard3Title}</h3>
                 </div>
-                <h3>{benefitsT.office.benefitsOfficeCard3Title}</h3>
                 <p>{benefitsT.office.benefitsOfficeCard3Text}</p>
               </div>
 
               {/* 4 CARD */}
               <div className="benefit-card">
-                <div className="benefit-icon">
-                  <img src={card4} alt="" />
+                <div className="benefit-head">
+                  <div className="benefit-icon">
+                    <img src={card4} alt="" />
+                  </div>
+                  <h3>{benefitsT.office.benefitsOfficeCard4Title}</h3>
                 </div>
-                <h3>{benefitsT.office.benefitsOfficeCard4Title}</h3>
                 <p>{benefitsT.office.benefitsOfficeCard4Text}</p>
               </div>
             </div>
@@ -86,45 +94,51 @@ function Benefits({ benefitsT }: BenefitsProps) {
             <div className="benefits-grid">
               {/* 5 CARD */}
               <div className="benefit-card">
-                <div className="benefit-icon-blue">
-                  <img src={card5} alt="" />
+                <div className="benefit-head">
+                  <div className="benefit-icon-blue">
+                    <img src={card5} alt="" />
+                  </div>
+                  <h3>{benefitsT.site.benefitsSiteCard1Title}</h3>
                 </div>
-                <h3>{benefitsT.site.benefitsSiteCard1Title}</h3>
                 <p>{benefitsT.site.benefitsSiteCard1Text}</p>
               </div>
 
               {/* 6 CARD */}
               <div className="benefit-card">
-                <div className="benefit-icon-blue">
-                  <img src={card6} alt="" />
+                <div className="benefit-head">
+                  <div className="benefit-icon-blue">
+                    <img src={card6} alt="" />
+                  </div>
+                  <h3>{benefitsT.site.benefitsSiteCard2Title}</h3>
                 </div>
-                <h3>{benefitsT.site.benefitsSiteCard2Title}</h3>
                 <p>{benefitsT.site.benefitsSiteCard2Text}</p>
               </div>
 
               {/* 7 CARD */}
               <div className="benefit-card">
-                <div className="benefit-icon-blue">
-                  <img src={card7} alt="" />
+                <div className="benefit-head">
+                  <div className="benefit-icon-blue">
+                    <img src={card7} alt="" />
+                  </div>
+                  <h3>{benefitsT.site.benefitsSiteCard3Title}</h3>
                 </div>
-                <h3>{benefitsT.site.benefitsSiteCard3Title}</h3>
                 <p>{benefitsT.site.benefitsSiteCard3Text}</p>
               </div>
 
               {/* 8 CARD */}
               <div className="benefit-card">
-                <div className="benefit-icon-blue">
-                  <img src={card8} alt="" />
-                </div>
+                <div className="benefit-head">
+                  <div className="benefit-icon-blue">
+                    <img src={card8} alt="" />
+                  </div>
 
-                <h3>{benefitsT.site.benefitsSiteCard4Title}</h3>
+                  <h3>{benefitsT.site.benefitsSiteCard4Title}</h3>
+                </div>
                 <p>{benefitsT.site.benefitsSiteCard4Text}</p>
               </div>
             </div>
           </div>
-          
         </div>
-
       </div>
     </section>
   );

@@ -110,7 +110,7 @@ export const benefitsTranslations = {
       benefitsOfficeCard2Text:
         "Färdiga timmar för löner och fakturor med ett klick.",
 
-      benefitsOfficeCard3Title: "Automatiska uppgiftspåminnelser",
+      benefitsOfficeCard3Title: "Automatiska påminnelser",
       benefitsOfficeCard3Text:
         "Ni behöver inte ringa och påminna medarbetare manuellt.",
 
