@@ -12,6 +12,9 @@ export const heroTranslations = {
     heroSubtitleShort:
       "Быстрое выставление счетов и зарплат, задачи с автонапоминаниями, ... ",
 
+    heroSubtitleBtnMore: "Еще ▼",
+    heroSubtitleBtnLess: "Меньше ▲",
+
     heroDemo: "Записаться на демо",
     heroHow: "Как это работает",
 
@@ -29,7 +32,11 @@ export const heroTranslations = {
 
     heroSubtitle:
       "Faster invoicing and payroll, tasks with automatic reminders real-time shift monitoring, planning. ",
-    heroSubtitleShort: "Faster invoicing and payroll, tasks with automatic reminders, ... ",
+    heroSubtitleShort:
+      "Faster invoicing and payroll, tasks with automatic reminders, ... ",
+
+    heroSubtitleBtnMore: "More ▼",
+    heroSubtitleBtnLess: "Less ▲",
 
     heroDemo: "Book a Demo",
     heroHow: "How It Works",
@@ -50,6 +57,10 @@ export const heroTranslations = {
       "Snabbare fakturering och lönehantering, automatiska påminnelser i uppgifter, kontroll av arbetspass i realtid, planering. ",
     heroSubtitleShort:
       "Snabbare fakturering och lönehantering, automatiska påminnelser ... ",
+
+    heroSubtitleBtnMore: "Mer ▼",
+    heroSubtitleBtnLess: "Mindre ▲",
+
     heroDemo: "Boka demo",
     heroHow: "Hur det fungerar",
 

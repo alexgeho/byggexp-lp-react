@@ -113,7 +113,7 @@ function Hero({ heroT }: HeroProps) {
               className="hero-sub-toggle"
               onClick={() => setWholeText(!wholeText)}
             >
-              {wholeText ? "Show less ▲" : "Read more ▼"}
+              {wholeText ? heroT.heroSubtitleBtnLess : heroT.heroSubtitleBtnMore}
             </button>
           </div>
           <div className="hero-ctas">
