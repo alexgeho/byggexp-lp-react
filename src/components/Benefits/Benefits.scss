@@ -104,7 +104,6 @@
 
 /* ============ ICONS ============ */
 
-
 .benefit-icon-blue {
   width: 52px;
   height: 52px;
@@ -149,7 +148,6 @@ benefit-card-team p {
   color: var(--white);
 }
 
-
 @media (max-width: 1150px) {
   .benefits-grid {
     display: grid;
@@ -190,6 +188,7 @@ benefit-card-team p {
 @media (max-width: 850px) {
   .benefitsBoth {
     display: flex;
+    justify-content: center;
     gap: 10px;
   }
 
@@ -223,6 +222,24 @@ benefit-card-team p {
   }
 }
 
+@media (max-width: 770px) {
+
+  .benefitsBoth{
+    gap: var(--gap-20);
+  }
+
+  .benefits-grid{
+     gap: var(--gap-20);
+  }
+  
+  .benefit-card,
+  .benefit-card-team {
+    height: 200px;
+    width: 280px;
+  }
+
+}
+
 @media (max-width: 600px) {
   .benefitsBoth {
     display: flex;
@@ -240,6 +257,3 @@ benefit-card-team p {
     min-height: 220px;
   }
 }
-
-
-
