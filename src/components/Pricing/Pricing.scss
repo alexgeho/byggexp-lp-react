@@ -3,8 +3,6 @@
   background: var(--bg);
 }
 
-
-
 .pricingOptions {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -57,12 +55,6 @@
 @media (max-width: 900px) {
   .pricingOptions {
     grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .pricingOptions {
-    grid-template-columns: 1fr;
   }
 }
 
@@ -196,4 +188,111 @@
   text-align: center;
   font-size: 14px;
   color: var(--muted);
+}
+
+.pricing-slider {
+  position: relative;
+}
+
+.pricing-controls {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .pricingOptions {
+    display: flex;
+    gap: 16px;
+
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+
+    padding-bottom: 10px;
+    scrollbar-width: none;
+  }
+
+  .pricingOptions::-webkit-scrollbar {
+    display: none;
+  }
+
+  .pricing-card {
+    flex: 0 0 88%;
+    width: auto;
+    margin: 0;
+    scroll-snap-align: start;
+  }
+
+  /* ARROWS */
+
+  .pricing-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.96);
+    color: var(--ink);
+
+    font-size: 28px;
+    line-height: 1;
+
+    cursor: pointer;
+    z-index: 20;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+
+    transition:
+      transform 0.2s,
+      box-shadow 0.2s;
+  }
+
+  .pricing-arrow:hover {
+    transform: translateY(-50%) scale(1.05);
+  }
+
+  .pricing-arrow-left {
+    left: 10px;
+  }
+
+  .pricing-arrow-right {
+    right: 10px;
+  }
+
+  /* DOTS */
+
+  .pricing-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
+  }
+
+  .pricing-dots {
+    display: flex;
+    gap: 10px;
+  }
+
+  .pricing-dots span {
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+
+    background: #d8e2ef;
+
+    transition: 0.25s;
+  }
+
+  .pricing-dots .active {
+    background: var(--blue);
+    transform: scale(1.3);
+  }
 }
