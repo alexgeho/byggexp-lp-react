@@ -229,7 +229,7 @@ benefit-card-team p {
   }
 
   .benefits-grid{
-     gap: var(--gap-20);
+     gap: var(--gap-1-L);
   }
   
   .benefit-card,
@@ -240,7 +240,7 @@ benefit-card-team p {
 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   .benefitsBoth {
     display: flex;
     flex-direction: column;
@@ -254,6 +254,7 @@ benefit-card-team p {
   .benefit-card,
   .benefit-card-team {
     width: 95%;
-    min-height: 220px;
+    max-height: 170px;
+  
   }
 }
