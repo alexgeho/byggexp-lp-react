@@ -154,12 +154,43 @@
   display: none;
 }
 
+.mobile-language {
+  display: none;
+}
+
 /* ============ MOBILE ============ */
 
 @media (max-width: 840px) {
+  .language-switcher {
+    display: none;
+  }
+
   .burger {
     display: block;
   }
+
+  /* MOBILE LANGUAGE */
+  .mobile-language {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  .mobile-language .language-selector {
+    width: 100%;
+    justify-content: flex-start;
+    padding: 0;
+    font-size: 1.1rem;
+  }
+
+  .mobile-language .language-dropdown {
+    position: static;
+    margin-top: 16px;
+    width: 100%;
+  }
+  /* MOBILE LANGUAGE END */
 
   .nav-right {
     gap: 20px;
@@ -170,23 +201,22 @@
   }
 
   .nav-links.open {
+    position: absolute;
+    top: calc(100%);
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    padding: 39px;
 
-    position: absolute;
-    top: calc(100% + 1px);
-    left: 0;
-
-    width: 100%;
+    width: calc(100%);
 
     background: var(--navy-900);
-    border-radius: 0 0 10px 10px;
+
     overflow: hidden;
-
-    z-index: 100;
-
     isolation: isolate;
+    z-index: 100;
   }
 
   .nav-links.open::before {
@@ -194,9 +224,9 @@
     position: absolute;
     inset: 0;
 
-    background: url("../../assets/glow/glow.svg") no-repeat center;
+    background: url("../../assets/glow/glow.svg") no-repeat;
     background-size: 900px;
-     background-position: center -120px;
+    background-position: center -140px;
 
     opacity: 0.7;
 
@@ -205,25 +235,29 @@
   }
 
   .nav-links.open a {
+    display: block;
+
     width: 100%;
 
-    padding: 18px 24px;
-
-    text-align: center;
+    color: var(--white);
     font-size: 1.1rem;
+    text-align: left;
 
     border-bottom: 1px solid rgba(255, 255, 255, 0.12);
   }
 
+  /* BUTTON */
   .nav-links.open .nav-cta {
-    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    margin: 20px 0;
+    width: 90%;
+    margin-top: 100px;
+    margin-bottom: 78px;
+    padding: 18px 28px;
 
     border: none;
-  }
-
-  .nav-links.open a:last-child {
-    border-bottom: none;
+    border-radius: 999px;
   }
 }

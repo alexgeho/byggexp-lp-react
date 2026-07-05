@@ -71,6 +71,35 @@ function Header({ headerT }: HeaderProps) {
             <a href="#pricing">{headerT.pricing}</a>
             <a href="#cta">{headerT.company}</a>
 
+            {/* MOBILET LANGUAGE */}
+            <div className="mobile-language">
+              <button
+                type="button"
+                className="language-selector"
+                onClick={() => setIsOpen(!isOpen)}
+              >
+                <img src={currentLanguage.flag} alt="" />
+                <span>{currentLanguage.label}</span>
+              </button>
+
+              {isOpen && (
+                <div className="language-dropdown">
+                  {Object.entries(languages).map(([code, language]) => (
+                    <button
+                      key={code}
+                      type="button"
+                      onClick={() => changeLanguage(code)}
+                    >
+                      <img src={language.flag} alt="" />
+                      <span>{language.label}</span>
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            {/* MOBILET LANGUAGE END*/}
+
             <a href="#cta" className="nav-cta">
               {headerT.demo}
             </a>
