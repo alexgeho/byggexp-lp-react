@@ -41,31 +41,33 @@ function Header({ headerT }: HeaderProps) {
         {/* NAV RIGHT */}
         <div className="nav-right">
           {/* LANGUAGE */}
-          <div className="language-switcher">
-            <button
-              type="button"
-              className="language-selector"
-              onClick={() => setIsOpen(!isOpen)}
-            >
-              <img src={currentLanguage.flag} alt="" />
-              <span>{currentLanguage.label}</span>
-            </button>
+          {!isMenuOpen && (
+            <div className="language-switcher">
+              <button
+                type="button"
+                className="language-selector"
+                onClick={() => setIsOpen(!isOpen)}
+              >
+                <img src={currentLanguage.flag} alt="" />
+                <span>{currentLanguage.label}</span>
+              </button>
 
-            {isOpen && (
-              <div className="language-dropdown">
-                {Object.entries(languages).map(([code, language]) => (
-                  <button
-                    key={code}
-                    type="button"
-                    onClick={() => changeLanguage(code)}
-                  >
-                    <img src={language.flag} alt="" />
-                    <span>{language.label}</span>
-                  </button>
-                ))}
-              </div>
-            )}
-          </div>
+              {isOpen && (
+                <div className="language-dropdown">
+                  {Object.entries(languages).map(([code, language]) => (
+                    <button
+                      key={code}
+                      type="button"
+                      onClick={() => changeLanguage(code)}
+                    >
+                      <img src={language.flag} alt="" />
+                      <span>{language.label}</span>
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
+          )}
 
           {/* NAV LINKS */}
           <div className={isMenuOpen ? "nav-links open" : "nav-links"}>

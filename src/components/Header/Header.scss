@@ -43,7 +43,7 @@
 .language-selector {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 10px;
 
   background: transparent;
   border: none;
@@ -161,9 +161,9 @@
 /* ============ MOBILE ============ */
 
 @media (max-width: 840px) {
-  .language-switcher {
+  /* .language-switcher {
     display: none;
-  }
+  } */
 
   .burger {
     display: block;
@@ -251,9 +251,7 @@
 
   .nav-links.open a {
     display: block;
-
     width: 100%;
-
     color: var(--white);
     font-size: 1.1rem;
     text-align: left;
