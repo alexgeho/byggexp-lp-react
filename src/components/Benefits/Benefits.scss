@@ -242,10 +242,13 @@ benefit-card-team p {
 
 @media (max-width: 650px) {
 
-.benefits-office { 
-  margin-bottom: 30px;
- }
+  .benefits-office {
+    margin-bottom: 0;
+  }
 
+  .benefits-office:first-child {
+    margin-bottom: 30px;
+  }
   .benefitsBoth {
     display: flex;
     flex-direction: column;
