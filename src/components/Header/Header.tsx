@@ -115,7 +115,11 @@ function Header({ headerT }: HeaderProps) {
           </div>
           {/* BURGER */}
           <button className="burger" id="burger" onClick={openMenu}>
-            <img src={isMenuOpen ? close : burger} alt="" />
+            <img
+              src={isMenuOpen ? close : burger}
+              alt=""
+              className={isMenuOpen ? "close-icon" : "burger-icon"}
+            />
           </button>
         </div>
       </nav>

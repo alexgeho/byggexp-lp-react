@@ -169,6 +169,19 @@
     display: block;
   }
 
+  /* BURGER */
+
+  .burger-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .close-icon {
+    width: 30px;
+    height: 30px;
+  }
+  /*  */
+
   /* MOBILE LANGUAGE */
   .mobile-language {
     position: relative;
@@ -230,7 +243,7 @@
     background-size: 900px;
     background-position: center -140px;
 
-    opacity: 0.7;
+    opacity: 1;
 
     pointer-events: none;
     z-index: -1;
@@ -244,7 +257,7 @@
     color: var(--white);
     font-size: 1.1rem;
     text-align: left;
-
+    padding-bottom: 14px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.12);
   }
 
