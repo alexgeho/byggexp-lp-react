@@ -1,6 +1,8 @@
 import "./Header.scss";
 import logo from "../../assets/header/logo.svg";
 import burger from "../../assets/header/burger.svg";
+import close from "../../assets/header/close.svg";
+import down from "../../assets/header/down.svg";
 import { useState } from "react";
 import { useNavigate, useParams, Link } from "react-router-dom";
 import { languages } from "../../locales/languages";
@@ -80,6 +82,12 @@ function Header({ headerT }: HeaderProps) {
               >
                 <img src={currentLanguage.flag} alt="" />
                 <span>{currentLanguage.label}</span>
+
+                <img
+                  src={down}
+                  alt=""
+                  className={isOpen ? "language-arrow open" : "language-arrow"}
+                />
               </button>
 
               {isOpen && (
@@ -97,16 +105,17 @@ function Header({ headerT }: HeaderProps) {
                 </div>
               )}
             </div>
-
             {/* MOBILET LANGUAGE END*/}
 
+            {/* CTA BTN */}
             <a href="#cta" className="nav-cta">
               {headerT.demo}
             </a>
+            {/* CTA BTN END*/}
           </div>
           {/* BURGER */}
           <button className="burger" id="burger" onClick={openMenu}>
-            <img src={burger} alt="" />
+            <img src={isMenuOpen ? close : burger} alt="" />
           </button>
         </div>
       </nav>
