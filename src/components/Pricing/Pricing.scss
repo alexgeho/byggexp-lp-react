@@ -37,7 +37,6 @@
   background-color: var(--white);
 }
 
-
 @media (max-width: 1200px) {
   .pricingOptions {
     grid-template-columns: repeat(3, 1fr);
@@ -52,14 +51,12 @@
 
 .pricing-card {
   width: 350px;
-  margin: 0 auto;
+
   background: var(--white);
   border-radius: 32px;
   padding: 18px;
   border: 1px solid var(--line);
-  box-shadow: 0 30px 80px -20px rgba(15, 34, 54, 0.12);
-  position: relative;
-  overflow: hidden;
+  box-shadow: 0 14px 32px rgba(15, 34, 54, 0.08);
 }
 
 .pricing-tag {
@@ -199,7 +196,7 @@
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
 
-    padding-bottom: 10px;
+    padding-bottom: 30px;
     scrollbar-width: none;
   }
 
