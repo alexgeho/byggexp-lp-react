@@ -8,7 +8,7 @@ export const pricingTranslations = {
 
     pricingTag: "Первый месяц бесплатно",
 
-    pricingPer: "SEK",
+    pricingPer: "/ месяц",
     pricingPer1: "Starter",
     pricingPer10: "Growth",
     pricingPer20: "Proffesional",
