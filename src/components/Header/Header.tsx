@@ -38,6 +38,7 @@ function Header({ headerT }: HeaderProps) {
 
         {/* NAV RIGHT */}
         <div className="nav-right">
+          {/* LANGUAGE */}
           <div className="language-switcher">
             <button
               type="button"
@@ -63,6 +64,7 @@ function Header({ headerT }: HeaderProps) {
               </div>
             )}
           </div>
+
           {/* NAV LINKS */}
           <div className={isMenuOpen ? "nav-links open" : "nav-links"}>
             <a href="#features">{headerT.how}</a>
@@ -73,7 +75,6 @@ function Header({ headerT }: HeaderProps) {
               {headerT.demo}
             </a>
           </div>
-
           {/* BURGER */}
           <button className="burger" id="burger" onClick={openMenu}>
             <img src={burger} alt="" />
