@@ -22,7 +22,7 @@ export const benefitsTranslations = {
 
       benefitsOfficeCard4Title: "Контроль объектов",
       benefitsOfficeCard4Text:
-        "Видно в реальном времени кто работает, где работает и кто отсутствует.",
+        "Видно в реальном времени кто работает, кто отсутствует и где.",
     },
 
     site: {

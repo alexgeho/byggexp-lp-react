@@ -144,7 +144,7 @@ benefit-card-team p {
   font-size: 1.1rem;
   line-height: 1.5;
   max-width: 740px;
-  margin: 30px;
+  margin-bottom: 30px;
   color: var(--white);
 }
 
@@ -241,6 +241,11 @@ benefit-card-team p {
 }
 
 @media (max-width: 650px) {
+
+.benefits-office { 
+  margin-bottom: 30px;
+ }
+
   .benefitsBoth {
     display: flex;
     flex-direction: column;
