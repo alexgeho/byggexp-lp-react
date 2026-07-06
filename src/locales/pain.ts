@@ -4,7 +4,7 @@ export const painTranslations = {
     painHeading:
       "Компании теряют деньги не из-за плохих работников, а потому что делают ",
 
-    painTitleAccent1: "вручную",
+    painTitleAccent1: "вручную ",
 
     painHeading2: "то, что успешные компании уже давно ",
 
