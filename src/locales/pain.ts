@@ -23,11 +23,11 @@ export const painTranslations = {
   en: {
     painTitle: "Root cause",
     painHeading:
-      "Companies lose money not because of bad workers, but because they still do ",
+      "Companies lose money because they still do ",
 
     painTitleAccent1: "manually",
 
-    painHeading2: "what successful companies have already ",
+    painHeading2: " what successful have already ",
 
     painTitleAccent2: "automated",
     painItem1:
@@ -46,11 +46,11 @@ export const painTranslations = {
   sv: {
     painTitle: "Grundproblemet",
     painHeading:
-      "Företag förlorar pengar inte på grund av dåliga medarbetare, utan för att de gör ",
+      "Företag förlorar pengar på grund av att de gör ",
 
     painTitleAccent1: "manuellt",
 
-    painHeading2: " det som framgångsrika företag redan har ",
+    painHeading2: " det som framgångsrika redan har ",
 
     painTitleAccent2: "automatiserat",
 
