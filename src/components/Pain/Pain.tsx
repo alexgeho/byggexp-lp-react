@@ -45,9 +45,9 @@ function Pain({ painT }: PainProps) {
           </div>
         </div>
 
-        <div className="pain-conclusion">
+       {/*  <div className="pain-conclusion">
           <strong>{painT.painResult}</strong> {painT.painResultText}
-        </div>
+        </div> */}
       </div>
     </section>
   );

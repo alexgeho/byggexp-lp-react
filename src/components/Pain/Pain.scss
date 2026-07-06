@@ -73,7 +73,7 @@
 .pain-item {
   display: flex;
   gap: 14px;
-  align-items: flex-start;
+  align-items: center;
   font-size: 18px;
   color: var(--ink);
 }
@@ -83,7 +83,6 @@
   width: 24px;
   height: 2px;
   background: var(--danger);
-  margin-top: 14px;
 }
 
 .pain-conclusion {
@@ -133,6 +132,8 @@
 
   .pain-item {
     font-size: 0.9rem;
+    display: flex;
+    align-items: center;
   }
 
   .dash {
@@ -140,6 +141,5 @@
     width: 14px;
     height: 2px;
     background: var(--danger);
-    margin-top: 14px;
   }
 }
