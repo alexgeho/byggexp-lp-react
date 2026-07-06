@@ -1,6 +1,6 @@
 export const featuresTranslations1_3 = {
   ru: {
-    featuresTitle: "Как это выглядит",
+    featuresTitle: "Как это работает",
 
     featuresHeading1: "9 инструмента, которые",
     featuresHeadingAccent: "закрывают 60%",
@@ -38,7 +38,7 @@ export const featuresTranslations1_3 = {
   },
 
   en: {
-    featuresTitle: "features It Works",
+    featuresTitle: "How It Works",
 
     featuresHeading1: "9 tools that",
     featuresHeadingAccent: "eliminate 60%",
