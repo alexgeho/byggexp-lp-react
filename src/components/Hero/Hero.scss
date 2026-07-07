@@ -327,6 +327,11 @@
 
   /*  */
 
+  .footer-desktop .hero-ctas {
+  display: flex;
+  justify-content: center;
+  }
+
   .footer-mobile .hero-sub, 
   .footer-mobile  .hero-ctas {
     display: none;
