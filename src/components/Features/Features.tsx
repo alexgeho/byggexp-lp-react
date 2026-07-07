@@ -1,13 +1,13 @@
 import "./Features.scss";
-import shiftsExport from "../../assets/features/shiftsExport.png";
-import tasks from "../../assets/features/tasks.png";
-import live from "../../assets/features/live.png";
-import photo from "../../assets/features/photo.png";
-import planing from "../../assets/features/planing.png";
-import tools from "../../assets/features/tools.png";
-import offert from "../../assets/features/offert.png";
-import invoice from "../../assets/features/invoice.png";
-import project from "../../assets/features/project.png";
+import shiftsExport from "../../assets/features/shiftsExport.webp";
+import tasks from "../../assets/features/tasks.webp";
+import live from "../../assets/features/live.webp";
+import photo from "../../assets/features/photo.webp";
+import planing from "../../assets/features/planing.webp";
+import tools from "../../assets/features/tools.webp";
+import offert from "../../assets/features/offert.webp";
+import invoice from "../../assets/features/invoice.webp";
+import project from "../../assets/features/project.webp";
 
 import skull from "../../assets/emoji-skull.gif";
 import type { FeaturesProps } from "../../types/features";

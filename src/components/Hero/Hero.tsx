@@ -1,5 +1,5 @@
 import "./Hero.scss";
-import phone from "../../assets/hero/phone-3d.png";
+import phone from "../../assets/hero/phone-3d.webp";
 import type { HeroProps } from "../../types/hero";
 import { useState } from "react";
 
