@@ -15,10 +15,10 @@ export const heroTranslations = {
     heroSubtitleBtnMore: "Еще ▼",
     heroSubtitleBtnLess: "Меньше ▲",
 
-    heroDemo: "Записаться на демо",
+    heroDemo: "Запись на демо",
     heroHow: "Как это работает",
 
-    heroFeature1: "Первый месяц бесплатно",
+    heroFeature1: "14 дней на тест",
     heroFeature2: "Запуск за 15 минут",
     heroFeature3: "Без подписки",
   },

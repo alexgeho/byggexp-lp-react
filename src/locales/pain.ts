@@ -6,7 +6,7 @@ export const painTranslations = {
 
     painTitleAccent1: "вручную ",
 
-    painHeading2: "то, что успешные уже давно ",
+    painHeading2: "то, что успешные давно ",
 
     painTitleAccent2: "автоматизировали",
     painItem1:

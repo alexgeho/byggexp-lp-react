@@ -9,6 +9,7 @@ function Hero({ heroT }: HeroProps) {
   return (
     <section className="hero">
       <div className="container">
+        {/* PILL MOBILE */}
         <span className="pill-mobile">
           <span className="pill-dot-mobile">●</span>
           {heroT.heroPill}
@@ -17,34 +18,41 @@ function Hero({ heroT }: HeroProps) {
         <div className="hero-inner">
           {/* HERO CONTENT */}
           <div className="hero-content">
+            {/* PILL-DESKTOP */}
             <span className="pill-desktop">
               <span className="pill-dot"></span>
               {heroT.heroPill}
             </span>
 
+            {/* TITLE */}
             <h1>
               {heroT.heroTitle}
               <em> {heroT.heroTitleAccent}</em>
             </h1>
 
-            <div className="footer-desktop ">
-              {" "}
-              <p className="hero-sub">{heroT.heroSubtitle}</p>
+            {/* FOOTER - DESKTOP */}
+            <div className="footer-desktop">
+              {/* SUB */}
+              <div className="hero-sub">
+                <span>
+                  {wholeText ? heroT.heroSubtitle : heroT.heroSubtitleShort}
+                </span>
+
+                <button
+                  type="button"
+                  className="hero-sub-toggle"
+                  onClick={() => setWholeText(!wholeText)}
+                >
+                  {wholeText
+                    ? heroT.heroSubtitleBtnLess
+                    : heroT.heroSubtitleBtnMore}
+                </button>
+              </div>
+
+              {/* CTAs */}
               <div className="hero-ctas">
                 <a href="#cta" className="btn-primary">
                   {heroT.heroDemo}
-                  <svg
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path d="M5 12h14M13 5l7 7-7 7"></path>
-                  </svg>
                 </a>
                 <a href="#features" className="btn-ghost">
                   {heroT.heroHow}
@@ -101,6 +109,7 @@ function Hero({ heroT }: HeroProps) {
           </div>
         </div>
 
+        {/* FOOTER - MOBILE */}
         <div className="footer-mobile">
           {" "}
           <div className="hero-sub">
@@ -113,24 +122,14 @@ function Hero({ heroT }: HeroProps) {
               className="hero-sub-toggle"
               onClick={() => setWholeText(!wholeText)}
             >
-              {wholeText ? heroT.heroSubtitleBtnLess : heroT.heroSubtitleBtnMore}
+              {wholeText
+                ? heroT.heroSubtitleBtnLess
+                : heroT.heroSubtitleBtnMore}
             </button>
           </div>
           <div className="hero-ctas">
             <a href="#cta" className="btn-primary">
               {heroT.heroDemo}
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="M5 12h14M13 5l7 7-7 7"></path>
-              </svg>
             </a>
             <a href="#features" className="btn-ghost">
               {heroT.heroHow}
