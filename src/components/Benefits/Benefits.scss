@@ -104,6 +104,7 @@
 
 /* ============ ICONS ============ */
 
+.benefit-icon,
 .benefit-icon-blue {
   width: 52px;
   height: 52px;
@@ -115,8 +116,8 @@
   justify-content: center;
   margin-bottom: 24px;
 }
-
-.benefit-icon-blue svg {
+.benefit-icon img,
+.benefit-icon-blue img {
   width: 24px;
   height: 24px;
 }
@@ -124,7 +125,7 @@
 /* ============ TYPOGRAPHY ============ */
 
 .benefit-card p,
-benefit-card-team p {
+.benefit-card-team p {
   font-size: 16px;
   line-height: 1.5;
   color: #ffffff99;
@@ -147,6 +148,17 @@ benefit-card-team p {
   margin-bottom: 30px;
   color: var(--white);
 }
+
+  .benefit-head {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .benefit-icon,
+  .benefit-icon-blue {
+    flex-shrink: 0;
+  }
 
 @media (max-width: 1150px) {
   .benefits-grid {
@@ -178,11 +190,7 @@ benefit-card-team p {
     width: 400px;
   }
 
-  .benefit-head {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-  }
+
 }
 
 @media (max-width: 850px) {
@@ -223,25 +231,22 @@ benefit-card-team p {
 }
 
 @media (max-width: 770px) {
-
-  .benefitsBoth{
+  .benefitsBoth {
     gap: var(--gap-20);
   }
 
-  .benefits-grid{
-     gap: var(--gap-1-L);
+  .benefits-grid {
+    gap: var(--gap-1-L);
   }
-  
+
   .benefit-card,
   .benefit-card-team {
     height: 200px;
     width: 280px;
   }
-
 }
 
 @media (max-width: 650px) {
-
   .benefits-office {
     margin-bottom: 0;
   }
@@ -262,7 +267,6 @@ benefit-card-team p {
   .benefit-card,
   .benefit-card-team {
     width: 95%;
-    max-height: 170px;
-  
+    max-height: 180px;
   }
 }

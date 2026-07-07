@@ -16,7 +16,7 @@ export const benefitsTranslations = {
       benefitsOfficeCard2Title: "Экспорт в Excel",
       benefitsOfficeCard2Text: "Готовые часы для зарплат и счетов в один клик.",
 
-      benefitsOfficeCard3Title: "Автонапоминания по задачам",
+      benefitsOfficeCard3Title: "Автонапоминания",
       benefitsOfficeCard3Text:
         "Не нужно звонить и напоминать сотрудникам вручную.",
 
@@ -40,7 +40,7 @@ export const benefitsTranslations = {
       benefitsSiteCard3Text:
         "Фотографии и документы привязываются к смене и проекту.",
 
-      benefitsSiteCard4Title: "Мгновенные уведомления",
+      benefitsSiteCard4Title: "Уведомления",
       benefitsSiteCard4Text:
         "Все участники проекта получают уведомления одновременно.",
     },
