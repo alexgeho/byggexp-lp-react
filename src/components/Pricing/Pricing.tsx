@@ -79,7 +79,7 @@ function Pricing({ pricingT }: PricingProps) {
   }
 
   function priceDeducter(price: number) {
-    return !isYearly ? price : price * 0.9;
+    return (!isYearly ? price : price * 0.9).toFixed(0);
   }
 
   return (
@@ -135,7 +135,7 @@ function Pricing({ pricingT }: PricingProps) {
               </span>
 
               <div className="pricing-price">
-                <span className="num">{priceDeducter(basePrice50)} SEK</span>
+                <span className="num">{priceDeducter(basePrice50)}</span>
 
                 <span className="per">{pricingT.pricingPer}</span>
               </div>
@@ -218,7 +218,7 @@ function Pricing({ pricingT }: PricingProps) {
               </span>
 
               <div className="pricing-price">
-                <span className="num">{priceDeducter(basePrice90)} SEK</span>
+                <span className="num">{priceDeducter(basePrice90)}</span>
 
                 <span className="per">{pricingT.pricingPer}</span>
               </div>
@@ -301,7 +301,7 @@ function Pricing({ pricingT }: PricingProps) {
               </span>
 
               <div className="pricing-price">
-                <span className="num">{priceDeducter(basePrice180)} SEK</span>
+                <span className="num">{priceDeducter(basePrice180)}</span>
 
                 <span className="per">{pricingT.pricingPer}</span>
               </div>

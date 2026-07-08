@@ -8,7 +8,7 @@ export const pricingTranslations = {
 
     pricingTag: "Первый месяц бесплатно",
 
-    pricingPer: "/ месяц",
+    pricingPer: "SEK / месяц",
     pricingPer1: "Starter",
     pricingPer10: "Growth",
     pricingPer20: "Proffesional",
@@ -29,9 +29,9 @@ export const pricingTranslations = {
     pricingItem3: "Без подписки",
     pricingItem4: "Мобильное приложение + админ-панель",
 
-    pricingButton: "Попробовать бесплатно",
+    pricingButton: "Записаться на демо",
 
-    pricingTrial: "Без карты. Запуск занимает 15 минут.",
+    pricingTrial: "Запуск занимает 5 минут.",
   },
 
   en: {
@@ -42,7 +42,7 @@ export const pricingTranslations = {
 
     pricingTag: "First Month Free",
 
-    pricingPer: "/ month",
+    pricingPer: "SEK / month",
     pricingPer1: "Starter",
     pricingPer10: "Growth",
     pricingPer20: "Proffesional",
@@ -65,7 +65,7 @@ export const pricingTranslations = {
 
     pricingButton: "Try for Free",
 
-    pricingTrial: "No credit card required. Setup takes 15 minutes.",
+    pricingTrial: "Setup takes 5 minutes.",
   },
 
   sv: {
@@ -77,7 +77,7 @@ export const pricingTranslations = {
 
     pricingTag: "Första månaden gratis",
 
-    pricingPer: "/ månad",
+    pricingPer: "SEK / månad",
     pricingPer1: "Start",
     pricingPer10: "Tillväxt",
     pricingPer20: "Professionell",
@@ -100,6 +100,6 @@ export const pricingTranslations = {
 
     pricingButton: "Prova gratis",
 
-    pricingTrial: "Kom igång på 15 minuter.",
+    pricingTrial: "Kom igång på 5 minuter.",
   },
 } as const;
