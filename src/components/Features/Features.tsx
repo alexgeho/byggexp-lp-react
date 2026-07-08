@@ -112,6 +112,13 @@ function Features({ featuresT1_3, featuresT4_6, featuresT7_9 }: FeaturesProps) {
               </li>
 
               <li>
+                <span className="number">3</span>
+                {featuresT1_3.featuresCard3Step3}
+              </li>
+
+
+              {/* SKULL */}
+              {/* <li>
                 <span className="check">
                   <svg viewBox="0 0 14 10" fill="none">
                     <path
@@ -127,7 +134,7 @@ function Features({ featuresT1_3, featuresT4_6, featuresT7_9 }: FeaturesProps) {
                 {featuresT1_3.featuresCard3Step3}
 
                 <img src={skull} alt="" className="inline-skull" />
-              </li>
+              </li> */}
             </ul>
           </div>
 

@@ -48,13 +48,13 @@
   font-weight: 500;
 }
 
-.inline-skull {
+/* .inline-skull {
   width: 40px;
   height: 40px;
   margin-left: -8px;
   position: relative;
   top: -14px;
-}
+} */
 
 @media (max-width: 900px) {
   .step {
@@ -167,9 +167,18 @@
   }
 
   .step-bullets {
-     text-align: start;
+    text-align: start;
     align-self: center;
-    max-width: 260px;
+  }
+
+  .step-bullets .number {
+    font-size: 0.8rem;
+    width: 20px;
+    height: 20px;
+  }
+
+  .step-bullets li {
+    display: flex;
   }
 
   .step-visual {

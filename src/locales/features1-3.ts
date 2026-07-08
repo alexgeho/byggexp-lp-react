@@ -86,23 +86,23 @@ export const featuresTranslations1_3 = {
 
     featuresCard1Title: "Automatisk tidsrapportering och Excel-export",
     featuresCard1Text:
-      "Medarbetaren väljer projekt och trycker på Start. ByggExp registrerar arbetstiden automatiskt och kontrollerar via GPS att personen befinner sig på arbetsplatsen.",
+      "Medarbetaren väljer projekt. ByggExp registrerar arbetstiden automatiskt och kontrollerar via GPS att personen befinner sig på arbetsplatsen.",
 
-    featuresCard1Step1: "Skapa ett projekt och tilldela medarbetare",
-    featuresCard1Step2: "Medarbetaren startar sitt arbetspass med ett klick",
+    featuresCard1Step1: "Arbetare kommer till plats",
+    featuresCard1Step2: "GPS startar pass automatiskt",
     featuresCard1Step3:
-      "Exportera färdiga Excel-rapporter med några få klick",
+      "Tid finns i systemet",
 
     featuresCard2Title: "Uppgifter med automatisk uppföljning",
     featuresCard2Text:
       "Uppgifter kan tilldelas hela projektet, utvalda medarbetare eller en enskild person. Om uppgiften inte slutförs skickar appen automatiskt påminnelser enligt det intervall du väljer.",
 
     featuresCard2Step1:
-      "Öppna projektet och klicka på Skapa uppgift",
+      "Klicka på Skapa uppgift",
     featuresCard2Step2:
-      "Lägg till mottagare, deadline och påminnelseintervall",
+      "Lägg till mottagare",
     featuresCard2Step3:
-      "Påminnelserna stängs av när uppgiften är slutförd",
+      "Sätt deadline och påminnelse",
 
     featuresCard3Title: "Live-översikt över arbetslagen",
     featuresCard3Text:
