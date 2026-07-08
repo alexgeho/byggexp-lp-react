@@ -9,7 +9,6 @@ import offert from "../../assets/features/offert.webp";
 import invoice from "../../assets/features/invoice.webp";
 import project from "../../assets/features/project.webp";
 
-import skull from "../../assets/emoji-skull.gif";
 import type { FeaturesProps } from "../../types/features";
 
 function Features({ featuresT1_3, featuresT4_6, featuresT7_9 }: FeaturesProps) {
@@ -259,21 +258,12 @@ function Features({ featuresT1_3, featuresT4_6, featuresT7_9 }: FeaturesProps) {
                 {featuresT7_9.featuresCard7Step2}
               </li>
 
-              <li>
-                <span className="check">
-                  <svg viewBox="0 0 14 10" fill="none">
-                    <path
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="m1 5 4 4 8-8"
-                    />
-                  </svg>
-                </span>
-
+               <li>
+                <span className="number">3</span>
                 {featuresT7_9.featuresCard7Step3}
               </li>
+
+           
             </ul>
           </div>
 

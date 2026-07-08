@@ -68,7 +68,7 @@ export const featuresTranslations7_9 = {
       "Foton, ritningar och dokument kopplas alltid till rätt projekt. All information finns samlad på ett ställe och är tillgänglig för hela teamet.",
     featuresCard9Step1: "Ladda upp dokument till projektet",
     featuresCard9Step2:
-      "Lägg till foton och ritningar direkt från arbetspasset",
+      "Lägg till foton från arbetsplats",
     featuresCard9Step3: "Hitta allt på ett ställe",
   },
 } as const;

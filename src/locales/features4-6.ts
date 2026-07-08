@@ -57,7 +57,7 @@ export const featuresTranslations4_6 = {
       "Varje bild kopplas automatiskt till arbetspasset, projektet, tidpunkten och GPS-positionen. Du slipper leta efter vem som tog bilden, var den togs och när det skedde.",
 
     featuresCard4Step1: "Ta bilder direkt i appen",
-    featuresCard4Step2: "Bilderna kopplas automatiskt till arbetspasset och projektet",
+    featuresCard4Step2: "Bilderna kopplas till arbetspasset",
     featuresCard4Step3: "Hela historiken finns alltid tillgänglig",
 
     featuresCard5Title: "Projekt- och personalplanering",
@@ -66,14 +66,14 @@ export const featuresTranslations4_6 = {
 
     featuresCard5Step1: "Skapa ett projekt och ange tidsplan",
     featuresCard5Step2: "Tilldela medarbetare till projektet",
-    featuresCard5Step3: "Få kontroll över företagets beläggning",
+    featuresCard5Step3: "Få kontroll över beläggning",
 
     featuresCard6Title: "Hantering av verktyg och utrustning",
     featuresCard6Text:
       "Koppla verktyg och utrustning till projekt eller medarbetare. Se alltid var utrustningen finns och vem som ansvarar för den.",
 
     featuresCard6Step1: "Lägg till verktyg och utrustning",
-    featuresCard6Step2: "Koppla dem till ett projekt eller en medarbetare",
+    featuresCard6Step2: "Koppla till projekt eller arbetare",
     featuresCard6Step3: "Följ plats och ansvar",
   },
 } as const;
