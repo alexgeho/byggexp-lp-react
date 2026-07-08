@@ -68,22 +68,22 @@ function Features({ featuresT1_3, featuresT4_6, featuresT7_9 }: FeaturesProps) {
 
             <p className="step-text">{featuresT1_3.featuresCard2Text}</p>
 
-            <ul className="step-bullets">
-              <li>
-                <span className="number">1</span>
-                {featuresT1_3.featuresCard2Step1}
-              </li>
+              <ul className="step-bullets">
+                <li>
+                  <span className="number">1</span>
+                  {featuresT1_3.featuresCard2Step1}
+                </li>
 
-              <li>
-                <span className="number">2</span>
-                {featuresT1_3.featuresCard2Step2}
-              </li>
+                <li>
+                  <span className="number">2</span>
+                  {featuresT1_3.featuresCard2Step2}
+                </li>
 
-              <li>
-                <span className="number">3</span>
-                {featuresT1_3.featuresCard2Step3}
-              </li>
-            </ul>
+                <li>
+                  <span className="number">3</span>
+                  {featuresT1_3.featuresCard2Step3}
+                </li>
+              </ul>
           </div>
 
           <div className="step-visual">
