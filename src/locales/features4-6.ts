@@ -54,7 +54,7 @@ export const featuresTranslations4_6 = {
   sv: {
     featuresCard4Title: "Fotodokumentation kopplad till arbetspass",
     featuresCard4Text:
-      "Varje bild kopplas automatiskt till arbetspasset, projektet, tidpunkten och GPS-positionen. Du slipper leta efter vem som tog bilden, var den togs och när det skedde.",
+      "Varje bild kopplas automatiskt till arbetspasset, projektet, tidpunkten, person och GPS.",
 
     featuresCard4Step1: "Ta bilder direkt i appen",
     featuresCard4Step2: "Bilderna kopplas till arbetspasset",

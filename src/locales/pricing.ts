@@ -63,7 +63,7 @@ export const pricingTranslations = {
     pricingItem3: "No subscription",
     pricingItem4: "Mobile app + Admin Panel",
 
-    pricingButton: "Try for Free",
+    pricingButton: "Book a demo",
 
     pricingTrial: "Setup takes 5 minutes.",
   },
@@ -98,7 +98,7 @@ export const pricingTranslations = {
     pricingItem3: "Ingen bindningstid",
     pricingItem4: "Mobilapp + Adminpanel",
 
-    pricingButton: "Prova gratis",
+    pricingButton: "Boka demo",
 
     pricingTrial: "Kom igång på 5 minuter.",
   },
