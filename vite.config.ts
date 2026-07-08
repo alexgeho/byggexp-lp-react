@@ -1,7 +1,9 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-export default defineConfig({
+// base через mode: при `vite build` mode всегда "production",
+// поэтому пути ассетов на GitHub Pages не слетают.
+export default defineConfig(({ mode }) => ({
   plugins: [react()],
-  base: "/",
-});
+  base: mode === "production" ? "/byggexp-lp-react/" : "/",
+}));
