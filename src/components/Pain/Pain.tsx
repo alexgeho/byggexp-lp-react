@@ -5,15 +5,14 @@ function Pain({ painT }: PainProps) {
   return (
     <section className="pain">
       <div className="container">
-        
         <div className="pain-top">
+          <span className="eyebrowpain">{painT.painTitle}</span>
+
           <div className="stat-big">
             80<span>%</span>
           </div>
 
           <div className="pain-header">
-            <span className="eyebrowpain">{painT.painTitle}</span>
-
             <h2>
               {painT.painHeading}
               <em>{painT.painTitleAccent1}</em>
@@ -45,7 +44,7 @@ function Pain({ painT }: PainProps) {
           </div>
         </div>
 
-       {/*  <div className="pain-conclusion">
+        {/*  <div className="pain-conclusion">
           <strong>{painT.painResult}</strong> {painT.painResultText}
         </div> */}
       </div>
