@@ -83,7 +83,7 @@
 }
 .step-text {
   color: var(--muted);
-  font-size: 1rem;
+  font-size: var(--1400P);
   line-height: 1.55;
   margin-bottom: 20px;
 }
@@ -97,8 +97,8 @@
   display: flex;
   gap: 12px;
   align-items: flex-start;
-  font-size: 1rem;
-  color: var(--ink-2);
+  font-size: var(--1400P);
+  color: var(--muted);
 }
 .step-bullets .check {
   flex-shrink: 0;
