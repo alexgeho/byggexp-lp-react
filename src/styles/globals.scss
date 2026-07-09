@@ -33,6 +33,8 @@
   --fs-h3: clamp(1.5rem, 2.2vw, 2.25rem); // 24px → 36px
   --h-gap: 14px;
   --h-MB: 48px;
+  --h-MB2: 96px;
+
 
   /* Body */
   --fs-body-lg: 1.25rem; // 20px
@@ -55,7 +57,7 @@
   text-align: center;
   max-width: 900px;
   margin: 0 auto;
-  margin-bottom: var(--h-MB);
+  margin-bottom: var(--h-MB2);
 
   .eyebrow {
     display: inline-block;
