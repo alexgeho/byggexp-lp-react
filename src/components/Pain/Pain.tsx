@@ -6,13 +6,15 @@ function Pain({ painT }: PainProps) {
     <section className="pain">
       <div className="container">
         <div className="pain-top">
-          <span className="eyebrowpain">{painT.painTitle}</span>
+
+          <span className="eyebrowpain-mobile">{painT.painTitle}</span>
 
           <div className="stat-big">
             80<span>%</span>
           </div>
 
           <div className="pain-header">
+            <span className="eyebrowpain-desktop">{painT.painTitle}</span>
             <h2>
               {painT.painHeading}
               <em>{painT.painTitleAccent1}</em>

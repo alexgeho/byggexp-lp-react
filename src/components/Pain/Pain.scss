@@ -25,7 +25,7 @@
   justify-content: center;
 }
 
-.eyebrowpain {
+.eyebrowpain-desktop {
   color: var(--danger);
   font-size: 1rem;
   font-weight: 600;
@@ -111,14 +111,15 @@
     justify-content: center;
   }
 
-  .eyebrowpain {
+  .eyebrowpain-desktop {
     font-size: 1rem;
     font-style: normal;
   }
 
   .stat-big {
-    font-size: 5rem;
+    font-size: 8rem;
     padding: 1px;
+    justify-content: center;
   }
 
   .pain-list {
@@ -144,6 +145,9 @@
     height: 2px;
     background: var(--danger);
   }
+    .eyebrowpain-mobile {
+      display: none;
+    }
 }
 
 @media (max-width: 560px) {
@@ -153,19 +157,32 @@
     gap: 0px;
   }
 
+  .eyebrowpain-desktop {
+    display: none;
+  }
+
+  .eyebrowpain-mobile {
+    color: var(--danger);
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
   .stat-big {
     font-size: 9rem;
     padding: 1px;
   }
 
   .pain-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-   .pain-header h2 {
+  .pain-header h2 {
     font-size: 1.4rem;
   }
 
