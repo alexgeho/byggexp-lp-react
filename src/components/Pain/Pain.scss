@@ -33,6 +33,10 @@
   letter-spacing: 0.08em;
 }
 
+.eyebrowpain-mobile {
+  display: none;
+}
+
 .stat-big {
   display: flex;
   align-self: center;
@@ -100,6 +104,8 @@
 .pain-conclusion strong {
   color: #e5556a;
   font-weight: 600;
+
+  
 }
 
 @media (max-width: 900px) {
@@ -145,9 +151,9 @@
     height: 2px;
     background: var(--danger);
   }
-    .eyebrowpain-mobile {
-      display: none;
-    }
+  .eyebrowpain-mobile {
+    display: none;
+  }
 }
 
 @media (max-width: 560px) {
@@ -173,6 +179,10 @@
   .stat-big {
     font-size: 9rem;
     padding: 1px;
+  }
+
+  .stat-big span {
+    padding: 3px;
   }
 
   .pain-header {

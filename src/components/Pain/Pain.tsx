@@ -5,6 +5,7 @@ function Pain({ painT }: PainProps) {
   return (
     <section className="pain">
       <div className="container">
+        
         <div className="pain-top">
 
           <span className="eyebrowpain-mobile">{painT.painTitle}</span>
