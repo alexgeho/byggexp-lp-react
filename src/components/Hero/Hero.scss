@@ -63,7 +63,7 @@
 }
 
 .hero h1 {
-  font-size: clamp(20px, 15.6vw, 43px);
+  font-size: clamp(20px, 4vw, 43px);
   line-height: 1.02;
   font-weight: 600;
   letter-spacing: -0.025em;
@@ -75,7 +75,7 @@
   font-style: normal;
 }
 .hero-sub {
-  font-size: clamp(16px, 5.6vw, 24px);
+  font-size: clamp(16px, 2vw, 24px);
   line-height: 1.45;
   color: var(--muted-2);
   max-width: 520px;
@@ -166,47 +166,27 @@
     padding-top: 16px;
   }
 
-  .pill-mobile {
-    display: flex;
-    margin: 0 auto;
-    width: fit-content;
-    align-items: center;
-    gap: 0px;
-    padding: 8px 10px;
-    background: rgba(35, 148, 255, 0.14);
-    border: 1px solid rgba(35, 148, 255, 0.32);
-    border-radius: 999px;
-    font-size: 0.7rem;
-    font-weight: 500;
-    color: #9bd0ff;
-  }
-
-  .pill-dot-mobile {
-    color: var(--blue);
-    font-size: 10px;
-    line-height: 1;
-    margin-right: 8px;
-  }
-
-/*   .footer-desktop {
+  /*    .footer-desktop {
     display: none;
-  } */
+  }  */
 
   .footer-desktop .hero-ctas,
-  .footer-desktop .hero-meta{
+  .footer-desktop .hero-meta {
     display: none;
   }
 
-  .pill-desktop {
+  .footer-mobile .hero-sub {
     display: none;
   }
 
-/*   .footer-mobile {
-    display: block;
+  .footer-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 30px;
-  } */
+  }
 
-    .hero-sub-toggle {
+  .hero-sub-toggle {
     background: none;
     border: none;
     padding: 0;
@@ -241,6 +221,32 @@
 @media (max-width: 560px) {
   .hero {
     padding-top: 30px;
+  }
+
+  .pill-desktop {
+    display: none;
+  }
+
+  .pill-mobile {
+    display: flex;
+    margin: 0 auto;
+    width: fit-content;
+    align-items: center;
+    gap: 0px;
+    padding: 8px 10px;
+    background: rgba(35, 148, 255, 0.14);
+    border: 1px solid rgba(35, 148, 255, 0.32);
+    border-radius: 999px;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: #9bd0ff;
+  }
+
+  .pill-dot-mobile {
+    color: var(--blue);
+    font-size: 10px;
+    line-height: 1;
+    margin-right: 8px;
   }
 
   .footer-desktop .hero-meta {
@@ -284,8 +290,6 @@
   .footer-desktop {
     display: block;
   }
-
-
 
   .hero-sub {
     font-size: clamp(16px, 3.6vw, 24px);
@@ -335,12 +339,12 @@
   /*  */
 
   .footer-desktop .hero-ctas {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
   }
 
-  .footer-mobile .hero-sub, 
-  .footer-mobile  .hero-ctas {
+  .footer-mobile .hero-sub,
+  .footer-mobile .hero-ctas {
     display: none;
   }
 }
