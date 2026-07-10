@@ -5,6 +5,11 @@
   position: relative;
   overflow: hidden;
 }
+
+.cta-head {
+  text-align: start;
+}
+
 .cta::before {
   content: "";
   position: absolute;
@@ -171,13 +176,12 @@
   line-height: 1.5;
 }
 
-
 /* SUCCESS */
 
 .form-success {
   text-align: center;
   padding: 20px 0;
- /*  display: none; */
+  /*  display: none; */
 }
 .form-success-icon {
   width: 64px;

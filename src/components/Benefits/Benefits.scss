@@ -75,19 +75,18 @@
 /* ============ GRID ============ */
 
 .benefits-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 250px);
-  row-gap: 30px;
-  column-gap: 70px;
-  justify-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px 40px;
 }
 
 /* ============ CARDS ============ */
 
 .benefit-card,
 .benefit-card-team {
-  height: 280px;
-  width: 290px;
+  min-height: 280px;
+  width: min(290px, calc(50% - 20px));
   color: var(--white);
   background: linear-gradient(
     180deg,
@@ -175,31 +174,30 @@
 
 @media (max-width: 1150px) {
   .benefits-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 220px);
-/*     gap: 25px;
- */    justify-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .benefit-card,
   .benefit-card-team {
     color: var(--white);
-    height: 280px;
+    min-height: 280px;
   }
 }
 
 @media (max-width: 1050px) {
   .benefits-grid {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 25px;
-    justify-items: center;
   }
 
   .benefit-card,
   .benefit-card-team {
     color: var(--white);
-    height: 180px;
+    min-height: 180px;
     width: 400px;
   }
 }
@@ -212,10 +210,10 @@
   }
 
   .benefits-grid {
-    display: grid;
-    grid-template-columns: repeat(1fr);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 20px;
-    justify-content: center;
   }
 
   .benefit-card,
@@ -252,7 +250,7 @@
 
   .benefit-card,
   .benefit-card-team {
-    height: 200px;
+    min-height: 200px;
     width: 280px;
   }
 }
@@ -278,6 +276,6 @@
   .benefit-card,
   .benefit-card-team {
     width: 95%;
-    max-height: 180px;
+    min-height: 180px;
   }
 }

@@ -53,7 +53,7 @@ function CTA({ ctaT }: CTAProps) {
         {/* LEFT CONTENT */}
         <div className="ctaLeft">
           
-          <div className="section-head">
+          <div className="section-head cta-head">
             <span className="eyebrow">{ctaT.ctaTitle}</span>
 
             <h2>
