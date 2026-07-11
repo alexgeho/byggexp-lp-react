@@ -124,7 +124,7 @@ export const benefitsTranslations = {
 
       benefitsSiteCard1Title: "Auto tidrapportering",
       benefitsSiteCard1Text:
-        "Telefonen behöver bara vara påslagen.",
+        "Telefonen behöver bara vara påslagen och arbetstagaren behöver komma till projektet",
 
       benefitsSiteCard2Title: "Uppgifter utan telefonsamtal",
       benefitsSiteCard2Text:
@@ -136,7 +136,7 @@ export const benefitsTranslations = {
 
       benefitsSiteCard4Title: "Omedelbara notifieringar",
       benefitsSiteCard4Text:
-        "Alla projektdeltagare får notifieringar samtidigt.",
+        "Alla projektdeltagare eller valda personer får notifieringar samtidigt.",
     },
   },
 } as const;
