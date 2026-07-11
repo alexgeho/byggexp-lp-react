@@ -36,6 +36,10 @@
   color: black;
   background-color: var(--white);
 }
+.pricing-slider {
+display: flex;
+align-items: center;justify-content: center;
+}
 
 @media (max-width: 1200px) {
   .pricingOptions {
@@ -50,7 +54,7 @@
 }
 
 .pricing-card {
-  width: 350px;
+  width: 300px;
 
   background: var(--white);
   border-radius: 32px;
@@ -188,6 +192,12 @@
 }
 
 @media (max-width: 600px) {
+
+/*   .pricing-slider {
+    width: fit-content;
+    margin: 0 auto;
+  } */
+  
   .pricingOptions {
     display: flex;
     gap: 16px;
