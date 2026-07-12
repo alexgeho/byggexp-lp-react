@@ -5,7 +5,7 @@ import close from "../../assets/header/close.svg";
 import down from "../../assets/header/down.svg";
 import { useState } from "react";
 import { useNavigate, useParams, Link } from "react-router-dom";
-import { languages } from "../../locales/languages";
+import { languages, selectableLanguages } from "../../locales/languages";
 import type { HeaderProps } from "../../types/header";
 
 function Header({ headerT }: HeaderProps) {
@@ -54,7 +54,7 @@ function Header({ headerT }: HeaderProps) {
 
               {isOpen && (
                 <div className="language-dropdown">
-                  {Object.entries(languages).map(([code, language]) => (
+                  {Object.entries(selectableLanguages).map(([code, language]) => (
                     <button
                       key={code}
                       type="button"
@@ -94,7 +94,7 @@ function Header({ headerT }: HeaderProps) {
 
               {isOpen && (
                 <div className="language-dropdown">
-                  {Object.entries(languages).map(([code, language]) => (
+                  {Object.entries(selectableLanguages).map(([code, language]) => (
                     <button
                       key={code}
                       type="button"
