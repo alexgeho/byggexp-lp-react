@@ -1,4 +1,5 @@
 import "./Features.scss";
+import { useEffect, useState } from "react";
 import shiftsExport from "../../assets/features/shiftsExport.webp";
 import tasks from "../../assets/features/tasks.webp";
 import live from "../../assets/features/live.webp";
@@ -12,6 +13,24 @@ import project from "../../assets/features/project.webp";
 import type { FeaturesProps } from "../../types/features";
 
 function Features({ featuresT1_3, featuresT4_6, featuresT7_9 }: FeaturesProps) {
+  const [lightboxImage, setLightboxImage] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (!lightboxImage) return;
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setLightboxImage(null);
+    };
+
+    document.addEventListener("keydown", handleKeyDown);
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = "";
+    };
+  }, [lightboxImage]);
+
   return (
     <section className="features" id="features">
       <div className="container">
@@ -55,7 +74,14 @@ function Features({ featuresT1_3, featuresT4_6, featuresT7_9 }: FeaturesProps) {
 
           <div className="step-visual">
             <div className="phone-shell">
-              <img src={shiftsExport} alt="" />
+              <button
+                type="button"
+                className="image-zoom-trigger"
+                onClick={() => setLightboxImage(shiftsExport)}
+                aria-label="Enlarge image"
+              >
+                <img src={shiftsExport} alt="" />
+              </button>
             </div>
           </div>
         </div>
@@ -87,7 +113,14 @@ function Features({ featuresT1_3, featuresT4_6, featuresT7_9 }: FeaturesProps) {
 
           <div className="step-visual">
             <div className="phone-shell">
-              <img src={tasks} alt="" />
+              <button
+                type="button"
+                className="image-zoom-trigger"
+                onClick={() => setLightboxImage(tasks)}
+                aria-label="Enlarge image"
+              >
+                <img src={tasks} alt="" />
+              </button>
             </div>
           </div>
         </div>
@@ -139,7 +172,14 @@ function Features({ featuresT1_3, featuresT4_6, featuresT7_9 }: FeaturesProps) {
 
           <div className="step-visual">
             <div className="phone-shell">
-              <img src={live} alt="" />
+              <button
+                type="button"
+                className="image-zoom-trigger"
+                onClick={() => setLightboxImage(live)}
+                aria-label="Enlarge image"
+              >
+                <img src={live} alt="" />
+              </button>
             </div>
           </div>
         </div>
@@ -171,7 +211,14 @@ function Features({ featuresT1_3, featuresT4_6, featuresT7_9 }: FeaturesProps) {
 
           <div className="step-visual">
             <div className="phone-shell">
-              <img src={photo} alt="" />
+              <button
+                type="button"
+                className="image-zoom-trigger"
+                onClick={() => setLightboxImage(photo)}
+                aria-label="Enlarge image"
+              >
+                <img src={photo} alt="" />
+              </button>
             </div>
           </div>
         </div>
@@ -203,7 +250,14 @@ function Features({ featuresT1_3, featuresT4_6, featuresT7_9 }: FeaturesProps) {
 
           <div className="step-visual">
             <div className="phone-shell">
-              <img src={planing} alt="" />
+              <button
+                type="button"
+                className="image-zoom-trigger"
+                onClick={() => setLightboxImage(planing)}
+                aria-label="Enlarge image"
+              >
+                <img src={planing} alt="" />
+              </button>
             </div>
           </div>
         </div>
@@ -235,7 +289,14 @@ function Features({ featuresT1_3, featuresT4_6, featuresT7_9 }: FeaturesProps) {
 
           <div className="step-visual">
             <div className="phone-shell">
-              <img src={tools} alt="" />
+              <button
+                type="button"
+                className="image-zoom-trigger"
+                onClick={() => setLightboxImage(tools)}
+                aria-label="Enlarge image"
+              >
+                <img src={tools} alt="" />
+              </button>
             </div>
           </div>
         </div>
@@ -269,7 +330,14 @@ function Features({ featuresT1_3, featuresT4_6, featuresT7_9 }: FeaturesProps) {
 
           <div className="step-visual">
             <div className="phone-shell">
-              <img src={offert} alt="" />
+              <button
+                type="button"
+                className="image-zoom-trigger"
+                onClick={() => setLightboxImage(offert)}
+                aria-label="Enlarge image"
+              >
+                <img src={offert} alt="" />
+              </button>
             </div>
           </div>
         </div>
@@ -301,7 +369,14 @@ function Features({ featuresT1_3, featuresT4_6, featuresT7_9 }: FeaturesProps) {
 
           <div className="step-visual">
             <div className="phone-shell">
-              <img src={invoice} alt="" />
+              <button
+                type="button"
+                className="image-zoom-trigger"
+                onClick={() => setLightboxImage(invoice)}
+                aria-label="Enlarge image"
+              >
+                <img src={invoice} alt="" />
+              </button>
             </div>
           </div>
         </div>
@@ -333,11 +408,48 @@ function Features({ featuresT1_3, featuresT4_6, featuresT7_9 }: FeaturesProps) {
 
           <div className="step-visual">
             <div className="phone-shell">
-              <img src={project} alt="" />
+              <button
+                type="button"
+                className="image-zoom-trigger"
+                onClick={() => setLightboxImage(project)}
+                aria-label="Enlarge image"
+              >
+                <img src={project} alt="" />
+              </button>
             </div>
           </div>
         </div>
       </div>
+
+      {lightboxImage && (
+        <div
+          className="image-lightbox"
+          onClick={() => setLightboxImage(null)}
+        >
+          <button
+            type="button"
+            className="image-lightbox-close"
+            onClick={() => setLightboxImage(null)}
+            aria-label="Stäng"
+          >
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                d="m5 5 14 14M19 5 5 19"
+              />
+            </svg>
+          </button>
+
+          <img
+            src={lightboxImage}
+            alt=""
+            className="image-lightbox-img"
+            onClick={(e) => e.stopPropagation()}
+          />
+        </div>
+      )}
     </section>
   );
 }
