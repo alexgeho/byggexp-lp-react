@@ -6,6 +6,9 @@ export type PricingProps = {
 
     pricingTag: string;
 
+    pricingMonthly: string,
+    pricingYearly: string,
+
     pricingPer: string;
     pricingPer1: string;
     pricingPer10: string;

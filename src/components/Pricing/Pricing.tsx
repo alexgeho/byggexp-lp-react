@@ -100,14 +100,14 @@ function Pricing({ pricingT }: PricingProps) {
             onClick={togglePeriod}
             className={!isYearly ? "toggleButtonActive" : "toggleButton"}
           >
-            Monthly
+            {pricingT.pricingMonthly}
           </button>
 
           <button
             onClick={togglePeriod}
             className={isYearly ? "toggleButtonActive" : "toggleButton"}
           >
-            Yearly - 10% off
+            {pricingT.pricingYearly} - 10% off
           </button>
         </div>
 

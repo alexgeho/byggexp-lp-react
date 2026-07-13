@@ -6,6 +6,9 @@ export const pricingTranslations = {
     pricingSub:
       "Никаких скрытых платежей. Никаких сюрпризов. Без платы за подключение. Отменить можно в любой момент.",
 
+    pricingMonthly: "Ежемесячно",
+    pricingYearly: "Ежегодно",
+
     pricingTag: "Первый месяц бесплатно",
 
     pricingPer: "SEK / месяц",
@@ -39,6 +42,9 @@ export const pricingTranslations = {
     pricingHeading: "One Plan, Everything Included",
 
     pricingSub: "No hidden fees. No surprises. No setup fees. Cancel anytime.",
+
+    pricingMonthly: "Monthly",
+    pricingYearly: "Yearly",
 
     pricingTag: "First Month Free",
 
@@ -75,6 +81,9 @@ export const pricingTranslations = {
     pricingSub:
       "Inga dolda avgifter. Inga överraskningar. Ingen startavgift. Avsluta när du vill.",
 
+    pricingMonthly: "Per månad",
+    pricingYearly: "Per år",
+
     pricingTag: "Första månaden gratis",
 
     pricingPer: "SEK / månad",
@@ -84,7 +93,6 @@ export const pricingTranslations = {
     pricingPer40: "Anpassad",
     pricingCustom: "Låt oss prata",
 
-   
     priceDescription1: "1-10 användare",
 
     priceDescription2: "10-20 användare",
