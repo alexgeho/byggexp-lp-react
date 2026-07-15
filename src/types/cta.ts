@@ -34,6 +34,7 @@ export type CTAProps = {
 
     ctaSuccessTitle: string;
     ctaSuccessText: string;
+    ctaSuccessCalendlyHint: string;
     ctaCalendlyButton: string;
   };
 };

@@ -36,6 +36,8 @@ export const ctaTranslations = {
 
     ctaSuccessTitle: "Заявка отправлена!",
     ctaSuccessText: "Свяжемся с тобой в течение часа в рабочее время.",
+    ctaSuccessCalendlyHint:
+      "А если хотите — можете сразу забронировать удобное время ниже.",
     ctaCalendlyButton: "Выбрать время в календаре",
   },
 
@@ -77,6 +79,8 @@ export const ctaTranslations = {
     ctaSuccessTitle: "Request Sent!",
     ctaSuccessText:
       "We will contact you within one hour during business hours.",
+    ctaSuccessCalendlyHint:
+      "Or, if you'd like, you can book a convenient time right away below.",
     ctaCalendlyButton: "Pick a time on the calendar",
   },
 
@@ -117,6 +121,8 @@ export const ctaTranslations = {
 
     ctaSuccessTitle: "Ansökan skickad!",
     ctaSuccessText: "Vi kontaktar dig inom en timme under arbetstid.",
+    ctaSuccessCalendlyHint:
+      "Vill du kan du också boka en passande tid direkt nedan.",
     ctaCalendlyButton: "Välj en tid i kalendern",
   },
 } as const;

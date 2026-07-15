@@ -2,6 +2,7 @@ import type { CTAProps } from "../../types/cta";
 import "./CTA.scss";
 import { useState, type FormEvent, type ChangeEvent } from "react";
 import { API_URL } from "../../config/api";
+import { InlineWidget } from "react-calendly";
 
 const CALENDLY_URL = "https://calendly.com/870717ag/30min";
 
@@ -234,15 +235,21 @@ function CTA({ ctaT }: CTAProps) {
               <h3>{ctaT.ctaSuccessTitle}</h3>
 
               <p id="success-msg">{ctaT.ctaSuccessText}</p>
+              <p className="form-success-hint">
+                {ctaT.ctaSuccessCalendlyHint}
+              </p>
 
-              <a
-                href={CALENDLY_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="form-submit form-success-calendly"
-              >
-                {ctaT.ctaCalendlyButton}
-              </a>
+              <div className="calendly-embed">
+                <InlineWidget
+                  url={CALENDLY_URL}
+                  prefill={{
+                    name,
+                    email,
+                    customAnswers: { a1: phone },
+                  }}
+                  styles={{ height: "650px" }}
+                />
+              </div>
             </div>
           )}
         </div>
