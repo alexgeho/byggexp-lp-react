@@ -3,7 +3,7 @@ import "./CTA.scss";
 import { useState, type FormEvent, type ChangeEvent } from "react";
 import { API_URL } from "../../config/api";
 
-const CALENDLY_URL = "https://calendly.com/your-link";
+const CALENDLY_URL = "https://calendly.com/870717ag/30min";
 
 function CTA({ ctaT }: CTAProps) {
   /* ON SUBMIT/SUCCCES OPENS */
