@@ -1,14 +1,43 @@
 import type { CTAProps } from "../../types/cta";
 import "./CTA.scss";
 import { useState, type FormEvent, type ChangeEvent } from "react";
+import { API_URL } from "../../config/api";
+
+const CALENDLY_URL = "https://calendly.com/your-link";
 
 function CTA({ ctaT }: CTAProps) {
   /* ON SUBMIT/SUCCCES OPENS */
   const [isSuccess, setIsSuccess] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState(false);
 
-  function handleSubmit(event: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    setIsSuccess(true);
+
+    if (!name.trim() || !email.trim() || !phone.trim()) {
+      return;
+    }
+
+    setIsSubmitting(true);
+    setSubmitError(false);
+
+    try {
+      const response = await fetch(`${API_URL}/mail/demo-request`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        throw new Error("Request failed");
+      }
+
+      setIsSuccess(true);
+    } catch {
+      setSubmitError(true);
+    } finally {
+      setIsSubmitting(false);
+    }
   }
   /* END */
 
@@ -39,12 +68,10 @@ function CTA({ ctaT }: CTAProps) {
   /* INPUTED DATA(OBJECT) */
 
   const formData = {
-    name,
-    email,
-    phone,
+    "f-name": name,
+    "f-email": email,
+    "f-phone": phone,
   };
-
-  console.log(formData);
 
   return (
     <section className="cta" id="cta">
@@ -52,7 +79,7 @@ function CTA({ ctaT }: CTAProps) {
 
         {/* LEFT CONTENT */}
         <div className="ctaLeft">
-          
+
           <div className="section-head cta-head">
             <span className="eyebrow">{ctaT.ctaTitle}</span>
 
@@ -60,7 +87,7 @@ function CTA({ ctaT }: CTAProps) {
               {ctaT.ctaHeading1} <em>{ctaT.ctaAccent}</em> {ctaT.ctaHeading2}
             </h2>
           </div>
-        
+
           <ul className="cta-list">
             <li>
               <span className="check">
@@ -169,9 +196,19 @@ function CTA({ ctaT }: CTAProps) {
                 </div>
 
                 {/* SUBMIT */}
-                <button type="submit" className="form-submit">
-                  {ctaT.ctaButton}
+                <button
+                  type="submit"
+                  className="form-submit"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? ctaT.ctaButtonSending : ctaT.ctaButton}
                 </button>
+
+                {submitError && (
+                  <p className="form-fine form-fine-error">
+                    {ctaT.ctaSubmitError}
+                  </p>
+                )}
 
                 <p className="form-fine">{ctaT.ctaPrivacy}</p>
               </form>
@@ -197,6 +234,15 @@ function CTA({ ctaT }: CTAProps) {
               <h3>{ctaT.ctaSuccessTitle}</h3>
 
               <p id="success-msg">{ctaT.ctaSuccessText}</p>
+
+              <a
+                href={CALENDLY_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="form-submit form-success-calendly"
+              >
+                {ctaT.ctaCalendlyButton}
+              </a>
             </div>
           )}
         </div>

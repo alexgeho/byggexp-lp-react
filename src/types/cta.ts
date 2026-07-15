@@ -27,10 +27,13 @@ export type CTAProps = {
     ctaPhoneError: string;
 
     ctaButton: string;
+    ctaButtonSending: string;
+    ctaSubmitError: string;
 
     ctaPrivacy: string;
 
     ctaSuccessTitle: string;
     ctaSuccessText: string;
+    ctaCalendlyButton: string;
   };
 };

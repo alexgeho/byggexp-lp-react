@@ -178,6 +178,13 @@
   text-align: center;
   line-height: 1.5;
 }
+.form-fine-error {
+  color: #ffb0bb;
+}
+.form-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
 
 /* SUCCESS */
 
@@ -210,4 +217,11 @@
 .form-success p {
   color: rgba(255, 255, 255, 0.65);
   font-size: 16px;
+}
+.form-success-calendly {
+  display: inline-block;
+  width: auto;
+  margin-top: 20px;
+  padding: 14px 28px;
+  text-decoration: none;
 }

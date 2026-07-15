@@ -28,12 +28,15 @@ export const ctaTranslations = {
     ctaPhoneError: "Укажи телефон для связи",
 
     ctaButton: "Записаться на демо",
+    ctaButtonSending: "Отправляем...",
+    ctaSubmitError: "Не удалось отправить заявку. Попробуйте ещё раз.",
 
     ctaPrivacy:
       "Отправляя форму, Вы соглашаетесь с обработкой персональных данных. Не передаём третьим лицам.",
 
     ctaSuccessTitle: "Заявка отправлена!",
     ctaSuccessText: "Свяжемся с тобой в течение часа в рабочее время.",
+    ctaCalendlyButton: "Выбрать время в календаре",
   },
 
   en: {
@@ -65,6 +68,8 @@ export const ctaTranslations = {
     ctaPhoneError: "Please enter your phone number",
 
     ctaButton: "Book a Demo",
+    ctaButtonSending: "Sending...",
+    ctaSubmitError: "Couldn't send your request. Please try again.",
 
     ctaPrivacy:
       "By submitting this form, you agree to the processing of your personal data. We do not share it with third parties.",
@@ -72,6 +77,7 @@ export const ctaTranslations = {
     ctaSuccessTitle: "Request Sent!",
     ctaSuccessText:
       "We will contact you within one hour during business hours.",
+    ctaCalendlyButton: "Pick a time on the calendar",
   },
 
   sv: {
@@ -103,11 +109,14 @@ export const ctaTranslations = {
     ctaPhoneError: "Ange telefonnummer",
 
     ctaButton: "Boka demo",
+    ctaButtonSending: "Skickar...",
+    ctaSubmitError: "Det gick inte att skicka ansökan. Försök igen.",
 
     ctaPrivacy:
       "Genom att skicka formuläret godkänner du behandlingen av personuppgifter. Vi delar inte uppgifterna med tredje part.",
 
     ctaSuccessTitle: "Ansökan skickad!",
     ctaSuccessText: "Vi kontaktar dig inom en timme under arbetstid.",
+    ctaCalendlyButton: "Välj en tid i kalendern",
   },
 } as const;
