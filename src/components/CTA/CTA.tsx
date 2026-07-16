@@ -247,7 +247,7 @@ function CTA({ ctaT }: CTAProps) {
                     email,
                     customAnswers: { a1: phone },
                   }}
-                  styles={{ height: "650px" }}
+                  styles={{ height: "750px" }}
                 />
               </div>
             </div>
