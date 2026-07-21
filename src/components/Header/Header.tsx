@@ -16,6 +16,10 @@ function Header({ headerT }: HeaderProps) {
     setIsMenuOpen(!isMenuOpen);
   }
 
+  function closeMenu() {
+    setIsMenuOpen(false);
+  }
+
   /*  */
 
   /* LANG */
@@ -28,6 +32,7 @@ function Header({ headerT }: HeaderProps) {
   function changeLanguage(language: string) {
     navigate(`/${language}`);
     setIsOpen(false);
+    setIsMenuOpen(false);
   }
   /*  */
   return (
@@ -71,10 +76,10 @@ function Header({ headerT }: HeaderProps) {
 
           {/* NAV LINKS */}
           <div className={isMenuOpen ? "nav-links open" : "nav-links"}>
-            <a href="#features">{headerT.how}</a>
-            <a href="#pricing">{headerT.pricing}</a>
-            <a href="#cta">{headerT.company}</a>
-            <Link to={`/${lang}/contact`}>{headerT.contact}</Link>
+            <a href="#features" onClick={closeMenu}>{headerT.how}</a>
+            <a href="#pricing" onClick={closeMenu}>{headerT.pricing}</a>
+            <a href="#cta" onClick={closeMenu}>{headerT.company}</a>
+            <Link to={`/${lang}/contact`} onClick={closeMenu}>{headerT.contact}</Link>
 
             {/* MOBILET LANGUAGE */}
             <div className="mobile-language">
@@ -111,7 +116,7 @@ function Header({ headerT }: HeaderProps) {
             {/* MOBILET LANGUAGE END*/}
 
             {/* CTA BTN */}
-            <a href="#cta" className="nav-cta">
+            <a href="#cta" className="nav-cta" onClick={closeMenu}>
               {headerT.demo}
             </a>
             {/* CTA BTN END*/}
