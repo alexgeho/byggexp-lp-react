@@ -6,7 +6,8 @@ import Hero from "./components/Hero/Hero";
 import Pricing from "./components/Pricing/Pricing";
 import Pain from "./components/Pain/Pain";
 import Contact from "./components/Contact/Contact";
-import { Routes, Route, Navigate, useParams } from "react-router-dom";
+import { useEffect } from "react";
+import { Routes, Route, Navigate, useParams, useLocation } from "react-router-dom";
 import { headerTranslations } from "./locales/header"
 import { painTranslations } from "./locales/pain"
 import { heroTranslations } from "./locales/hero"
@@ -24,6 +25,40 @@ import Features from "./components/Features/Features";
 
 function HomePage() {
   const { lang = "sv" } = useParams();
+  const location = useLocation();
+
+  useEffect(() => {
+    if (!location.hash) return;
+    const id = location.hash.slice(1);
+
+    let frame: number;
+    let lastTop: number | null = null;
+    let stableFrames = 0;
+    let framesWaited = 0;
+
+    const waitForStableLayout = () => {
+      const el = document.getElementById(id);
+      const top = el ? el.getBoundingClientRect().top + window.scrollY : null;
+
+      if (top !== null && lastTop !== null && Math.abs(top - lastTop) < 1) {
+        stableFrames++;
+      } else {
+        stableFrames = 0;
+      }
+      lastTop = top;
+      framesWaited++;
+
+      if (el && (stableFrames >= 6 || framesWaited > 120)) {
+        el.scrollIntoView({ behavior: "smooth", block: "start" });
+        return;
+      }
+
+      frame = requestAnimationFrame(waitForStableLayout);
+    };
+
+    frame = requestAnimationFrame(waitForStableLayout);
+    return () => cancelAnimationFrame(frame);
+  }, [location]);
 
 
   const headerT = headerTranslations[lang as keyof typeof headerTranslations] || headerTranslations.sv;
