@@ -193,25 +193,62 @@ function Contact({ contactT, ctaT }: ContactProps & CTAProps) {
           <div className="contact-card contact-form-card">
             {!isSuccess && (
               <>
-                <div className="contact-form-left">
-                  <span className="contact-icon">
-                    <svg
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <rect x="3" y="4" width="18" height="18" rx="2"></rect>
-                      <line x1="16" y1="2" x2="16" y2="6"></line>
-                      <line x1="8" y1="2" x2="8" y2="6"></line>
-                      <line x1="3" y1="10" x2="21" y2="10"></line>
-                    </svg>
-                  </span>
+                <div className="ctaLeft contact-form-left">
+                  <div className="section-head section-head--dark cta-head">
+                    <span className="eyebrow">{ctaT.ctaTitle}</span>
 
-                  <h3>{contactT.contactDemoTitle}</h3>
-                  <p className="contact-note">{contactT.contactDemoText}</p>
+                    <h2>
+                      {ctaT.ctaHeading1} <em>{ctaT.ctaAccent}</em>{" "}
+                      {ctaT.ctaHeading2}
+                    </h2>
+                  </div>
+
+                  <ul className="cta-list-contact">
+                    <li>
+                      <span className="check">
+                        <svg viewBox="0 0 14 10" fill="none">
+                          <path
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="m1 5 4 4 8-8"
+                          />
+                        </svg>
+                      </span>
+                      {ctaT.ctaItem1}
+                    </li>
+
+                    <li>
+                      <span className="check">
+                        <svg viewBox="0 0 14 10" fill="none">
+                          <path
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="m1 5 4 4 8-8"
+                          />
+                        </svg>
+                      </span>
+                      {ctaT.ctaItem2}
+                    </li>
+
+                    <li>
+                      <span className="check">
+                        <svg viewBox="0 0 14 10" fill="none">
+                          <path
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="m1 5 4 4 8-8"
+                          />
+                        </svg>
+                      </span>
+                      {ctaT.ctaItem3}
+                    </li>
+                  </ul>
                 </div>
 
                 <form
