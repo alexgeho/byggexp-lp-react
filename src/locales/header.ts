@@ -3,6 +3,7 @@ export const headerTranslations = {
     how: "Как работает",
     pricing: "Цены",
     company: "О компании",
+    contact: "Контакты",
     demo: "Записаться на демо",
 
   },
@@ -11,6 +12,7 @@ export const headerTranslations = {
     how: "How it works",
     pricing: "Pricing",
     company: "About us",
+    contact: "Contact",
     demo: "Book a demo",
   },
 
@@ -19,6 +21,7 @@ export const headerTranslations = {
     how: "Hur det fungerar",
     pricing: "Priser",
     company: "Om oss",
+    contact: "Kontakt",
     demo: "Boka demo",
   },
 }

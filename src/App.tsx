@@ -5,6 +5,7 @@ import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Pricing from "./components/Pricing/Pricing";
 import Pain from "./components/Pain/Pain";
+import Contact from "./components/Contact/Contact";
 import { Routes, Route, Navigate, useParams } from "react-router-dom";
 import { headerTranslations } from "./locales/header"
 import { painTranslations } from "./locales/pain"
@@ -17,6 +18,7 @@ import { finalBenefitsTranslations } from "./locales/finalBenefits"
 import { pricingTranslations } from "./locales/pricing"
 import { ctaTranslations } from "./locales/CTA"
 import { footerTranslations } from "./locales/footer"
+import { contactTranslations } from "./locales/contact"
 import Benefits from "./components/Benefits/Benefits";
 import Features from "./components/Features/Features";
 
@@ -57,11 +59,29 @@ function HomePage() {
 
 
 
+function ContactPage() {
+  const { lang = "sv" } = useParams();
+
+  const headerT = headerTranslations[lang as keyof typeof headerTranslations] || headerTranslations.sv;
+  const footerT = footerTranslations[lang as keyof typeof footerTranslations] || footerTranslations.sv;
+  const contactT = contactTranslations[lang as keyof typeof contactTranslations] || contactTranslations.sv;
+  const ctaT = ctaTranslations[lang as keyof typeof ctaTranslations] || ctaTranslations.sv;
+
+  return (
+    <>
+      <Header headerT={headerT} />
+      <Contact contactT={contactT} ctaT={ctaT} />
+      <Footer footerT={footerT} />
+    </>
+  );
+}
+
 function App() {
   return (
   <Routes>
   <Route path="/" element={<Navigate to="/sv" replace />} />
   <Route path="/:lang" element={<HomePage />} />
+  <Route path="/:lang/contact" element={<ContactPage />} />
 </Routes>
   );
 }

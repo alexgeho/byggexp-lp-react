@@ -3,6 +3,7 @@ export type HeaderProps = {
     how: string;
     pricing: string;
     company: string;
+    contact: string;
     demo: string;
   };
 };

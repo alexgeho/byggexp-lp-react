@@ -74,6 +74,7 @@ function Header({ headerT }: HeaderProps) {
             <a href="#features">{headerT.how}</a>
             <a href="#pricing">{headerT.pricing}</a>
             <a href="#cta">{headerT.company}</a>
+            <Link to={`/${lang}/contact`}>{headerT.contact}</Link>
 
             {/* MOBILET LANGUAGE */}
             <div className="mobile-language">
