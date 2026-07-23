@@ -84,7 +84,7 @@ export const featuresTranslations1_3 = {
     featuresSub:
       "Ingen dator behövs. Ingen sekreterare behövs. Bara en smartphone som redan finns i fickan.",
 
-    featuresCard1Title: "Automatisk tidsrapportering och Excel-export",
+    featuresCard1Title: "Automatisk insamling av arbetstid",
     featuresCard1Text:
       "Medarbetaren väljer projekt. ByggExp registrerar arbetstiden automatiskt via GPS.",
 
