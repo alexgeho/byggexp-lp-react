@@ -45,7 +45,7 @@ export const featuresTranslations1_3 = {
     featuresHeading2: "of administrative work",
 
     featuresSub:
-      "No laptop required. No secretary required. Just a smartphone already in your pocket.",
+      "No laptop required. Just a smartphone already in your pocket.",
 
     featuresCard1Title: "Automatic Time Tracking and Excel Export",
     featuresCard1Text:
@@ -82,7 +82,7 @@ export const featuresTranslations1_3 = {
     featuresHeading2: "av administrationens arbete",
 
     featuresSub:
-      "Ingen dator behövs. Ingen sekreterare behövs. Bara en smartphone som redan finns i fickan.",
+      "Ingen dator behövs. Bara en smartphone som redan finns i fickan.",
 
     featuresCard1Title: "Automatisk insamling av arbetstid",
     featuresCard1Text:
