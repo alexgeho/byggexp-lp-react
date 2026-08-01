@@ -111,10 +111,31 @@ function ContactPage() {
   );
 }
 
+// Legal pages are self-contained bilingual (SV/EN) HTML files in /public,
+// rendered full-viewport so /privacy and /terms serve clean URLs while the
+// static /privacy.html and /terms.html remain directly reachable too.
+function LegalPage({ src, title }: { src: string; title: string }) {
+  return (
+    <iframe
+      src={src}
+      title={title}
+      style={{
+        position: "fixed",
+        inset: 0,
+        width: "100%",
+        height: "100%",
+        border: "none",
+      }}
+    />
+  );
+}
+
 function App() {
   return (
   <Routes>
   <Route path="/" element={<Navigate to="/sv" replace />} />
+  <Route path="/privacy" element={<LegalPage src="/privacy.html" title="Privacy Policy" />} />
+  <Route path="/terms" element={<LegalPage src="/terms.html" title="Terms of Service" />} />
   <Route path="/:lang" element={<HomePage />} />
   <Route path="/:lang/contact" element={<ContactPage />} />
 </Routes>
